@@ -1,7 +1,7 @@
-
 ---
 layout: post
 title: "babel이란?"
+categories: [ Javascript, babel ]
 author: "Yeon"
 ---
 
