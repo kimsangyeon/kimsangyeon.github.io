@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="740ead53-08cd-4a29-940d-f076ddfb43ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-27-hackerrank-IntroductionToSet.md" afterPath="$PROJECT_DIR$/_posts/2017-11-27-hackerrank-IntroductionToSet.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-27-hackerrank-Merge the-Tools.md" afterPath="$PROJECT_DIR$/_posts/2017-11-27-hackerrank-Merge the-Tools.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-28- Symmetric-Difference.md" afterPath="$PROJECT_DIR$/_posts/2017-11-28- Symmetric-Difference.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-01-Days-Data-Types.md" afterPath="$PROJECT_DIR$/_posts/2017-12-01-Days-Data-Types.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-01-Days-Hello-world.md" afterPath="$PROJECT_DIR$/_posts/2017-12-01-Days-Hello-world.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-04-hackerrank-setAdd.md" afterPath="$PROJECT_DIR$/_posts/2017-12-04-hackerrank-setAdd.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-07-hackerrank-set-discard-remove-pop.md" afterPath="$PROJECT_DIR$/_posts/2017-12-07-hackerrank-set-discard-remove-pop.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-07-hackerrank-set-union.md" afterPath="$PROJECT_DIR$/_posts/2017-12-07-hackerrank-set-union.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-09-hackerrank-set-NoIdea.md" afterPath="$PROJECT_DIR$/_posts/2017-12-09-hackerrank-set-NoIdea.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-difference.md" afterPath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-difference.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-intersection.md" afterPath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-intersection.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-mutations.md" afterPath="$PROJECT_DIR$/_posts/2017-12-10-hackerrank-set-mutations.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-11-hackerrank-set-theCaptainRoom.md" afterPath="$PROJECT_DIR$/_posts/2017-12-11-hackerrank-set-theCaptainRoom.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-math-PolarCoordinates.md" afterPath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-math-PolarCoordinates.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-set-CheckStrictSuperset.md" afterPath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-set-CheckStrictSuperset.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-set-checkSubset.md" afterPath="$PROJECT_DIR$/_posts/2017-12-14-hackerrank-set-checkSubset.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-01-02-javascript-canvas-game.md" afterPath="$PROJECT_DIR$/_posts/2018-01-02-javascript-canvas-game.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-01-14-hackerrank-math-FineAngleMBC.md" afterPath="$PROJECT_DIR$/_posts/2018-01-14-hackerrank-math-FineAngleMBC.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-01-14-python-webCrawler.md" afterPath="$PROJECT_DIR$/_posts/2018-01-14-python-webCrawler.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-01-21-python-subDirectorySearch.md" afterPath="$PROJECT_DIR$/_posts/2018-01-21-python-subDirectorySearch.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-03-26-nodeJs_express1.md" afterPath="$PROJECT_DIR$/_posts/2018-03-26-nodeJs_express1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-04-08-python-pygame-beggining-game-programming.md" afterPath="$PROJECT_DIR$/_posts/2018-04-08-python-pygame-beggining-game-programming.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-04-08-trigonometrical-function.md" afterPath="$PROJECT_DIR$/_posts/2018-04-08-trigonometrical-function.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-06-06-python-flask-01.md" afterPath="$PROJECT_DIR$/_posts/2018-06-06-python-flask-01.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-06-25-django-structure.md" afterPath="$PROJECT_DIR$/_posts/2018-06-25-django-structure.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-07-09-django-fields.md" afterPath="$PROJECT_DIR$/_posts/2018-07-09-django-fields.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-07-09-django-widget.md" afterPath="$PROJECT_DIR$/_posts/2018-07-09-django-widget.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-01-typeScript-start1.md" afterPath="$PROJECT_DIR$/_posts/2018-08-01-typeScript-start1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" afterPath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-12-apache-users-conf.md" afterPath="$PROJECT_DIR$/_posts/2018-08-12-apache-users-conf.md" />
-    </list>
+    <list default="true" id="740ead53-08cd-4a29-940d-f076ddfb43ce" name="Default" comment="" />
     <ignored path="kimsangyeon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -463,7 +431,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1124,16 +1096,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534772607725</updated>
-      <workItem from="1534772609438" duration="5094000" />
+      <workItem from="1534772609438" duration="5170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5094000" />
+    <option name="totallyTimeSpent" value="5170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1145,7 +1117,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2835218" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2835218" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
