@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Check Strict Subset"
+categories: [ Python ]
 author: "Yeon"
 ---
 

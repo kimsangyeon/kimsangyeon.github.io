@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Days 0: Data Types"
+categories: [ Javascript ]
 author: "Yeon"
 ---
 

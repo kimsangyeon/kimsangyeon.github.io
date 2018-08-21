@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Polar Coordinates"
+categories: [ Python ]
 author: "Yeon"
 ---
 

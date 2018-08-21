@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Symmetic Difference"
+categories: [ Python ]
 author: "Yeon"
 ---
 

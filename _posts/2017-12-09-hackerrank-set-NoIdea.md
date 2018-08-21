@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "No Idea!"
+categories: [ Python ]
 author: "Yeon"
 ---
 

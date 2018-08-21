@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Django Widget"
+categories: [ Python, django ]
 author: "Yeon"
 ---
 

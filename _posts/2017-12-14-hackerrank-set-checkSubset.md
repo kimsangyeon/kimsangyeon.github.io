@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Check Subset"
+categories: [ Python ]
 author: "Yeon"
 ---
 

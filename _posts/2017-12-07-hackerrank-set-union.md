@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Set .union() Operation"
+categories: [ Python ]
 author: "Yeon"
 ---
 

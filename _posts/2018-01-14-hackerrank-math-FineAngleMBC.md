@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Find Angle MBC"
+categories: [ Python ]
 author: "Yeon"
 ---
 

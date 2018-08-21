@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Set .discard(), .remove() & .pop()"
+categories: [ Python ]
 author: "Yeon"
 ---
 

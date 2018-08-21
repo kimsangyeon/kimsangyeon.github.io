@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "간단한 Web Crawler 만들기"
+categories: [ Python ]
 author: "Yeon"
 ---
 

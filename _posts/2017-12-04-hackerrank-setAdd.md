@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "set.add()"
+categories: [ Python ]
 author: "Yeon"
 ---
 

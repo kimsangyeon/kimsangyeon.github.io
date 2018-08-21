@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Trigonometrical function"
+categories: [ Math ]
 author: "Yeon"
 ---
 

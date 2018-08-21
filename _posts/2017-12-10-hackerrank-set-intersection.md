@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Set .intersection() Operation"
+categories: [ Python ]
 author: "Yeon"
 ---
 

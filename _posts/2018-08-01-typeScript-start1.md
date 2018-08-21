@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "TypeScript start 01"
+categories: [ Javascript, typescript ]
 author: "Yeon"
 ---
 
