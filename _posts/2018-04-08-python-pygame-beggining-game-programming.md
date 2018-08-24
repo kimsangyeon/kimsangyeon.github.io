@@ -2,6 +2,7 @@
 layout: post
 title: "Beginning Game Programming for Teens with Python"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

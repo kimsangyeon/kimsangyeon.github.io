@@ -2,6 +2,7 @@
 layout: post
 title: "NodeJs Express란?"
 categories: [ Javascript, nodejs ]
+image: assets/images/banner/nodejs.png
 author: yeon
 ---
 

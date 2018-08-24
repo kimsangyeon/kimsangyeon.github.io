@@ -2,6 +2,7 @@
 layout: post
 title: "간단한 Web Crawler 만들기"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 
