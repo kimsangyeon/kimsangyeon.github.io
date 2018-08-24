@@ -2,6 +2,7 @@
 layout: post
 title: "Symmetic Difference"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

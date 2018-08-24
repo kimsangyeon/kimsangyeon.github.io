@@ -2,6 +2,7 @@
 layout: post
 title: "Days 0: Data Types"
 categories: [ Javascript ]
+image: assets/images/banner/javascript.png
 author: yeon
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Canvas Game Charecter animation"
 categories: [ Javascript ]
+image: assets/images/banner/javascript.png
 author: yeon
 ---
 

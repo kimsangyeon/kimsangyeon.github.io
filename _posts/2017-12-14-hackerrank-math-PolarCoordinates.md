@@ -2,6 +2,7 @@
 layout: post
 title: "Polar Coordinates"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

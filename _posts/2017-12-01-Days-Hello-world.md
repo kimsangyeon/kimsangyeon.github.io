@@ -2,6 +2,7 @@
 layout: post
 title: "Days 0: Hello world!"
 categories: [ Javascript ]
+image: assets/images/banner/javascript.png
 author: yeon
 ---
 

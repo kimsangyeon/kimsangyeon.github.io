@@ -11,7 +11,7 @@ author: yeon
 ## Python Practice
 ### Intoroduction to Sets
 
-Input Format
+Input Format*
 
 The first line contains the integer, N, the total number of plants.
 The second line contains the N space separated heights of the plants.

@@ -2,6 +2,7 @@
 layout: post
 title: "Set .union() Operation"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

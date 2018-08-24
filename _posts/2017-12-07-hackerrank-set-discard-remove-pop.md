@@ -2,6 +2,7 @@
 layout: post
 title: "Set .discard(), .remove() & .pop()"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

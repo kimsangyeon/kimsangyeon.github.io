@@ -2,6 +2,7 @@
 layout: post
 title: "Set .difference() Operation"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

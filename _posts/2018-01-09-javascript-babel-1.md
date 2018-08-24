@@ -2,6 +2,7 @@
 layout: post
 title: "babel이란?"
 categories: [ Javascript, babel ]
+image: assets/images/banner/javascript.png
 author: yeon
 ---
 

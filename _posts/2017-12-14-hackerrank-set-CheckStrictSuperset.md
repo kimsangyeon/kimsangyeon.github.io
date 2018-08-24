@@ -2,6 +2,7 @@
 layout: post
 title: "Check Strict Subset"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 

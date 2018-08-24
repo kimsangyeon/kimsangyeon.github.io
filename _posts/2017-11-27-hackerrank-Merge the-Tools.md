@@ -2,6 +2,7 @@
 layout: post
 title: "Merge the Tools!"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 
