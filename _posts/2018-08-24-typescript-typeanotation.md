@@ -2,7 +2,7 @@
 layout: post
 title: "Typescript Type Anotation" 
 categories: [ Javascript, typescript ]
-image: assets/images/typescript/typescript.png
+image: assets/images/banner/typescript/typescript.png
 author: yeon
 ---
 

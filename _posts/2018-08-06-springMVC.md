@@ -2,7 +2,7 @@
 layout: post
 title: "Spring MVC 구조" 
 categories: [ Java, springMVC ]
-image: assets/images/banner/springmvc.png
+image: assets/images/banner/django.png
 author: yeon
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Django Fields"
 categories: [ Python, django ]
+image: assets/images/banner/django.png
 author: yeon
 ---
 
