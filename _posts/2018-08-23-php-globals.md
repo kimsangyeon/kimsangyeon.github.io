@@ -2,6 +2,7 @@
 layout: post
 title: "php $GLOBALS" 
 categories: [ php ]
+image: assets/images/banner/php.png
 author: yeon
 ---
 
