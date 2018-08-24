@@ -2,6 +2,7 @@
 layout: post
 title: "Django Widget"
 categories: [ Python, django ]
+image: assets/images/banner/django.png
 author: yeon
 ---
 
