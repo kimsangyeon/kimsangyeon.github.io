@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="740ead53-08cd-4a29-940d-f076ddfb43ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" afterPath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-12-apache-users-conf.md" afterPath="$PROJECT_DIR$/_posts/2018-08-12-apache-users-conf.md" />
     </list>
     <ignored path="kimsangyeon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -965,12 +963,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534772607725</updated>
       <workItem from="1534772609438" duration="7814000" />
-      <workItem from="1535115151391" duration="2667000" />
+      <workItem from="1535115151391" duration="2697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10481000" />
+    <option name="totallyTimeSpent" value="10511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
