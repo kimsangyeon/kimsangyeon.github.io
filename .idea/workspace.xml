@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740ead53-08cd-4a29-940d-f076ddfb43ce" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/banner/javascript.png" afterPath="$PROJECT_DIR$/assets/images/banner/javascript.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kimsangyeon.github.io.iws" />
@@ -104,13 +105,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="304">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="javascript.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/images/banner/javascript.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -963,12 +971,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534772607725</updated>
       <workItem from="1534772609438" duration="7814000" />
-      <workItem from="1535115151391" duration="3389000" />
+      <workItem from="1535115151391" duration="3619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11203000" />
+    <option name="totallyTimeSpent" value="11433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1016,28 +1024,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2016-01-12-never-stopped-worrying-never-loved-bomb.md">
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-01-12-options-for-creating-new-site-with-jekyll.md">
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1176,8 +1162,8 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1535117663717" expanded="true" signature="487:554" ph="..." />
-              <marker date="1535117663717" expanded="true" signature="582:689" ph="..." />
+              <marker date="1535119046452" expanded="true" signature="488:555" ph="..." />
+              <marker date="1535119046452" expanded="true" signature="583:690" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -1188,8 +1174,8 @@
           <first_editor relative-caret-position="60">
             <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="12" />
             <folding>
-              <marker date="1535117663717" expanded="true" signature="487:554" ph="..." />
-              <marker date="1535117663717" expanded="true" signature="582:689" ph="..." />
+              <marker date="1535119046452" expanded="true" signature="488:555" ph="..." />
+              <marker date="1535119046452" expanded="true" signature="583:690" ph="..." />
             </folding>
           </first_editor>
           <second_editor>
@@ -1314,7 +1300,7 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1535116086428" expanded="true" signature="913:1066" ph="..." />
+              <marker date="1535119024577" expanded="true" signature="952:1105" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -1325,7 +1311,7 @@
           <first_editor relative-caret-position="60">
             <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             <folding>
-              <marker date="1535116086428" expanded="true" signature="913:1066" ph="..." />
+              <marker date="1535119024577" expanded="true" signature="952:1105" ph="..." />
             </folding>
           </first_editor>
           <second_editor>
@@ -1967,10 +1953,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="304">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/banner/javascript.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
