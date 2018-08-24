@@ -2,6 +2,7 @@
 layout: post
 title: "TypeScript start 01"
 categories: [ Javascript, typescript ]
+image: assets/images/typescript/typescript.png
 author: "Yeon"
 ---
 
