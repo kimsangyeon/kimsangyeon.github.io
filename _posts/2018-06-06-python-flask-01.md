@@ -2,6 +2,7 @@
 layout: post
 title: "Python Flask Install"
 categories: [ Python, flask ]
+image: assets/images/banner/flask.png
 author: yeon
 ---
 

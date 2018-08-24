@@ -2,6 +2,7 @@
 layout: post
 title: "Introduction to Sets"
 categories: [ Python ]
+image: assets/images/banner/python.png
 author: yeon
 ---
 
