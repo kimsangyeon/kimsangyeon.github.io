@@ -2,7 +2,7 @@
 layout: post
 title: "The Captain's Room"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

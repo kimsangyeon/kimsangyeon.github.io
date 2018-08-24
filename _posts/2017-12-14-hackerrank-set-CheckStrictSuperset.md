@@ -2,7 +2,7 @@
 layout: post
 title: "Check Strict Subset"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

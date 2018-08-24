@@ -2,7 +2,7 @@
 layout: post
 title: "Python Flask Install"
 categories: [ Python, flask ]
-author: "Yeon"
+author: yeon
 ---
 
 # Python Flask Install

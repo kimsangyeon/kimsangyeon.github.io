@@ -2,7 +2,7 @@
 layout: post
 title: "set.add()"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

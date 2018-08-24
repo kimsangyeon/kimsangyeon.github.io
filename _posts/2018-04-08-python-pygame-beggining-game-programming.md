@@ -2,7 +2,7 @@
 layout: post
 title: "Beginning Game Programming for Teens with Python"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # Beginning Game Programming for Teens with Python

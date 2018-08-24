@@ -2,7 +2,7 @@
 layout: post
 title: "Canvas Game Charecter animation"
 categories: [ Javascript ]
-author: "Yeon"
+author: yeon
 ---
 
 # Canvas Game Charecter animation

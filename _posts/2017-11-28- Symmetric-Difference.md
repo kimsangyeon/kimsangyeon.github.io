@@ -2,7 +2,7 @@
 layout: post
 title: "Symmetic Difference"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

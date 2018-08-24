@@ -2,7 +2,7 @@
 layout: post
 title: "Django Fields"
 categories: [ Python, django ]
-author: "Yeon"
+author: yeon
 ---
 
 # Django Fields

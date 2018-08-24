@@ -2,7 +2,7 @@
 layout: post
 title: "Set .intersection() Operation"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

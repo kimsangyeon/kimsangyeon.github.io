@@ -2,7 +2,7 @@
 layout: post
 title: "php $GLOBALS" 
 categories: [ php ]
-author: "Yeon"
+author: yeon
 ---
 
 # php $GLOBALS

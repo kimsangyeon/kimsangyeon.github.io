@@ -2,7 +2,7 @@
 layout: post
 title: "No Idea!"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

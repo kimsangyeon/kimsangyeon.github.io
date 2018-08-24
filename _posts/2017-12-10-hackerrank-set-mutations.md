@@ -2,7 +2,7 @@
 layout: post
 title: "Set Mutations"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

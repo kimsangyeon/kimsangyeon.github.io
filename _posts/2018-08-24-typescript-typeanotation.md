@@ -3,7 +3,7 @@ layout: post
 title: "Typescript Type Anotation" 
 categories: [ Javascript, typescript ]
 image: assets/images/typescript/typescript.png
-author: "Yeon"
+author: yeon
 ---
 
 # Typescript Type Anotation

@@ -2,7 +2,7 @@
 layout: post
 title: "Days 0: Hello world!"
 categories: [ Javascript ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

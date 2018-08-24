@@ -2,7 +2,7 @@
 layout: post
 title: "Django Structure"
 categories: [ Python, django ]
-author: "Yeon"
+author: yeon
 ---
 
 # Django 란?

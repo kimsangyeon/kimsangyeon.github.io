@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Sets"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

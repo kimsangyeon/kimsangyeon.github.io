@@ -2,7 +2,7 @@
 layout: post
 title: "NodeJs Express란?"
 categories: [ Javascript, nodejs ]
-author: "Yeon"
+author: yeon
 ---
 
 # NodeJs Express Server 만들기

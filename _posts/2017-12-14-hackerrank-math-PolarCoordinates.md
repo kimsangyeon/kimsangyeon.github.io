@@ -2,7 +2,7 @@
 layout: post
 title: "Polar Coordinates"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

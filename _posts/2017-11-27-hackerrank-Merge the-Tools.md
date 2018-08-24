@@ -2,7 +2,7 @@
 layout: post
 title: "Merge the Tools!"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank

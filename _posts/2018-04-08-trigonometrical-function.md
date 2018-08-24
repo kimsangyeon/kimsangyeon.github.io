@@ -2,7 +2,7 @@
 layout: post
 title: "Trigonometrical function"
 categories: [ Math ]
-author: "Yeon"
+author: yeon
 ---
 
 # Trigonometrical function (삼각함수)

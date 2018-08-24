@@ -2,7 +2,7 @@
 layout: post
 title: "Set .union() Operation"
 categories: [ Python ]
-author: "Yeon"
+author: yeon
 ---
 
 # hacker rank
