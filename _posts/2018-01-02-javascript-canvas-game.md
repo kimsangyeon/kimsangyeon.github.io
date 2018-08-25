@@ -48,7 +48,7 @@ this.charecter = new Charecter({
     image: charImage
 });
 ```
-![run split image](../image/run.png)
+![run split image](../images/run.png)
 <br><br><br>
 
 이미지 그리기

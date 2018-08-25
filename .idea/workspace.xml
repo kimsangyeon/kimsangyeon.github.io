@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="740ead53-08cd-4a29-940d-f076ddfb43ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-01-02-javascript-canvas-game.md" afterPath="$PROJECT_DIR$/_posts/2018-01-02-javascript-canvas-game.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-04-08-trigonometrical-function.md" afterPath="$PROJECT_DIR$/_posts/2018-04-08-trigonometrical-function.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-06-25-django-structure.md" afterPath="$PROJECT_DIR$/_posts/2018-06-25-django-structure.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" afterPath="$PROJECT_DIR$/_posts/2018-08-06-springMVC.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-08-25-angular-introduction.md" afterPath="$PROJECT_DIR$/_posts/2018-08-25-angular-introduction.md" />
     </list>
     <ignored path="kimsangyeon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -940,12 +945,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534772607725</updated>
       <workItem from="1534772609438" duration="7814000" />
-      <workItem from="1535115151391" duration="4273000" />
+      <workItem from="1535115151391" duration="4438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12087000" />
+    <option name="totallyTimeSpent" value="12252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />

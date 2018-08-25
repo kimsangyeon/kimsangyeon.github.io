@@ -20,7 +20,7 @@ AngularJS는 자바스크립트 기반의 오픈 소스 프론트엔드 웹 애�
 - Javascript, typescript 최신기능을 활용할 수 있다.
 - 쉽게 구현이 가능한 프레임워크 제공으로 생산성이 향상된다.
 
-![Anguler Application image](../image/Angular_app.png)
+![Anguler Application image](../images/Angular_app.png)
 
 
 ### Angular 아키텍쳐
