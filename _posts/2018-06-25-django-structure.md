@@ -10,7 +10,7 @@ author: yeon
 파이썬으로 만들어진 무료 오픈소스 웹 애플리케이션 프레임워크(web application framework)입니다파이썬으로 만들어진 무료 오픈소스 웹 애플리케이션 프레임워크(web application framework)
 ## Django MTV 패턴
 - model, template, view
-![MTV 패턴](assets/images/mtv_pattern.png)
+![MTV 패턴]({{ site.baseurl }}/assets/images/mtv_pattern.png)
 
 ## Django 구조
 #### 프로젝트 Directory

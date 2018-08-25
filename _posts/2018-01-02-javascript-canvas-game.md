@@ -48,7 +48,7 @@ this.charecter = new Charecter({
     image: charImage
 });
 ```
-![run split image](../images/run.png)
+![run split image]({{ site.baseurl }}/assets/images/run.png)
 <br><br><br>
 
 이미지 그리기

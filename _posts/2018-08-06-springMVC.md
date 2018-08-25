@@ -13,7 +13,7 @@ Spring Web MVC는 서블릿 API를 기반으로 작성된 최초의 웹 프레�
 - Controller : 요청을 처리, Model과 View 통신 역할 수행
 
 ## 처리과정
-![springMVC 처리과정 image](assets/images/springMVC.png)<br>
+![springMVC 처리과정 image]({{ site.baseurl }}/assets/images/springMVC.png)<br>
 
  1. 모든 요청을 DispatcherServlet에서 요청을 받는다. <br>
 2. servlet-context.xml에서 등록된 Controller를 HandlerMapping을 통해 찾아낸다. <br>
