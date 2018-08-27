@@ -51,3 +51,5 @@ Javascript는 null과 undefined를 변수에 할당 할 수 있다.
 이러한 변수는 변수에 접근할때 마다 유효성 검사를 해주어야 한다.
 'null is not a function, undefined is not a function, Uncaught TypeError: Cannot read property 'a' of null'
 Javascript에서는 변수나 함수 또는 null에 접근하지 못하도록 하는 검사방법이 제공되지 않는다.
+
+<br><br><br>

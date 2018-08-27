@@ -21,3 +21,5 @@ author: yeon
 ### AMP 설치
 - [WAMP를 사용해서 윈도우 컴퓨터에 워드프레스 설치하기](https://ko.wordpress.org/%EB%82%B4-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%97%90-%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/)
 - [MAMP를 사용해서 애플 컴퓨터에 워드프레스 설치하기](https://ko.wordpress.org/2014/01/01/mamp%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EB%82%B4-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%97%90-%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/)
+
+<br><br><br>

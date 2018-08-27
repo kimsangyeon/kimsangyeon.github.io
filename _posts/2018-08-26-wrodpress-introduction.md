@@ -30,3 +30,5 @@ Wordpress는 크게 두가지로 가입형과 설치형으로 나눈다.
 ![WordPress CMS image]({{ site.baseurl }}/assets/images/Wordpress_CMS.png)
 
 CMS에서 커스터마이징, 플러그인 추가, 테마 변경 등으로 웹페이지를 손쉽게 만들 수 있다.
+
+<br><br><br>

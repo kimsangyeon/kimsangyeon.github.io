@@ -32,3 +32,4 @@ test();
 [참고: PHP:$GLOBALS-Manual](http://php.net/manual/kr/reserved.variables.globals.php)
 
 
+<br><br><br>
