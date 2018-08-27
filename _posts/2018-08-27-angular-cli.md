@@ -2,7 +2,7 @@
 layout: post
 title: "Angular CLI" 
 categories: [ Angular, Javascript, typescript ]
-image: assets/images/banner/Angular.png
+image: assets/images/banner/angular.png
 author: yeon
 ---
 
