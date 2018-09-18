@@ -39,6 +39,7 @@ Typescript에서도 콜백 함수를 작성 할 수 있도록 제공
 	}
 ```
 
+<br><br><br>
 
 ## Typescript Promise
 ES2015 이후 제공되는 프로미스를 사용하여 비동기 코드 작성이 가능하다.
