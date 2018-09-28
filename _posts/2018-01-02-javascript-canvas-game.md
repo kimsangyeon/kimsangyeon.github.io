@@ -8,11 +8,24 @@ author: yeon
 
 # Canvas Game Charecter animation
 
+<br>
+
 ## Make Charecter
+
+<br>
+
 ### Canvas 게임 만들기를 시작
 
+<br>
+
 Canvas Class에서 Charecter를 관리하는 방식으로 시작
+
+<br><br>
+
 ### Canvas, Charecter Class
+
+<br>
+
 ```javascript 
 class Canvas {
     constructor(id) {
@@ -34,8 +47,16 @@ class Charecter {
 }
 ```
 
+<br>
+
 이미지를 로드 및 Charecter 생성
+
+<br><br>
+
 ### Image load
+
+<br>
+
 ```javascript 
 let charImage = new Image();
 charImage.src = "./images/run.png";
@@ -48,11 +69,20 @@ this.charecter = new Charecter({
     image: charImage
 });
 ```
+
+<br>
+
 ![run split image]({{ site.baseurl }}/assets/images/run.png)
 <br><br><br>
 
 이미지 그리기
+
+<br><br>
+
 ### Image draw
+
+<br>
+
 ```javascript 
 this.context.drawImage(
     this.image,
@@ -66,6 +96,8 @@ this.context.drawImage(
     this.height);
 ```
 
+<br>
+
 이미지 frame update code
 ~~~
 frameIndex = 현재 진행중인 이미지 index
@@ -73,7 +105,13 @@ tickCount = 현재 진행중인 animation count
 ticksperFrame = 다음 이미지 index로 넘어갈 animation count
 numberOfFrames = 사용하고있는 이미지 frame
 ~~~
+
+<br><br>
+
 ### Image update
+
+<br>
+
 ```javascript
 update() {
     this.tickCount += 1;
@@ -89,8 +127,13 @@ update() {
 }
 ```
 
+<br>
+
 이미지 clear Rect
 drawImage를 지속적으로 호출하여 그리는 방식이기 때문에 clearRect를 함께 해주어야함
+
+<br>
+
 ```javascript
 render() {
     this.clearRender();
@@ -102,10 +145,18 @@ clearRender() {
 }
 ```
 
+<br>
+
 이미지 animation frame 동작
 브라우저 requestAnimationFrame 사용하여 render 함수 지속적 호출
 setInterval로도 대체 가능할 것으로 보임
+
+<br><br>
+
 ### Image animation frame
+
+<br>
+
 ```javascript
 renderCharecter() {
     window.requestAnimationFrame(this.renderCharecter.bind(this));
@@ -114,5 +165,7 @@ renderCharecter() {
     this.charecter.render();
 }
 ```
+
+<br><br><br>
 
 [참고: CREATE A SPRITE ANIMATION WITH HTML5 CANVAS AND JAVASCRIPT](http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/)

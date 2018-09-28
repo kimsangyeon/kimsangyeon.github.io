@@ -35,12 +35,15 @@ npm i -D jasmine-core
 ~~~
 karma CLI와 jasmine-core 설치
 
+<br><br><br>
+
 ### Karma CLI 의존성 설치
 ~~~
 npm i karma karma-chrome-launcher karma-jasmine -D
 ~~~
 -D : devDependencies 설치
 
+<br><br><br>
 
 ### Jasmine 타이핑
 테스트 케이스도 typescript로 작성하기 위해 필요.
