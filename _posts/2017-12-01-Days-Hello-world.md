@@ -7,28 +7,47 @@ author: yeon
 ---
 
 # hacker rank
+
+<br>
+
 ---
 ## 10 Days of Javascript
+
+<br>
+
 ### Days 0: Hello world!
 
+<br>
+
 Input Format
+
+<br>
 
 | Data Type | Parameter | Description |
 | :-------- | :-------: | ----------: |
 | string    | parameter valiable| A single line of text containing one or more space-separated words. |
 
+<br>
+
 Output Format
+
+<br>
 
 Print the following two lines of output:
 
-1. On the first line, print Hello, World! (this is provided for you in the editor).
-2. On the second line, print the contents of parameter valiable.
+<br>
 
+1. On the first line, print Hello, World! (this is provided for you in the editor). <br>
+2. On the second line, print the contents of parameter valiable. <br>
+
+<br>
 
 > Sample Input
 ~~~
 Welcome to 10 Days of JavaScript!
 ~~~
+
+<br>
 
 > Sample Output
 ~~~
@@ -36,7 +55,12 @@ Hello, World!
 Welcome to 10 Days of JavaScript!
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```javascript
 'use strict';
 

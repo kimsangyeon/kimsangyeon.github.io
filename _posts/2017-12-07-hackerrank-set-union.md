@@ -8,20 +8,34 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### Set .union() Operation
+
+<br>
 
 Input Format
 
-The first line contains an integer, n, the number of students who have subscribed to the English newspaper. 
-The second line contains n space separated roll numbers of those students. 
-The third line contains b, the number of students who have subscribed to the French newspaper. 
-The fourth line contains b space separated roll numbers of those students.
+<br>
 
+The first line contains an integer, n, the number of students who have subscribed to the English newspaper. <br>
+The second line contains n space separated roll numbers of those students. <br>
+The third line contains b, the number of students who have subscribed to the French newspaper. <br>
+The fourth line contains b space separated roll numbers of those students. <br>
+
+<br>
 
 Output Format
 
+<br>
+
 Output the total number of students who have at least one subscription.
+
+<br>
 
 > Sample Input
 ~~~
@@ -31,12 +45,19 @@ Output the total number of students who have at least one subscription.
 10 1 2 3 11 21 55 6 8
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 13
 ~~~
 
+<br>
+
 ### My code
+
+<br>
+
 ```python
 n = input()
 s1 = set(map(int, raw_input().split()))

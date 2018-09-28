@@ -13,6 +13,8 @@ Class는 Javascript도 객체지향적으로 프로그램이 가능하게 도와
 - 캡슐화
 - 추상화
 
+<br>
+
 ## Class 정의
 Javascript ES6에서 class 사용가능
 다른 언어 class처럼 관련된 프로퍼티와 메서드로 구성된 논리적 컨테이너라고 한다.
@@ -74,6 +76,8 @@ class Computer {
 }
 ```
 
+<br><br>
+
 ## 정적 프로퍼티
 정적 프로퍼티는 static을 사용하여 정의하며 클래스 객체를 통해 참조한다.
 ```javascript
@@ -101,6 +105,7 @@ abstract class Computer {
 ```
 
 <br>
+
 하위 클래스를 만들어 추상 메소드에 동작을 정의
 ```javascript
 class typescript extends Computer {

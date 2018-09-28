@@ -8,21 +8,34 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### Set .difference() Operation
+
+<br>
 
 Input Format
 
-The first line contains the number of students who have subscribed to the English newspaper. 
-The second line contains the space separated list of student roll numbers who have subscribed to the English newspaper.
-The third line contains the number of students who have subscribed to the French newspaper. 
-The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper.
+<br>
 
+The first line contains the number of students who have subscribed to the English newspaper. <br>
+The second line contains the space separated list of student roll numbers who have subscribed to the English newspaper. <br>
+The third line contains the number of students who have subscribed to the French newspaper. <br>
+The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper. <br>
 
+<br><br>
 
 Output Format
 
+<br>
+
 Output the total number of students who are subscribed to the English newspaper only.
+
+<br>
 
 > Sample Input
 ~~~
@@ -32,12 +45,19 @@ Output the total number of students who are subscribed to the English newspaper 
 10 1 2 3 11 21 55 6 8
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 4
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 n = input();
 s = set(map(int, input().split()));

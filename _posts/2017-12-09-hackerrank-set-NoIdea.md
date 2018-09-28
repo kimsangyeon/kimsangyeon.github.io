@@ -8,19 +8,33 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### No Idea!
+
+<br>
 
 Input Format
 
-The first line contains integers n and m separated by a space. 
-The second line contains n integers, the elements of the array. 
-The third and fourth lines contain m integers, A and B, respectively.
+<br>
 
+The first line contains integers n and m separated by a space. <br>
+The second line contains n integers, the elements of the array. <br>
+The third and fourth lines contain m integers, A and B, respectively. <br>
+
+<br>
 
 Output Format
 
+<br>
+
 Output a single integer, your total happiness.
+
+<br>
 
 > Sample Input
 ~~~
@@ -30,12 +44,19 @@ Output a single integer, your total happiness.
 5 7
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 1
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 n, m = raw_input().split()
 arr = map(int, raw_input().split())

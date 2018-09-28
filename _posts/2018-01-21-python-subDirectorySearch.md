@@ -8,10 +8,17 @@ author: yeon
 
 # Sub Directory Search 만들기
 
+<br>
+
 ### 하위 directory를 재귀적으로 탐색
+
+<br>
 
 >os path를 사용하여 파일 경로를 검사하여 탐색 <br>
 파일이 directory인 경우 해당경로 안쪽으로 재탐색
+
+<br>
+
 ```python
 # Sub Directory Search File
 import sys, os
@@ -32,9 +39,13 @@ def search(dirName):
 search("/Users/sangyeon/python_study")
 ```
 
+<br>
+
 > 에러 출력 함수 만들기 <br>
 탐색중 Permission Error 발생하는 경우 <br>
 EPERM 에러 검사하여 에러 출력하고 pass를 넣어 계속해서 탐색하도록 함.
+
+<br>
 
 ```python
 from errno import EACCES, EPERM, ENOENT
@@ -58,5 +69,6 @@ def print_error_message(e, file_name):
         print("OS error({0}): {1} as: {2}".format(e.errno, e.strerror, file_name))
 ```
 
+<br><br>
 
 [참고: 하위 디렉터리 검색하기](https://wikidocs.net/39)

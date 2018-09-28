@@ -9,24 +9,42 @@ author: yeon
 # Typescript Type Anotation
 Typescript에서는 Javascript 변수 또는 함수에 타입을 지정할 수 있도록, 타입 정의 구문을 제공함
 
+<br>
+
 ## Typescript Type
+
+<br>
+
 ### Number
 Javascript에서와 동일한 Number Type
+
+<br>
+
 ```javascript
 let num: number = 1;
 let decimal = 1.0;
 
 ```
 
+<br><br>
+
 ### String
 문자열은 UTF-16 형식의 데이터이다.
 Javascript에서는 문자열, 캐릭터형을 '', "" 둘다 사용 가능하다.
+
+<br>
+
 ```javascript
 let firstName: string = 'sangyeon';
 let templateHMTL: string = '<div>template HTML</div>';
 ```
 
+<br>
+
 Typescript는 $구문을 사용하여 String을 쉽게 합칠 수 있다.
+
+<br>
+
 ```javascript
 let news: string = "MBC";
 let num: number = 5;
@@ -34,14 +52,21 @@ let title: string = `TOP $num news feed from $news.`
 
 console.log(title);
 ```
+
+<br>
+
 ~~~
 "TOP 5 news feed from MBC."
 ~~~
+
+<br><br>
 
 ### Boolean
 ```javascript
 let isBool: boolean = false;
 ```
+
+<br><br>
 
 ### Array
 배열은 배열안에 담을 데이터 Type을 지정
@@ -49,12 +74,16 @@ let isBool: boolean = false;
 let counts: number[] = [1, 2, 3, 4, 5];
 ```
 
+<br><br>
+
 ### Tuple
 배열이지만 다른 Type의 데이터를 담을 수 있다.
 ```javascript
 let tData: [string, number];
 tData = ['yeon', 1];
 ```
+
+<br><br>
 
 ### Any
 Javascript를 Typescript로 마이그레이션중에 유용하게 사용
@@ -66,6 +95,8 @@ anytype = 'yeon';
 anytype = [1, 2, 3]''
 ```
 
+<br><br>
+
 ### Void
 리턴값이 없는 등에 상황에 반환타입 void 지정
 ```javascript
@@ -74,6 +105,8 @@ function nothingFn(num: number): void {
 }
 ```
 
+<br><br>
+
 ### Null, undefined
 null과 undefined는 모든 Type의 하위집합이라고 한다.
 numm, undefined로 지정하는 경우 any Type이 지정된다.
@@ -81,6 +114,8 @@ numm, undefined로 지정하는 경우 any Type이 지정된다.
 let num = 10;
 num = 'yeon';
 ```
+
+<br><br>
 
 ### Union types
 Typescript에서 한 Type이 아닌 여러 타입을 지정할 수 있도록 해주는 기능을 제공 파이프 기호를 사용하여 여러 타입을 지정

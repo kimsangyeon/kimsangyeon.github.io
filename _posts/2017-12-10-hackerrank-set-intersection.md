@@ -8,21 +8,34 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### Set .intersection() Operation
+
+<br>
 
 Input Format
 
-The first line contains n, the number of students who have subscribed to the English newspaper. 
-The second line contains n space separated roll numbers of those students.
-The third line contains b, the number of students who have subscribed to the French newspaper. 
-The fourth line contains b space separated roll numbers of those students.
+<br>
 
+The first line contains n, the number of students who have subscribed to the English newspaper. <br>
+The second line contains n space separated roll numbers of those students. <br>
+The third line contains b, the number of students who have subscribed to the French newspaper. <br>
+The fourth line contains b space separated roll numbers of those students. <br>
 
+<br><br>
 
 Output Format
 
+<br>
+
 Output the total number of students who have subscriptions to both English and French newspapers.
+
+<br>
 
 > Sample Input
 ~~~
@@ -32,12 +45,19 @@ Output the total number of students who have subscriptions to both English and F
 10 1 2 3 11 21 55 6 8
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 5
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 n = input();
 s = set(map(int, input().split()));

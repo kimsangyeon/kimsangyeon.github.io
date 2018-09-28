@@ -7,18 +7,30 @@ author: yeon
 ---
 
 # hacker rank
+
+<br>
+
 ---
 ## Python Practice
+
+<br>
+
 ### Merge the Tools!
 
-The first line contains a single string denoting s. 
-The second line contains an integer, k, denoting the length of each subsegment.
+<br>
+
+The first line contains a single string denoting s. <br>
+The second line contains an integer, k, denoting the length of each subsegment. <br>
+
+<br>
 
 > Sample Input
 ~~~
 AABCAAADA
 3
 ~~~
+
+<br>
 
 > Sample Output
 ~~~
@@ -27,7 +39,12 @@ CA
 AD
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 def merge_the_tools(string, k):
     splitNum = len(string)/k;

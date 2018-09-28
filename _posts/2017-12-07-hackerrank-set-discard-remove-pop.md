@@ -8,21 +8,34 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### Set .discard(), .remove() & .pop()
+
+<br>
 
 Input Format
 
-The first line contains integer n, the number of elements in the set s. 
-The second line contains n space separated elements of set s. All of the elements are non-negative integers, less than or equal to 9. 
-The third line contains integer N, the number of commands.
-The next N lines contains either pop, remove and/or discard commands followed by their associated value.
+<br>
 
+The first line contains integer n, the number of elements in the set s. <br>
+The second line contains n space separated elements of set s. All of the elements are non-negative integers, less than or equal to 9. <br>
+The third line contains integer N, the number of commands. <br>
+The next N lines contains either pop, remove and/or discard commands followed by their associated value. <br>
 
+<br><br>
 
 Output Format
 
+<br>
+
 Print the sum of the elements of set s on a single line.
+
+<br>
 
 > Sample Input
 ~~~
@@ -40,12 +53,19 @@ pop
 discard 5 
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 4
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 n = input()
 s = set(map(int, raw_input().split())) 
