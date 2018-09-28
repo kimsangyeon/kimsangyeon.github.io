@@ -7,16 +7,26 @@ author: yeon
 ---
 
 # hacker rank
+
+<br>
+
 ---
 ## Python Practice
+
+<br>
+
 ### Intoroduction to Sets
+
+<br>
 
 Input Format*
 
-The first line contains the integer, N, the total number of plants.
-The second line contains the N space separated heights of the plants.
+<br>
 
+The first line contains the integer, N, the total number of plants. <br>
+The second line contains the N space separated heights of the plants. <br>
 
+<br>
 
 > Sample Input
 ~~~
@@ -24,12 +34,19 @@ The second line contains the N space separated heights of the plants.
 161 182 161 154 176 170 167 171 170 174
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 169.375
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 def average(array):
     arraySet = set(array);

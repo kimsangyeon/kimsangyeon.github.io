@@ -8,23 +8,34 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### Set Mutations
+
+<br>
 
 Input Format
 
-The first line contains the number of elements in set A.
-The second line contains the space separated list of elements in set A.
-The third line contains integer N, the number of other sets.
-The next 2 * N lines are divided into N parts containing two lines each.
-The first line of each part contains the space separated entries of the operation name and the length of the other set.
-The second line of each part contains space separated list of elements in the other set.
+<br>
 
+The first line contains the number of elements in set A. <br>
+The second line contains the space separated list of elements in set A. <br>
+The third line contains integer N, the number of other sets. <br>
+The next 2 * N lines are divided into N parts containing two lines each. <br>
+The first line of each part contains the space separated entries of the operation name and the length of the other set. <br>
+The second line of each part contains space separated list of elements in the other set. <br>
 
+<br>
 
-Output Format
+Output Format <br>
 
-Output the sum of elements in set A.
+Output the sum of elements in set A. <br>
+
+<br>
 
 > Sample Input
 ~~~
@@ -41,12 +52,19 @@ Output the sum of elements in set A.
  11 22 35 55 58 62 66
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 38
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 aLen = int(input());
 A = set(map(int, input().split()))

@@ -8,17 +8,32 @@ author: yeon
 
 # hacker rank
 
+<br>
+
 ## Python Practice
+
+<br>
+
 ### set.add()
+
+<br>
 
 Input Format
 
-The first line contains an integer N, the total number of country stamps.
-The next N lines contains the name of the country where the stamp is from. 
+<br>
+
+The first line contains an integer N, the total number of country stamps. <br>
+The next N lines contains the name of the country where the stamp is from. <br>
+
+<br>
 
 Output Format
 
+<br>
+
 Output the total number of distinct country stamps on a single line.
+
+<br>
 
 > Sample Input
 ~~~
@@ -32,12 +47,19 @@ UK
 France 
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 5
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```python
 if __name__ == '__main__':
     n = int(raw_input())

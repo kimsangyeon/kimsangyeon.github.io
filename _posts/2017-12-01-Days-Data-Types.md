@@ -7,11 +7,21 @@ author: yeon
 ---
 
 # hacker rank
+
+<br>
+
 ---
 ## 10 Days of Javascript
+
+<br>
+
 ### Days 0: Data Types
 
-Input Format
+<br>
+
+Input Format <br>
+
+
 
 | Data Type | Parameter | Description |
 | :-------- | :-------: | ----------: |
@@ -19,14 +29,21 @@ Input Format
 string      | second Decimal | The string representation of a floating-point number you must sum with firstDecimal. |
 string      | second String  | A string of one or more space-separated words you must append to second String. |
 
+<br>
+
 Output Format
+
+<br>
 
 Print the following three lines of output:
 
-On the first line, print the sum of first Integer and the integer representation of second Integer.
-On the second line, print the sum of first Decimal and the floating-point representation of first Decimal.
-On the third line, print first String concatenated with second String. You must print first String before second String.
+<br>
 
+On the first line, print the sum of first Integer and the integer representation of second Integer. <br>
+On the second line, print the sum of first Decimal and the floating-point representation of first Decimal. <br>
+On the third line, print first String concatenated with second String. You must print first String before second String. <br>
+
+<br>
 
 > Sample Input
 ~~~
@@ -35,6 +52,8 @@ On the third line, print first String concatenated with second String. You must 
 is the best place to learn and practice coding!
 ~~~
 
+<br>
+
 > Sample Output
 ~~~
 16
@@ -42,7 +61,12 @@ is the best place to learn and practice coding!
 HackerRank is the best place to learn and practice coding!
 ~~~
 
+<br><br>
+
 ### My code
+
+<br>
+
 ```javascript
 'use strict';
 
