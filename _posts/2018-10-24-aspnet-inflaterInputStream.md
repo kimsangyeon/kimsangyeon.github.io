@@ -2,7 +2,7 @@
 layout: post
 title: "Asp.net InflaterInputStream" 
 categories: [ REST ]
-image: assets/images/banner/restapi.png
+image: assets/images/banner/aspnet.png
 author: yeon
 ---
 
