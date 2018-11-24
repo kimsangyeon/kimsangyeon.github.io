@@ -41,6 +41,7 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ~~~
 
+<br><br>
 
 #### 최신 업데이트 가져오기
 ~~~
@@ -52,6 +53,8 @@ Unpacking objects: 100% (62/62), done.
 From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
  * [new branch]      master     -> upstream/master
 ~~~
+
+<br><br>
 
 #### upstream Repository를 Fork Repository로 merge
 ~~~
