@@ -24,15 +24,11 @@ Github repository를 좀 더 체계적으로 관리해보기위해 이슈 만들
 
 이슈 생성시에 오른쪽에 Assignees
 
-<br>
-
 ![github issue Image]({{ site.baseurl }}/assets/images/github-issue-3.png)
 
 <br>
 
 그리고 labels를 설정 할 수 있다.
-
-<br>
 
 ![github issue Image]({{ site.baseurl }}/assets/images/github-issue-4.png)
 
@@ -65,7 +61,7 @@ New issue에서 Title 및 간단한 내용 작성후 Submit new issue 클릭!
 
 #### Github pull request 날리기 #2
 생성한 이슈에 대응되게 pull request 날리기도 해보았다.
-이슈이름과 같에 comment title 작성후 push된 새로운 branch로 pull request 탭에서 compare & pull request 생성
+이슈 이름과 같게 comment title 작성후 push된 새로운 branch로 pull request 탭에서 compare & pull request 생성
 
 <br>
 
