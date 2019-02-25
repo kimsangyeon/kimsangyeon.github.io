@@ -58,6 +58,7 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 - fill() : 경로의 내부를 채워 도형 그리기
 
 <br>
+
 ##### 호 (arc)
 - arc(x, y, radius, startAngle, endAngle, anticlockwise) : x, y좌표에 원점을 주고 반지름 r만큼 startAngle에서 시작하여 endAngle에서 끝 나며 anticlockwise 방향으로 진행 (기본 시계방향)
 - arcTo(x1, y1, x2, y2, radius) : 두 직선사이 호를 그리고 점들을 직선으로 연결한다.
@@ -65,5 +66,26 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 <br>
 > arc에서 각도는 각이아닌 라디안 값 사용 [radians = (Math.PI/180) * degress]
 
+<br>
+
+
+##### 이차 곡선 (quadratic)
+- quadraticCurveTo(cp1x, cp1y, x, y) : cp1x 및 cp1y로 지정된 제어점을 사용하여 현재 펜의 위치에서 x와 y로 지정된 끝점까지 이차 베지어 곡선을 그립니다.
+
+<br>
+
+![Quadratic Curve Image]({{ site.baseurl }}/assets/images/quadratic_curve.png)
+
+<br>
+
+
+##### 베지어 곡선 (bezier)
+- bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y) : (cp1x, cp1y) 및 (cp2x, cp2y)로 지정된 제어점을 사용하여 현재 펜 위치에서 x 및 y로 지정된 끝점까지 삼차 베지어 곡선을 그립니다.
+
+<br>
+
+![Bezier Curve Image]({{ site.baseurl }}/assets/images/bezier_curve.png)
+
+<br>
 
 <br><br><br>
