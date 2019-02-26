@@ -88,4 +88,42 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 
 <br>
 
+#### Path2D 오브젝트
+Path2D 객체를 사용하여 드로잉 명령 실행 및 캐시 기록 가능하다. <br>
+moveTo, rect, arc, 혹은 quadraticCurveTo 등과 같은 모든 경로 메소드를 사용 가능.
+
+<br>
+
+```javascript
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    var rectangle = new Path2D();
+    rectangle.rect(10, 10, 50, 50);
+
+    var circle = new Path2D();
+    circle.moveTo(125, 35);
+    circle.arc(100, 35, 25, 0, 2 * Math.PI);
+
+    ctx.stroke(rectangle);
+    ctx.fill(circle);
+  }
+}
+```
+
+<br>
+
+
+Path2D의 가장 강력한 특징은 SVG path data를 canvas에 재사용 할 수 있게 해준다.
+
+<br>
+
+```javascript
+var p = new Path2D('M10 10 h 80 v 80 h -80 Z');
+```
+
+<br>
+
 <br><br><br>
