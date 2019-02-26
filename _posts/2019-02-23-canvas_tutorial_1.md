@@ -42,6 +42,8 @@ svg와는 다르게 canvas는 직사각형 하나의 원시적인 도형을 그�
 
 canvas에서 x, y는 그리는 시작 좌표 / width, height는 크기 <br>
 
+<br>
+
 #### canvas path 함수
 canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점들의 집합으로 선을 연결하여 도형을 그린다. <br>
 
@@ -72,8 +74,6 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 ##### 이차 곡선 (quadratic)
 - quadraticCurveTo(cp1x, cp1y, x, y) : cp1x 및 cp1y로 지정된 제어점을 사용하여 현재 펜의 위치에서 x와 y로 지정된 끝점까지 이차 베지어 곡선을 그립니다.
 
-<br>
-
 ![Quadratic Curve Image]({{ site.baseurl }}/assets/images/quadratic_curve.png)
 
 <br>
@@ -82,8 +82,6 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 ##### 베지어 곡선 (bezier)
 - bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y) : (cp1x, cp1y) 및 (cp2x, cp2y)로 지정된 제어점을 사용하여 현재 펜 위치에서 x 및 y로 지정된 끝점까지 삼차 베지어 곡선을 그립니다.
 
-<br>
-
 ![Bezier Curve Image]({{ site.baseurl }}/assets/images/bezier_curve.png)
 
 <br>
@@ -91,8 +89,6 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 #### Path2D 오브젝트
 Path2D 객체를 사용하여 드로잉 명령 실행 및 캐시 기록 가능하다. <br>
 moveTo, rect, arc, 혹은 quadraticCurveTo 등과 같은 모든 경로 메소드를 사용 가능.
-
-<br>
 
 ```javascript
 function draw() {
@@ -115,10 +111,7 @@ function draw() {
 
 <br>
 
-
 Path2D의 가장 강력한 특징은 SVG path data를 canvas에 재사용 할 수 있게 해준다.
-
-<br>
 
 ```javascript
 var p = new Path2D('M10 10 h 80 v 80 h -80 Z');
