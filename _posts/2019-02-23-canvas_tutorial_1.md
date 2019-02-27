@@ -9,12 +9,12 @@ author: yeon
 
 
 ### The canvas element
-HTML5에서 canvas는 그래픽들을 관리하는 컨테이너이다.<br><br>
+HTML5에서 canvas는 그래픽들을 관리하는 컨테이너이다. <br><br>
 
 #### canvas width height
-canvas는 처음 width, height를 지정하지 않을 경우 너비 300px, 높이 150px을 기본 값으로 가지게 된다.<br>
+canvas는 처음 width, height를 지정하지 않을 경우 너비 300px, 높이 150px을 기본 값으로 가지게 된다. <br>
 css를 사용하여 canvas 너비와 높이를 지정할 수 있지만, 랜더링을 하는동안 이미지는 레이아웃 크기에 맞게 조절되기 때문에
-css의 너비와 높이를 고려하지 않을 경우 랜더링이 왜곡되어 보일수 있다.<br><br>
+css의 너비와 높이를 고려하지 않을 경우 랜더링이 왜곡되어 보일수 있다. <br><br>
 
 #### canvas 대체 콘텐츠
 canvas는 IE9 이하 버전 등 오래된 브라우저에서 지원하지 않기 때문에 대체 콘텐츠가 필요하다. <br>
@@ -52,6 +52,7 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 3. 만들어진 경로에 윤곽선 및 채우기
 
 <br>
+
 - beginPath() : 새로운 경로 생성
 - moveTo(x, y) : 펜을 x, y 좌표로 이동
 - lineTo(x, y) : 현재위치에서 x, y 좌표까지 선 그리기
@@ -66,6 +67,7 @@ canvas에서 직사각형 이외의 도형들은 path로 그리며, path는 점�
 - arcTo(x1, y1, x2, y2, radius) : 두 직선사이 호를 그리고 점들을 직선으로 연결한다.
 
 <br>
+
 > arc에서 각도는 각이아닌 라디안 값 사용 [radians = (Math.PI/180) * degress]
 
 <br>
