@@ -11,6 +11,8 @@ author: yeon
 ### The canvas style color
 canvas 도형에 색 및 스타일을 적용하는 방법 <br>
 
+<br>
+
 #### canvas color
 캔버스 도형에 색적용을 위해 context fillStyle, strokeStyle을 사용하여 색을 지정할 수 있다. <br>
 
@@ -28,8 +30,6 @@ ctx.fillStyle = "rgb(255, 165, 0)";
 ctx.fillStyle = "rgba(255, 165, 0, 1)";
 ```
 
-<br>
-
 반복문을 사용하여 파레트 형태의 색상 나열
 ```javascript
 function draw() {
@@ -46,6 +46,8 @@ function draw() {
 
 ![fillStyle Image]({{ site.baseurl }}/assets/images/canvas_fillstyle.png)
 
+<br>
+
 ##### strokeStyle
 여러가지 형태로 style 색상 지정 가능
 ```javascript
@@ -54,8 +56,6 @@ ctx.strokeStyle = "#FFA500";
 ctx.strokeStyle = "rgb(255, 165, 0)";
 ctx.strokeStyle = "rgba(255, 165, 0, 1)";
 ```
-
-<br>
 
 반복문을 사용하여 파레트 형태의 색상 나열
 ```javascript
