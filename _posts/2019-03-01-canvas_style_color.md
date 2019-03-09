@@ -76,4 +76,48 @@ function draw() {
 
 ![strokeStyle Image]({{ site.baseurl }}/assets/images/canvas_strokestyle.png)
 
+<br>
+
+##### globalAlpha
+윤곽선 또는 채움 스타일에 반투명 설정
+
+<br>
+
+strokeStyle과 fillStyle도 rgba 값으로 투명색 적용 가능
+```javascript
+// 외곽선과 채움 스타일에 투명 적용
+
+ctx.strokeStyle = 'rgba(255, 0, 0, 0.5)';
+ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+```
+
+global Alpha 예제
+```javascript
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  // 배경을 그린다
+  ctx.fillStyle = '#FD0';
+  ctx.fillRect(0, 0, 75, 75);
+  ctx.fillStyle = '#6C0';
+  ctx.fillRect(75, 0, 75, 75);
+  ctx.fillStyle = '#09F';
+  ctx.fillRect(0, 75, 75, 75);
+  ctx.fillStyle = '#F30';
+  ctx.fillRect(75, 75, 75, 75);
+  ctx.fillStyle = '#FFF';
+
+  // 투명값을 설정한다
+  ctx.globalAlpha = 0.2;
+
+  // 반투명한 원을 그린다
+  for (var i = 0; i < 7; i++){
+    ctx.beginPath();
+    ctx.arc(75, 75, 10 + 10 * i, 0, Math.PI * 2, true);
+    ctx.fill();
+  }
+}
+```
+
+![globalaAlpha Image]({{ site.baseurl }}/assets/images/canvas_globalalpha.png)
+
 <br><br><br>
