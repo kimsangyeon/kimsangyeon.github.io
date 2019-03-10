@@ -21,7 +21,7 @@ canvas 도형에 색 및 스타일을 적용하는 방법 <br>
 
 <br>
 
-##### fillStyle
+#### fillStyle
 여러가지 형태로 style 색상 지정 가능
 ```javascript
 ctx.fillStyle = "orange";
@@ -48,7 +48,7 @@ function draw() {
 
 <br>
 
-##### strokeStyle
+#### strokeStyle
 여러가지 형태로 style 색상 지정 가능
 ```javascript
 ctx.strokeStyle = "orange";
@@ -78,7 +78,7 @@ function draw() {
 
 <br>
 
-##### globalAlpha
+#### globalAlpha
 윤곽선 또는 채움 스타일에 반투명 설정
 
 <br>
@@ -119,5 +119,130 @@ function draw() {
 ```
 
 ![globalaAlpha Image]({{ site.baseurl }}/assets/images/canvas_globalalpha.png)
+
+<br>
+
+#### stroke shape (선모양)
+> lineWidth = value
+그려질 선의 두깨 결정
+
+```javascript
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  for (var i = 0; i < 10; i++){
+    ctx.lineWidth = 1 + i;
+    ctx.beginPath();
+    ctx.moveTo(5 + i * 14, 5);
+    ctx.lineTo(5 + i * 14, 140);
+    ctx.stroke();
+  }
+}
+```
+
+![lineWidth Image]({{ site.baseurl }}/assets/images/canvas_linewidth.png)
+
+<br>
+
+>  lineCap = type
+선의 끝 모양을 설정
+
+- butt: 선의 끝이 좌표에 딱 맞게
+- round: 선의 끝이 둥글게 
+- square: 선의 끝에 선두께의 반만큼 사각형 영역이 더해짐
+
+```javascript
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  var lineCap = ['butt','round','square'];
+
+  // 안내선을 그린다
+  ctx.strokeStyle = '#09f';
+  ctx.beginPath();
+  ctx.moveTo(10, 10);
+  ctx.lineTo(140, 10);
+  ctx.moveTo(10, 140);
+  ctx.lineTo(140, 140);
+  ctx.stroke();
+
+  // 선을 그린다
+  ctx.strokeStyle = 'black';
+  for (var i=0;i<lineCap.length;i++){
+    ctx.lineWidth = 15;
+    ctx.lineCap = lineCap[i];
+    ctx.beginPath();
+    ctx.moveTo(25 + i * 50, 10);
+    ctx.lineTo(25 + i * 50,140);
+    ctx.stroke();
+  }
+}
+```
+
+![lineCap Image]({{ site.baseurl }}/assets/images/canvas_linecap.png)
+
+<br>
+
+> lineJoin = type
+선들이 만나는 모서리 모양을 설정
+
+- round: 연결되는 부분을 원모양으로 만들며 반지름은 선의 두께
+- bevel: 연결되는 부분을 세모모양으로 만듬
+- miter: 연결되는 부분을 마름모모양으로 만듬
+
+```javascript
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  var lineJoin = ['round', 'bevel', 'miter'];
+  ctx.lineWidth = 10;
+  for (var i=0;i<lineJoin.length;i++){
+    ctx.lineJoin = lineJoin[i];
+    ctx.beginPath();
+    ctx.moveTo(-5, 5 + i * 40);
+    ctx.lineTo(35, 45 + i * 40);
+    ctx.lineTo(75, 5 + i * 40);
+    ctx.lineTo(115, 45 + i * 40);
+    ctx.lineTo(155, 5 + i * 40);
+    ctx.stroke();
+  }
+}
+```
+
+![lineJoin Image]({{ site.baseurl }}/assets/images/canvas_linejoin.png)
+
+<br>
+
+> Dash pattern
+
+- getLineDash() : 현재 선의 대시 패턴 배열을 반환
+- setLineDash(segments) : 현재 선의 대시 패턴 설정
+- lineDashOffset = value : 선의 대시 배열이 어디서 시작될지 설정
+
+```javascript
+var ctx = document.getElementById('canvas').getContext('2d');
+var offset = 0;
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.setLineDash([4, 2]);
+  ctx.lineDashOffset = -offset;
+  ctx.strokeRect(10, 10, 100, 100);
+}
+
+function march() {
+  offset++;
+  if (offset > 16) {
+    offset = 0;
+  }
+  draw();
+  setTimeout(march, 20);
+}
+
+march();
+```
+
+![dashPattern Image]({{ site.baseurl }}/assets/images/canvas_dashpattern.png)
+
+<br>
+
+
 
 <br><br><br>
