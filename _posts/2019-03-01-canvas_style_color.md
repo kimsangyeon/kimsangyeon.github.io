@@ -243,6 +243,38 @@ march();
 
 <br>
 
+#### gradient
+다른 그래픽 프로그램들과 마찬가지로, 선형 및 원형의 그레이디언트를 사용할 수 있습니다. 다음 메소드 중 하나를 사용하여 CanvasGradient 객체를 생성합니다. 그런 다음 이 객체를 fillStyle 또는 strokeStyle 속성에 할당 할 수 있습니다. <br>
 
+- createLinearGradient(x1, y1, x2, y2): 시작점 좌표를 (x1, y1)로 하고, 종료점 좌표를 (x2, y2)로 하는 선형 그라디언트 오브젝트를 생성합니다.
+- createRadialGradient(x1, y1, r1, x2, y2, r2): 반지름이 r1이고 좌표 (x1, y1)을 중심으로 하는 원과, 반지름이 r2이고 좌표 (x2, y2)를 중심으로 하는 원을 사용하여 그라디언트가 생성됩니다.
+
+```javascript
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+  // 그레이디언트를 생성한다
+  var lingrad = ctx.createLinearGradient(0, 0, 0, 150);
+  lingrad.addColorStop(0, '#00ABEB');
+  lingrad.addColorStop(0.5, '#fff');
+  lingrad.addColorStop(0.5, '#26C000');
+  lingrad.addColorStop(1, '#fff');
+
+  var lingrad2 = ctx.createLinearGradient(0, 50, 0, 95);
+  lingrad2.addColorStop(0.5, '#000');
+  lingrad2.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+  // 외곽선과 채움 스타일에 그레이디언트를 적용한다
+  ctx.fillStyle = lingrad;
+  ctx.strokeStyle = lingrad2;
+  
+  // 도형을 그린다
+  ctx.fillRect(10, 10, 130, 130);
+  ctx.strokeRect(50, 50, 50, 50);
+
+}
+```
+
+![gradient Image]({{ site.baseurl }}/assets/images/canvas_gradient.png)
 
 <br><br><br>
