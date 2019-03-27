@@ -8,18 +8,18 @@ author: yeon
 ---
 
 
-#### canvas put point part2
+## canvas put point part2
 
 canvas에 이벤트를 활용하여 간단한 그리기 도구 만들기
 
 <br>
 
-##### canvas addEventListener
+### canvas addEventListener
 mousedown move up을 활용하여 put point
 
 <br>
 
-###### mousedown
+#### mousedown
 
 ```javascript
 var isDraw = false;
@@ -36,7 +36,7 @@ putPoint 호출하여 그리기
 
 <br>
 
-###### mousemove
+#### mousemove
 
 ```javascript
 var putPoint = (e) => {
@@ -58,7 +58,7 @@ putPoint mousemove 이벤트 등록
 
 <br>
 
-###### mouseup
+#### mouseup
 
 ```javascript
 var fnMouseUp = (e) => {
