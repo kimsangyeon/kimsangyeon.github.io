@@ -237,8 +237,9 @@ License: https://www.wowthemes.net/freebies-license/
      margin-top:3px;
      cursor:pointer;
 }
+ .alertbar img,
  .mediumnavigation .navbar-brand img {
-     max-height:30px;
+     max-height:60px;
      margin-right:5px;
 }
  .mainheading h1.sitetitle {
