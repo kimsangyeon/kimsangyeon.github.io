@@ -2,7 +2,7 @@
 layout: post
 title: "Javascript Event Loop" 
 categories: [ javascript ]
-image: assets/images/banner/javascrpit.png
+image: assets/images/banner/javascript.png
 featured: false
 author: yeon
 ---
