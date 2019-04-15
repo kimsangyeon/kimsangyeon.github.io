@@ -2,7 +2,7 @@
 layout: post
 title: "Javascript Closure" 
 categories: [ javascript ]
-image: assets/images/banner/javascrpit.png
+image: assets/images/banner/javascript.png
 featured: false
 author: yeon
 ---
