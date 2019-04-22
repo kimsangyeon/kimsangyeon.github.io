@@ -136,4 +136,53 @@ render 이후에 호출되는 API이며, 이 시점에선 props와 state가 바�
 
 <br>
 
+### remove Component
+
+<br>
+
+#### componentWillUnMount
+
+```javascript
+componentWillUnmount() {
+  // 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
+}
+```
+
+컴포넌트가 필요하지 않게 되었을때 호출하는 API. 이벤트제거와 setTimeout clear 혹은 외부 라이브러리 제거 등에 사용된다.
+
+<br>
+
+### error Component
+
+<br>
+
+#### ComponentDidCatch
+
+```javascript
+componentDidCatch(error, info) {
+  this.setState({
+    error: true
+  });
+}
+```
+
+render에서 에러 발생시 호출되는 API. 위의 예제처럼 에러 발생시 state error true로 설정하여, render에서 에러 처리 가능. 컴포넌트 자신의 render 함수 에러는 잡지 못하지만, 내부 자식 컴포넌트에서 발생하는 에러는 잡을 수 있다고 한다.
+
+<br>
+
+```javascript
+componentDidCatch(error, info) {
+    this.setState({
+      error: true
+    });
+  }
+  
+  render() {
+    if (this.state.error) return (<h1>에러발생!</h1>);
+
+    return (
+```
+
+render 예외처리
+
 <br><br><br>
