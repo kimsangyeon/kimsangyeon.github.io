@@ -296,7 +296,7 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .navbar-brand img {
-    max-height: 30px;
+    max-height: 60px;
     margin-right: 5px;
 }
 
@@ -716,7 +716,7 @@ h6 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100px;
 }
 
 .bottompagination span.navigation {
