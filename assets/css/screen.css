@@ -716,6 +716,10 @@ h6 {
 }
 
 img {
+    max-width: 100%;
+}
+
+.container .text-center img {
     max-width: 100px;
 }
 
