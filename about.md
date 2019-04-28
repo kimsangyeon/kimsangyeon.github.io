@@ -67,6 +67,33 @@ comments: true
             </div>
         </div>
     </section>
+    <!-- Working -->
+    <section id="three" class="main style1 special">
+        <div class="container">
+            <header class="major">
+                <h2>My Working</h2>
+            </header>
+            <p>Javascript Front-End Web Service.</p>
+            <div class="row gtr-150">
+                <div class="col-4 col-12-medium">
+                    <span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+                    <h3>Synap Editor</h3>
+                    <p>2018.11 ~ ing</p>
+                    <ul class="actions special">
+                        <li><a href="http://www.synapsoft.co.kr/editor" class="button">More</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+                    <h3>Synap Office</h3>
+                    <p>2016.01 ~ 2018.11</p>
+                    <ul class="actions special">
+                        <li><a href="http://www.synapsoft.co.kr/office" class="button">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
