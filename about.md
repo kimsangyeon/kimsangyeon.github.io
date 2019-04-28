@@ -32,8 +32,11 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <ul class="major-icons">
                         <li><span class="icon style1 major fa-code"></span></li>
-                        <li><span class="icon style5 major fa-desktop"></span></li>
+                        <li><span class="icon style2 major fa-bolt"></span></li>
+                        <li><span class="icon style3 major fa-camera-retro"></span></li>
                         <li><span class="icon style4 major fa-cog"></span></li>
+                        <li><span class="icon style5 major fa-desktop"></span></li>
+                        <li><span class="icon style6 major fa-calendar"></span></li>
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium">
