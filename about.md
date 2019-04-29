@@ -94,6 +94,75 @@ comments: true
             </div>
         </div>
     </section>
+    <!-- SynapEditor -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Synap Editor</h2><br>
+                        <h5>2018.11 ~ ing</h5>
+                    </header>
+                    <p>에디터 편집 담당</p>
+                    <ul>
+                        <li>텍스트 입력 및 삭제</li>
+                        <li>개체 (이미지) 편집 핸들</li>
+                        <li>Undo/Redo</li>
+                        <li>레이어 편집</li>
+                    </ul>
+                    <p>에디터 도형 표현</p>
+                    <ul>
+                        <li>임포트 도형 표현</li>
+                    </ul>
+                    <p>API</p>
+                    <ul>
+                        <li>DOM API</li>
+                    </ul>
+                    <p>Test</p>
+                    <ul>
+                        <li>Mocha</li>
+                        <li>Karma</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Synap Office -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Synap Office</h2><br>
+                        <h5>2016.01 ~ 2018.11</h5>
+                    </header>
+                    <p>사이냅 오피스 슬라이드 담당</p>
+                    <ul>
+                        <li>네이버 오피스 공동 편집 대응</li>
+                        <li>슬라이드 에디터 작업</li>
+                        <li>슬라이드 랜더링 성능 개선</li>
+                    </ul>
+                    <p>오피스 도형 표현 작업</p>
+                    <ul>
+                        <li>오피스 워드 도형 표현</li>
+                        <li>오피스 셀 도형 표현</li>
+                        <li>슬라이드 랜더링 성능 개선</li>
+                    </ul>
+                    <p>문서 공유</p>
+                    <ul>
+                        <li>문서 뷰 공유</li>
+                        <li>문서 퍼블리싱</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
