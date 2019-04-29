@@ -94,6 +94,38 @@ comments: true
             </div>
         </div>
     </section>
+    <!-- SynapEditor -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Synap Editor</h2>
+                    </header>
+                    <p>synap editor</p>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Synap Office -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Synap Office</h2>
+                    </header>
+                    <p>synap office</p>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
