@@ -2365,9 +2365,15 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit img {
-				width: 100%;
-			}
+		.image.fit img {
+			width: 100%;
+		}
+
+		.image.editor img 
+		.image.office img {
+			width: 280px;
+			height: 180px;
+		}
 
 /* List */
 
