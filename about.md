@@ -125,7 +125,7 @@ comments: true
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
-                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                    <span class="image fit"><img src="images/about/editor2.jpg" alt="" /></span>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@ comments: true
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
-                    <span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+                    <span class="image fit"><img src="images/about/office2.jpg" alt="" /></span>
                 </div>
             </div>
         </div>
