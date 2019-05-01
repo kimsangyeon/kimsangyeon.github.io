@@ -76,7 +76,7 @@ comments: true
             <p>Javascript Front-End Web Service.</p>
             <div class="row gtr-150">
                 <div class="col-4 col-12-medium">
-                    <span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+                    <span class="image fit"><img src="images/about/editor.png" alt="" /></span>
                     <h3>Synap Editor</h3>
                     <p>2018.11 ~ ing</p>
                     <ul class="actions special">
@@ -84,7 +84,7 @@ comments: true
                     </ul>
                 </div>
                 <div class="col-4 col-12-medium">
-                    <span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+                    <span class="image fit"><img src="images/about/office.png" alt="" /></span>
                     <h3>Synap Office</h3>
                     <p>2016.01 ~ 2018.11</p>
                     <ul class="actions special">
