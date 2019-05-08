@@ -3,7 +3,6 @@ layout: post
 title: "Github issue 만들기 & pull request" 
 categories: [ git, github ]
 image: assets/images/banner/github.png
-featured: true
 author: yeon
 ---
 
