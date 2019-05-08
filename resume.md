@@ -35,7 +35,7 @@ comments: true
             <div class="row gtr-150">
                 <div class="col-4 col-12-medium">
                     <span class="image editor"><img src="images/about/editor.png" alt="" /></span>
-                    <h3>Synap Editor</h3>
+                    <h3><a herf="#resume-synapeditor">Synap Editor</a></h3>
                     <p>2018.11 ~ ing</p>
                     <ul class="actions special">
                         <li><a href="http://www.synapsoft.co.kr/editor" class="button">More</a></li>
@@ -43,7 +43,7 @@ comments: true
                 </div>
                 <div class="col-4 col-12-medium">
                     <span class="image office"><img src="images/about/office.png" alt="" /></span>
-                    <h3>Synap Office</h3>
+                    <h3><a herf="#resume-synapoffice">Synap Office</a></h3>
                     <p>2016.01 ~ 2018.11</p>
                     <ul class="actions special">
                         <li><a href="http://www.synapsoft.co.kr/office" class="button">More</a></li>
@@ -58,7 +58,7 @@ comments: true
             <div class="row gtr-150">
                 <div class="col-6 col-12-medium">
                     <header class="major">
-                        <h2>Synap Editor</h2><br>
+                        <h2 id="resume-synapeditor">Synap Editor</h2><br>
                         <h5>2018.11 ~ ing</h5>
                     </header>
                     <h3>Description</h3>
@@ -99,7 +99,7 @@ comments: true
             <div class="row gtr-150">
                 <div class="col-6 col-12-medium">
                     <header class="major">
-                        <h2>Synap Office</h2><br>
+                        <h2 id="resume-synapoffice">Synap Office</h2><br>
                         <h5>2016.01 ~ 2018.11</h5>
                     </header>
                     <h3>Description</h3>
