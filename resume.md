@@ -64,7 +64,8 @@ comments: true
                     <h3>Description</h3>
                     <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 에디터 편집 개발 등을 전담하여 개발하였습니다. GS인증 1등급 획득 완료하였으며, 현재 개발 진행중입니다.</p>
                     <h3>Tech</h3>
-                    <p>Javascript, Jquery가 주로 사용되었으며, MVC Model 편집 부터 랜더링 구조로 작업. Mocha, karma를 사용한 브라우저 테스트 환경 구축. ES6 문법으로 작성 webpack, babel을 사용하여 모듈화.</p>
+                    <p>Javascript, Jquery가 주로 사용되었으며, MVC Model 편집 부터 랜더링 구조로 작업. Mocha, karma를 사용한 브라우저 테스트 환경 구축. ES6 문법으로 작성 webpack, babel을 사용하여 모듈화.</p><br>
+                    <h4>에디터 편집</h4>
                     <ul>
                         <li>텍스트 입력 및 삭제</li>
                         <li>개체 (이미지) 편집 핸들</li>
@@ -103,7 +104,8 @@ comments: true
                     <h3>Description</h3>
                     <p>사이냅 오피스 슬라이드 프론트엔드 담당하였으며, 네이버 슬라이드 이슈 대응 및 성능개선 진행하였습니다. 또한 슬라이드 내부 content Editor 작업 진행 및 워드, 셀 도형 랜더링 작업을 하였습니다.</p>
                     <h3>Tech</h3>
-                    <p>Javascript, Jquery, Jindo js 등이 주로 사용되었으며, cross browsing 지원 작업 (IE9 이상)</p>
+                    <p>Javascript, Jquery, Jindo js 등이 주로 사용되었으며, cross browsing 지원 작업 (IE9 이상)</p><br>
+                    <h4>슬라이드 편집</h4>
                     <ul>
                         <li>네이버 오피스 공동 편집 대응</li>
                         <li>슬라이드 에디터 작업</li>
