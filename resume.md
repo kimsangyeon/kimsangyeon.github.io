@@ -62,8 +62,8 @@ comments: true
                         <h5>2018.11 ~ ing</h5>
                     </header>
                     <h3>Description</h3>
-                    <p>ContentEditable을 사용하지 않은 에디터로써 문서 임포트 등 혁신적인 기술을 지원하는 웹 에디터 입니다.</p>
-                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 에디터 편집을 전담하여 개발하였습니다. GS인증 1등급 획득 완료하였으며, 현재 개발 진행중입니다.</p><br>
+                    <p>ContentEditable을 사용하지 않은 에디터로서 문서 임포트 등 혁신적인 기술을 지원하는 웹 에디터입니다.</p>
+                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 에디터 편집을 전담하여 개발하였습니다. GS인증 1등급 획득 완료하였으며, 현재 개발 진행 중입니다.</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, MVC Model 편집 부터 랜더링 구조로 작업. Mocha, karma를 사용한 브라우저 테스트 환경 구축. ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. cross browsing 지원 작업 (IE10 이상)</p><br>
                     <h4>에디터 편집</h4>
