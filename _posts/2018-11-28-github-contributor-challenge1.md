@@ -3,7 +3,6 @@ layout: post
 title: "Github Contributor 되보기 도전 #1" 
 categories: [ git, contributor ]
 image: assets/images/banner/github.png
-featured: true
 author: yeon
 ---
 
