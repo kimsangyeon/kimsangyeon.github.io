@@ -28,6 +28,8 @@ ex) img link script 등 다른 도메인으로부터 리소스 요청 <br>
 구글 코드랩에 PWA에 대한 좋은 예제와 설명이 있다. <br>
 [참고: PWA](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=ko) <br>
 
+<br>
+
 ### PWA의 특징
 - 프로그레시브 - 어떤 브라우저에서도 똑같이 동작합니다.
 - 반응형 - 데스크톱, 모바일, 태블릿 등 모든 폼 팩터에 맞습니다.
