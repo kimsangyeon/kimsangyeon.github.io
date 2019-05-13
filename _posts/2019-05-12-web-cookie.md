@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ookie, LocalStorage, SessionStorage" 
+title: "cookie, LocalStorage, SessionStorage" 
 categories: [ web, cookie, localstorge, sessionstorage ]
 image: assets/images/banner/web.png
 featured: false
