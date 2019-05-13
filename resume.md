@@ -25,6 +25,27 @@ comments: true
             </ul>
         </div>
     </section>
+    <!-- contact -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h3>Contact</h3>
+                    </header>
+                    <ul>
+                        <li>tel: 010-5105-7419</li>
+                        <li>email: ksy424@synapsoft.co.kr</li>
+                        <li>blog: <a href="https://kimsangyeon.github.io/">yeon blog</a></li>
+                        <li>github: <a href="https://kimsangyeon.github.io/">yeon github</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/contact.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Working -->
     <section id="three" class="main style1 special">
         <div class="container">
