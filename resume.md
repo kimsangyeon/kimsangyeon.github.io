@@ -41,7 +41,7 @@ comments: true
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
-                    <span class="image fit"><img src="images/contact.jpg" alt="" /></span>
+                    <span class="image fit"><img src="images/about/contact.jpg" alt="" /></span>
                 </div>
             </div>
         </div>
