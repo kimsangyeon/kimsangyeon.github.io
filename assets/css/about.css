@@ -131,6 +131,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		word-break: keep-all;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -147,31 +148,37 @@ input, select, textarea {
 	h1 {
 		font-size: 2.25em;
 		line-height: 1.35em;
+		word-break: keep-all;
 	}
 
 	h2 {
 		font-size: 2em;
 		line-height: 1.35em;
+		word-break: keep-all;
 	}
 
 	h3 {
 		font-size: 1.35em;
 		line-height: 1.5em;
+		word-break: keep-all;
 	}
 
 	h4 {
 		font-size: 1.25em;
 		line-height: 1.5em;
+		word-break: keep-all;
 	}
 
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
+		word-break: keep-all;
 	}
 
 	h6 {
 		font-size: 0.7em;
 		line-height: 1.5em;
+		word-break: keep-all;
 	}
 
 	sub {
