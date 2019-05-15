@@ -15,7 +15,7 @@ comments: true
     <section id="header">
         <div class="inner">
             <span class="icon major fa-cloud"></span>
-            <h1><strong>Trandy</strong> Programmer</h1>
+            <h1><strong>Trendy</strong> Programmer</h1>
             <p><strong>Front-End</strong>, 개발자 김상연입니다.<br />
             현재 <strong>Javascript</strong> 스토킹 중입니다.</p>
             <p>항상 새로운 것에 호기심을 느끼고, 경험 중입니다.<br />
