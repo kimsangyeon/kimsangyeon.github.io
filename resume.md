@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kim Sang Yeon PORTPOLIO
+title: PORTPOLIO
 comments: true
 ---
 <head>
@@ -15,35 +15,15 @@ comments: true
     <section id="header">
         <div class="inner">
             <span class="icon major fa-cloud"></span>
-            <h1><strong>Front-End</strong>, 개발자 김상연입니다.<br />
-            현재 <strong>Javascript</strong> 뒷 꽁무니를 스토킹중입니다.</h1>
-            <p>항상 새로운 것에 호기심을 느끼고, 경험중입니다.<br />
-            <strong>Trend</strong>에 뒤쳐지지않는 프로그래머가 되기위해 노력중입니다.</p>
-            <p>김상연의 개발자 Life는 <strong>ing...</strong> 중입니다.</p>
+            <h1><strong>Trandy</strong> Programmer</h1>
+            <p><strong>Front-End</strong>, 개발자 김상연입니다.<br />
+            현재 <strong>Javascript</strong> 스토킹 중입니다.</p>
+            <p>항상 새로운 것에 호기심을 느끼고, 경험 중입니다.<br />
+            <strong>Trendy</strong>한 프로그래머가 되기 위해 노력 중입니다.</p>
+            <p>김상연의 개발자 Life는 <strong>ing...</strong></p>
             <ul class="actions special">
                 <li><a href="https://github.com/kimsangyeon" class="button scrolly">GitHub</a></li>
             </ul>
-        </div>
-    </section>
-    <!-- contact -->
-    <section id="one" class="main style1">
-        <div class="container">
-            <div class="row gtr-150">
-                <div class="col-6 col-12-medium">
-                    <header class="major">
-                        <h3>Contact</h3>
-                    </header>
-                    <ul>
-                        <li>tel: 010-5105-7419</li>
-                        <li>email: ksy424@synapsoft.co.kr</li>
-                        <li>blog: <a href="https://kimsangyeon.github.io/">yeon blog</a></li>
-                        <li>github: <a href="https://kimsangyeon.github.io/">yeon github</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-12-medium imp-medium">
-                    <span class="image fit"><img src="images/about/contact.jpg" alt="" /></span>
-                </div>
-            </div>
         </div>
     </section>
     <!-- Working -->
@@ -190,6 +170,27 @@ comments: true
                         <li>slack</li>
                         <li>issue tracking system (jira)</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h3>Contact</h3>
+                    </header>
+                    <ul>
+                        <li>tel: 010-5105-7419</li>
+                        <li>email: ksy424@synapsoft.co.kr</li>
+                        <li>blog: <a href="https://kimsangyeon.github.io/">yeon blog</a></li>
+                        <li>github: <a href="https://kimsangyeon.github.io/">yeon github</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/about/contact.jpg" alt="" /></span>
                 </div>
             </div>
         </div>
