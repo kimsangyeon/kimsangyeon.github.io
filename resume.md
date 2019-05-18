@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PORTPOLIO
+title: PORTFOLIO
 comments: true
 ---
 <head>
