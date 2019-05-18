@@ -180,7 +180,7 @@ comments: true
                     </header>
                     <ul>
                         <li>tel: 010-5105-7419</li>
-                        <li>email: ksy424@synapsoft.co.kr</li>
+                        <li>email: overflowscript@gmail.com</li>
                         <li>blog: <a href="https://kimsangyeon.github.io/">yeon blog</a></li>
                         <li>github: <a href="https://kimsangyeon.github.io/">yeon github</a></li>
                     </ul>
@@ -196,7 +196,7 @@ comments: true
         <ul class="icons">
             <li><a href="https://www.instagram.com/overflow_script/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
             <li><a href="https://github.com/kimsangyeon" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="mailto:ksy424@synapsoft.co.kr" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="mailto:overflowscript@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
             <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
