@@ -57,7 +57,7 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <header class="major">
                         <h2 id="resume-synapeditor">Synap Editor</h2><br>
-                        <h5>2018.11 ~ ing</h5>
+                        <h5>2017.11 ~ ing</h5>
                     </header>
                     <h3>Description</h3>
                     <p>ContentEditable을 사용하지 않은 모델 편집중심 웹 에디터 개발 참여.</p>
@@ -98,7 +98,7 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <header class="major">
                         <h2 id="resume-synapoffice">Synap Office</h2><br>
-                        <h5>2016.01 ~ 2018.11</h5>
+                        <h5>2016.01 ~ 2017.11</h5>
                     </header>
                     <h3>Description</h3>
                     <p>MS문서(Word, Cell, Slide) 및 HWP 임포트 편집 가능한 웹오피스입니다.</p>
