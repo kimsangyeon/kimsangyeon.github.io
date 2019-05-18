@@ -16,7 +16,7 @@ comments: true
         <div class="inner">
             <span class="icon major fa-cloud"></span>
             <h1><strong>Front-End</strong> Developer</h1>
-            현재 <strong>Javascript</strong> 스토킹 중인 김상연입니다.</p>
+            <p>현재 <strong>Javascript</strong> 스토킹 중인 김상연입니다.</p>
             <p>김상연의 개발자 Life는 <strong>ing...</strong></p>
             <ul class="actions special">
                 <li><a href="https://github.com/kimsangyeon" class="button scrolly">GitHub</a></li>
@@ -61,7 +61,7 @@ comments: true
                     </header>
                     <h3>Description</h3>
                     <p>ContentEditable을 사용하지 않은 모델 편집중심 웹 에디터 개발 참여.</p>
-                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 원할한 입력이 가능한 독자적 IME(입력기) 개발, 에디터 편집을 전담하여 개발하였습니다.GS인증 1등급 획득 완료하였으며, 현재 개발 진행 중입니다.</p><br>
+                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 원활한 입력이 가능한 IME(입력기) 개발, 에디터 편집을 전담하여 개발하였습니다. GS인증 1등급 획득 완료하였으며, 현재 개발 진행 중입니다.</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, MVC Model 편집부터 랜더링 구조로 작업. Mocha, karma를 사용한 브라우저 테스트 환경 구축. ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. cross browsing 지원 작업 (IE10 이상)</p><br>
                     <h4>에디터 편집</h4>
