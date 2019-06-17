@@ -4,7 +4,6 @@ title: "jsp form data"
 categories: [ javascript, jsp ]
 image: assets/images/banner/webpack.png
 author: yeon
-featured: true
 ---
 
 ## jsp form data
