@@ -2,7 +2,7 @@
 layout: post
 title: "jsp form data"
 categories: [ javascript, jsp ]
-image: assets/images/banner/webpack.png
+image: assets/images/banner/jsp.png
 author: yeon
 ---
 
