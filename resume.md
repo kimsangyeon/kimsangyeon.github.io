@@ -34,7 +34,7 @@ comments: true
                 <div class="col-4 col-12-medium">
                     <span class="image editor"><img src="images/about/editor.png" alt="" /></span>
                     <h3><a href="#resume-synapeditor">Synap Editor</a></h3>
-                    <p>2018.11 ~ ing</p>
+                    <p>2018.02 ~ ing</p>
                     <ul class="actions special">
                         <li><a href="http://www.synapsoft.co.kr/editor" class="button">More</a></li>
                     </ul>
@@ -42,7 +42,7 @@ comments: true
                 <div class="col-4 col-12-medium">
                     <span class="image office"><img src="images/about/office.png" alt="" /></span>
                     <h3><a href="#resume-synapoffice">Synap Office</a></h3>
-                    <p>2016.01 ~ 2018.11</p>
+                    <p>2016.01 ~ 2018.02</p>
                     <ul class="actions special">
                         <li><a href="http://www.synapsoft.co.kr/office" class="button">More</a></li>
                     </ul>
@@ -57,7 +57,7 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <header class="major">
                         <h2 id="resume-synapeditor">Synap Editor</h2><br>
-                        <h5>2017.11 ~ ing</h5>
+                        <h5>2018.02 ~ ing</h5>
                     </header>
                     <h3>Description</h3>
                     <p>ContentEditable을 사용하지 않은 모델 편집중심 웹 에디터 개발 참여.</p>
@@ -98,7 +98,7 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <header class="major">
                         <h2 id="resume-synapoffice">Synap Office</h2><br>
-                        <h5>2016.01 ~ 2017.11</h5>
+                        <h5>2016.01 ~ 2018.02</h5>
                     </header>
                     <h3>Description</h3>
                     <p>MS문서(Word, Cell, Slide) 및 HWP 임포트 편집 가능한 웹오피스입니다.</p>
