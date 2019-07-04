@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript Event Bubbling Capturing"
+title: "Javascript Event Bubbling Capturing Delegation"
 categories: [ javascript, event ]
 image: assets/images/banner/javascript.png
 author: yeon
@@ -81,6 +81,64 @@ B 클릭시 B -> A로 이벤트가 전파 <br>
 ```
 
 캡쳐링 옵션은 addEventListener 세번째 인자로 설정 가능하며, 기본값은 false이다. <br>
+
+<br><br>
+
+### Event Delegation
+이벤트 위임은 이벤트 등록을 효율적으로 하여, 이벤트 처리 로직을 간결하게 도와준다. <br>
+많은 자료들에서 이벤트 위임을 list를 예제로 많이들 사용하고있어 list를 사용해본다. <br>
+
+```html
+<html>
+    <body>
+        <ul id="list">
+            <li>
+                <div id="A"></div>
+            </li>
+            <li>
+                <div id="B"></div>
+            </li>
+            <li>
+                <div id="C"></div>
+            </li>
+        </ul>
+    </body>
+</html>
+```
+
+위와 같이 ul list 안쪽에 이벤트를 등록한다고 하였을때 <br>
+
+```javascript
+const onClick = (e) => {
+    console.log(e.currentTarget);
+};
+const elDivs = document.querySelectorAll('div');
+elDivs.forEach(elDiv => elDiv.addEventListener("click", onClick);
+```
+
+div를 가져와 하나씩 각각 click 이벤트를 등록한다고 하였을때, 새로운 리스트가 추가된다면? <br>
+또 다시 새롭게 추가된 리스트에 이벤트를 등록해주어야한다. <br>
+
+<br>
+
+번거롭게 일일이 이벤트 등록을 하지 않고, 이벤트 버블링을 떠올려 이벤트 위임으로 해결 <br>
+
+```javascript
+const onClick = (e) => {
+    const id = e.target.id;
+    if (id === "A") {
+
+    } else if (id === "B") {
+
+    } else if (id === "C") {
+
+    }
+};
+const elUl = document.getElementById('list');
+elUl.addEventListener("click", onClick);
+```
+
+ul에 이벤트를 등록후 하위 Element에서 버블링되어 오는 이벤트를 감지하여 이벤트 처리로직을 간결하게 완성 <br>
 
 <br><br>
 
