@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "RDBMS NOSQL 차이"
-categories: [ http, formdata, multipart ]
-image: assets/images/banner/http.png
+categories: [ sql, nosql, database ]
+image: assets/images/banner/sqlnosql.png
 author: yeon
 ---
 
