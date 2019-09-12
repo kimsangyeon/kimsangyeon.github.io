@@ -95,5 +95,98 @@ console.log(phone2.getName()); // 'super';
 
 위와같은 형태는 class에서 사용하는 상속 받아 오버라이딩 하는 형태와 비슷하다고 할 수 있겠습니다.
 
+<br><br>
+
+## 상속
+
+코드를 재사용하는 방법, 재활용은 Java 등에서 class 상속을 통해 중복되는 코드를 상속받아 재사용할 수 있습니다.
+Javascript에서는 Prototype을 사용하여 코드를 재사용하는 방법이 있습니다. <br>
+
+<br>
+
+Prototype으로 코드 재사용하는 방법은 두가지로 분류되며 **classical** 방식과 **prototypal** 방식이 있습니다. <br>
+
+<br><br>
+
+### Classical
+classcical 방식으로는 여러 방법이 있지만 Prototype 객체를 참조하는 방법만 정리하겠습니다.
+생성한 자식함수의 Prototype 속성을 부모함수의 Prototype 속성을 참조하는 방식으로 객체를 생성시 부모함수의 Prototype에 지정한 멤버를 사용할 수 있습니다. <br>
+
+<br>
+
+```javascript
+function Phone(number) {
+   this.number = number;
+}
+
+Phone.prototype.getNumber = function() {
+   return this.number;
+}
+
+function Iphone(number) {
+   this.number = number;
+}
+
+Iphone.prototype = Phone.prototype;
+
+let myPhone = new Iphone("010");
+console.log(myPhone.getNumber()); // "010"
+```
+
+하지만 이 방법은 자식함수가 부모함수의 Prototype을 참조하는 것이기 때문에 자식함수의 Prototype에 멤버를 추가하는것은 부모함수 Prototype 멤버가 추가되는 것이기 때문에 유의가 필요합니다.
+해서 자식함수에 멤버 추가시 자식함수의 this에 멤버를 추가하여 사용하여야 합니다. <br>
+
+<br>
+
+```javascript
+function Phone(number) {
+   this.number = number;
+}
+
+Phone.prototype.getNumber = function() {
+   return this.number;
+}
+
+function Iphone(number) {
+   this.number = number;
+   this.getName = function() {
+      console.log("IPhone");
+   };
+}
+
+Iphone.prototype = Phone.prototype;
+
+let myPhone = new Iphone("010");
+console.log(myPhone.getNumber()); // "010"
+```
+
+<br><br>
+
+### Prototypal
+Prototypal 방식은 간단하게 Object.create()를 사용하며 새로운 객체 생성시 첫번째 인자로 Prototype을 참조할 부모 객체를 넣어주면 됩니다. <br>
+
+<br>
+
+```javascript
+function Phone(number) {
+   this.number = number;
+}
+
+Phone.prototype.getNumber = function() {
+   return this.number;
+}
+
+let myPhone = Object.create(Phone);
+myPhone.name = "010";
+console.log(myPhone.getNumber()); // "010"
+```
+
+<br>
+
+위 방식으로 myPhone 생성시 myPhone은 Phone의 prototype을 참조하여 멤버 사용이 가능합니다. <br>
+
+<br>
+
+MDN: [Object.create](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 <br><br><br> 
