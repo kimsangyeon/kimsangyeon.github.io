@@ -176,8 +176,8 @@ Phone.prototype.getNumber = function() {
    return this.number;
 }
 
-let myPhone = Object.create(Phone);
-myPhone.name = "010";
+let myPhone = Object.create(Phone.prototype);
+myPhone.number = "010";
 console.log(myPhone.getNumber()); // "010"
 ```
 
