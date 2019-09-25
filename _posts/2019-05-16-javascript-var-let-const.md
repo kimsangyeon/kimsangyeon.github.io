@@ -44,7 +44,7 @@ let a = 'javascript'; // const a = 'javascript';
 let, const 의 경우 호이스팅후 선언만 이루어지고 초기화가 되지 않았기 때문에
 
 ~~~
-VM98:1 Uncaught ReferenceError: a is not defined
+Uncaught ReferenceError: Cannot access 'a' before initialization
 ~~~
 
 다음과 같은 에러를 출력한다.
