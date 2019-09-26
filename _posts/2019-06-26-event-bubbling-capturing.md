@@ -52,7 +52,7 @@ elBtn.addEventListener("click", onClick);
 </html>
 ```
 
-여기서 third Div를 클릭시 C -> B -> A 순으로 이벤트가 전달된다. <br>
+여기서 id "C"를 가지는 Div를 클릭시 C -> B -> A 순으로 이벤트가 전달된다. <br>
 B 클릭시 B -> A로 이벤트가 전파 <br>
 
 <br><br>
