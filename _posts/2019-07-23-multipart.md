@@ -11,7 +11,9 @@ HTTP 통신에서 Content-Type의 multipart/form-data에서 multipart가 무엇�
 
 <br>
 
-우선적으로 HTTP request에서 Content-Type의 헤더부분에 대한 이해가 필요하여 정리합니다.
+우선적으로 HTTP request에서 Content-Type의 헤더부분에 대한 이해가 필요하여 정리합니다. <br>
+
+<br>
 
 ### Content-Type
 Content-Type은 전송하는 자원의 타입이 어떤것인지 명시하는 헤더 정보입니다. Content-Type은 엄청나게 많은 종류가 있습니다. <br>
@@ -21,13 +23,15 @@ Content-Type은 전송하는 자원의 타입이 어떤것인지 명시하는 �
 <br><br>
 
 ### MIME Type
+MIME 타입이란 클라이언트에게 전송된 문서의 다양성을 알려주기 위한 메커니즘 <br>
+미디어 타입(media type), MIME 타입(MIME type), 콘텐츠 타입(content type)은 인터넷에 전달되는 파일 포맷과 포맷 콘텐츠를 위한 2 부분의 식별자<br>
 과거에는 MIME Type으로 불렸지만 지금은 "media type" 또는 "content-type"이라고 부른다고 합니다. <br>
 웹에서는 파일 확장자의 의미가 없기 때문에 각 문서의 확장자를 표시하기위한 타입이라고 합니다. <br>
 
 <br><br>
 
 ### Multipart
-이제 multipart가 무엇인지 설명하자면, multipart는 다른 MIME Type들이 개별적인 파트로 나누어지는 문서를 가리킨다고 합니다. <br>
+이제 multipart가 무엇인지 설명하자면, multipart는 MIME Type들이 개별적인 파트로 나누어지는 문서 -> MIME Type들이 각 Type에 맞게 파트별로 나누어지는 것을 말합니다. <br>
 HTTP Request body에 클라이언트에서 전송하고자 하는 데이터를 넣어 서버로 전송할 수 있습니다. 그리고 서버에서는 HTTP Request Header에 담긴 타입 정보를 보고 알맞은 처리를 합니다. 그런데 body에 한종류의 타입이 아닌 여러 종류가 들어올 경우에 하나의 타입만 정의 하면 정보가 알맞게 처리 되지 않습니다. 그래서 multipart라는 타입으로 Header에 타입 정보를 설정합니다. <br>
 간단한 예시로 file을 form data에 설정한다면?
 
