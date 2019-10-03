@@ -109,7 +109,7 @@ Prototype으로 코드 재사용하는 방법은 두가지로 분류되며 **cla
 <br><br>
 
 ### Classical
-classcical 방식으로는 여러 방법이 있지만 Prototype 객체를 참조하는 방법만 정리하겠습니다.
+classical 방식으로는 여러 방법이 있지만 Prototype 객체를 참조하는 방법만 정리하겠습니다.
 생성한 자식함수의 Prototype 속성을 부모함수의 Prototype 속성을 참조하는 방식으로 객체를 생성시 부모함수의 Prototype에 지정한 멤버를 사용할 수 있습니다. <br>
 
 <br>
@@ -141,6 +141,9 @@ console.log(myPhone.getNumber()); // "010"
 ```javascript
 function Phone(number) {
    this.number = number;
+   this.getName = function() {
+      console.log("Phone");
+   };
 }
 
 Phone.prototype.getNumber = function() {
@@ -158,6 +161,7 @@ Iphone.prototype = Phone.prototype;
 
 let myPhone = new Iphone("010");
 console.log(myPhone.getNumber()); // "010"
+console.log(myPhone.getName()); // "Iphone"
 ```
 
 <br><br>
