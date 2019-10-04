@@ -2,7 +2,7 @@
 layout: post
 title: "JSONP" 
 categories: [ javascript, jsonp ]
-image: assets/images/banner/react.png
+image: assets/images/banner/javascript.png
 featured: false
 author: yeon
 ---
@@ -11,7 +11,7 @@ author: yeon
 
 Javascript에서는 다른 도메인으로의 요청을 보안상의 이유로 제한하고 있다. <br>
 이 정책이 바로 **Same-Origin Policy(SOP)** 동일근원정책이라고 한다. <br>
-크롬에서 다른 도메인으로 요청을 날릴 경우
+다른 도메인으로 요청을 날릴 경우
 
 - No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin ‘[요청한 도메인]' is therefore not allowed access.
 
@@ -20,7 +20,7 @@ Javascript에서는 다른 도메인으로의 요청을 보안상의 이유로 �
 <br>
 
 cross-domain 이슈의 경우 **JSON with Padding(JSONP)**로 해결한 예전 방식. <br>
-2009년 이후 CORS가 채택된 이후로는 CORS 방식의 HTTP 통신을 권장한다. <br>
+**2009년 이후 CORS가 채택된 이후로는 CORS 방식의 HTTP 통신을 권장한다.** <br>
 
 <br>
 
