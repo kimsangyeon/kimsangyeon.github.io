@@ -82,7 +82,7 @@ binary.value;
 
 <br><br>
 
-Javascript info: [Object Accessor Properties](https://javascript.info/property-accessors)
-ref: [Diving Deeper in JavaScripts Objects](https://blog.bitsrc.io/diving-deeper-in-javascripts-objects-318b1e13dc12);
+Javascript info: [Object Accessor Properties](https://javascript.info/property-accessors) <br>
+ref: [Diving Deeper in JavaScripts Objects](https://blog.bitsrc.io/diving-deeper-in-javascripts-objects-318b1e13dc12)
 
 <br><br><br> 
