@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Javascript Object Property Descriptors"
-categories: [ javascript ]
+title: 'Javascript Object Property Descriptors'
+categories: [javascript]
 image: assets/images/banner/javascript.png
 author: yeon
 ---
@@ -13,6 +13,7 @@ author: yeon
 <br><br>
 
 Javascript Object의 Property Attribute는 총 6개가 존재합니다.
+
 - [[Value]]
 - [[Get]]
 - [[Set]]
@@ -27,10 +28,11 @@ Javascript Object의 Property Attribute는 총 6개가 존재합니다.
 ### Object getOwnPropertyDescriptor
 
 Object의 내부 속성을 조회하기 위한 메소드로 [[[Value]], [[Writable]], [[Enumerable]], [[Configurable]]을 조회가능 합니다.
+
 ```javascript
 const obj = {
   a: 1,
-  b: 2
+  b: 2,
 };
 
 Object.getOwnPropertyDescriptor(obj, 'a');
@@ -59,9 +61,10 @@ Object.getOwnPropertyDescriptor(obj, 'a');
 <br>
 
 ex) MDN
-~~~
+
+```
 Object.defineProperty(obj, prop, descriptor)
-~~~
+```
 
 <br>
 
@@ -76,7 +79,7 @@ const object1 = {};
 
 Object.defineProperty(object1, 'property1', {
   value: 42,
-  writable: false
+  writable: false,
 });
 
 object1.property1 = 77;
@@ -90,4 +93,4 @@ console.log(object1.property1);
 
 ref: [Diving Deeper in JavaScripts Objects](https://blog.bitsrc.io/diving-deeper-in-javascripts-objects-318b1e13dc12)
 
-<br><br><br> 
+<br><br><br>
