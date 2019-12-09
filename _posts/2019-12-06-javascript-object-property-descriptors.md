@@ -89,6 +89,24 @@ console.log(object1.property1);
 // expected output: 42
 ```
 
+writable이 false로 지정되는 경우 값을 수정할 수 없습니다. <br>
+
+<br>
+
+```javascript
+const object1 = {};
+
+Object.defineProperty(object1, 'property1', {
+  value: 42,
+  configurable: false,
+});
+
+delete object1.property1;
+// false
+```
+
+configurable이 false로 지정되는 경우 값을 제거할 수 없습니다. <br>
+
 <br><br>
 
 ref: [Diving Deeper in JavaScripts Objects](https://blog.bitsrc.io/diving-deeper-in-javascripts-objects-318b1e13dc12)
