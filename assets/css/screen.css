@@ -397,7 +397,7 @@ blockquote {
     }
 
     .alertbar {
-        display: none !Important;
+        display: none !important;
         position: relative !Important;
         margin-bottom: 20px;
         margin-top: 20px;
