@@ -13,6 +13,9 @@ author: yeon
 <br>
 
 `Service worker`는 기본적으로 웹 응용 프로그램, 브라우저 및 네트워크 (사용 가능한 경우) 사이에있는 프록시 서버의 역할을 합니다. 라고 MDN에 아무 명확하게 설명이 되어있었습니다. 프록시 서버 역할로 `Service Worker`는 클라이언트와 서버 사이에서 요청을 가로채어 데이터를 제어하는 역할을 하고 있습니다. 그리고 오프라인 환경을 제어 할 수 있도록 지원하는 역할도 하고 있습니다. <br>
+
+<br>
+
 제공되는 기능을 보자면 `ServiceWorker`는 브라우저가 백그라운드에서 실행하는 스크립트로, 웹페이지와는 별개로 작동하며, 웹페이지 또는 사용자 상호작용이 필요하지 않은 기능을 제어합니다. 현재 푸시 알림 및 백그라운드 동기화와 같은 기능은 이미 제공되고 있습니다. <br>
 
 <br>
@@ -39,11 +42,20 @@ author: yeon
 
 ### Download
 
-`Service Worker`는 제어 페이지에 접근시 즉시 다운로드가 됩니다. 그 후 24 시간마다 다운로드가되며 다운로드 한 파일이 기존의 `Service Worker`와 다른경우 (바이트 단위로 비교) 페이지의 첫 번째 `Service Worker`와 만난 경우 설치가 시도 됩니다. 
+`Service Worker`는 제어 페이지에 접근시 즉시 다운로드가 됩니다. 그 후 24 시간마다 다운로드가되며 다운로드 한 파일이 기존의 `Service Worker`와 다른경우 (바이트 단위로 비교) 페이지의 첫 번째 `Service Worker`와 만난 경우 설치가 시도 됩니다. <br>
+
+<br>
+
+`.register()`를 호출하면 `Service Worker`가 다운로드됩니다. 만약 스크립트를 다운로드하지 못하거나 실행중 로류가 발생하는 경우 register promise가 거부되고 `Service Worker`가 삭제 됩니다. <br>
+- Chrome의 DevTools의 `Application`탭 Service Worker 섹션에서 오류 확인이 가능
+
+<br>
 
 ### Install
 
 `install` 이벤트는 `Service Worker`가 받는 첫 번째 이벤트이며 최초 한번만 발생합니다. `Service Worker`는 `install`과 `activate`는 시간이 걸리는 작업이기 때문에 promise를 반환하는 `waitUntil`을 제공합니다. promise가 성공적으로 resolved 될 때까지 `Service Worker`에 이벤트들이 전달되지 않습니다. <br>
+
+<br>
 
 ### Activate
 
