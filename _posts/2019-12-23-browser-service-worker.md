@@ -29,7 +29,79 @@ author: yeon
 
 <br><br>
 
+## Service Worker 수명주기
 
+1. Download
+2. Install
+3. Activate
 
+<br>
+
+### Download
+
+`Service Worker`는 제어 페이지에 접근시 즉시 다운로드가 됩니다. 그 후 24 시간마다 다운로드가되며 다운로드 한 파일이 기존의 `Service Worker`와 다른경우 (바이트 단위로 비교) 페이지의 첫 번째 `Service Worker`와 만난 경우 설치가 시도 됩니다. 
+
+### Install
+
+`install` 이벤트는 `Service Worker`가 받는 첫 번째 이벤트이며 최초 한번만 발생합니다. `Service Worker`는 `install`과 `activate`는 시간이 걸리는 작업이기 때문에 promise를 반환하는 `waitUntil`을 제공합니다. promise가 성공적으로 resolved 될 때까지 `Service Worker`에 이벤트들이 전달되지 않습니다. <br>
+
+### Activate
+
+`Service Worker`가 설치 완료된 후 `activate`될 때까지 featch 및 push 이벤트는 수신되지 않습니다. 해당 이벤트 수신 및 `Service Worker` 동작을 위해서는 페이지를 새로고침하여야 합니다. `Service Worker`가 활성화된 이후에 메모리 절약을 위해 종료되거나, 페이지에서 네트워크 요청 메시지가 생성될때 fetch 및 message 이벤트를 처리합니다. <br>
+
+<br>
+
+Download, Install, Activate 예시로 [Service Worker Life Cycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle?hl=ko)에 이미지 불러오기 예시를 참고 할 수 있습니다. <br>
+
+<br>
+
+```html
+<!DOCTYPE html>
+An image will appear here in 3 seconds:
+<script>
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log('SW registered!', reg))
+    .catch(err => console.log('Boo!', err));
+
+  setTimeout(() => {
+    const img = new Image();
+    img.src = '/dog.svg';
+    document.body.appendChild(img);
+  }, 3000);
+</script>
+```
+
+dog.svg가 설정된 이미지를 `Service Worker`를 등록 후 3초 후에 불러옵니다.
+
+<br>
+
+그리고 `sw.js`
+
+```javascript
+self.addEventListener('install', event => {
+  console.log('V1 installing…');
+
+  // cache a cat SVG
+  event.waitUntil(
+    caches.open('static-v1').then(cache => cache.add('/cat.svg'))
+  );
+});
+
+self.addEventListener('activate', event => {
+  console.log('V1 now ready to handle fetches!');
+});
+
+self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  // serve the cat SVG from the cache if the request is
+  // same-origin and the path is '/dog.svg'
+  if (url.origin == location.origin && url.pathname == '/dog.svg') {
+    event.respondWith(caches.match('/cat.svg'));
+  }
+});
+```
+
+`Service Worker`에서 cat.svg를 캐시하여 제공하지만 처음 페이지를 로딩시 dog.svg가 그려집니다. 새로고침시 `Service Worker activate`되며 cat.svg가 표시됩니다.
 
 <br><br><br>
