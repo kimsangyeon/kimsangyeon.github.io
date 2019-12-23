@@ -17,4 +17,19 @@ author: yeon
 
 <br>
 
+`Service Worker`는 작업자 컨텍스트(Worker Context)에서 실행 되기 때문에 DOM에 직접 접근 할 수 없습니다. 대신 `postMessage`를 사용하여 전달된 메시지에 응답하는 방식으로 페이지와 통신이 가능하며, 페이지에서 DOM에 접근하여 조작 할 수 있습니다. 그리고 완전 비동기로 설계되어 있어 동기식 [XHR](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) 및 [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)와 같은 API를 서비스 작업자 내부에서 사용할 수 없습니다. <br>
+
+<br>
+
+보안상의 이유로 `Service Worker`는 HTTPS를 통해서만 실행되어 네트워크 요청에 대한 중간 공격을 예방 할 수 있습니다. <br>
+
+<br>
+
+`Service Worker`는 일반적으로 응답을 기다렸다가 성공 또는 실패 조치를 취하기 때문에 [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)를 많이 사용합니다.
+
+<br><br>
+
+
+
+
 <br><br><br>
