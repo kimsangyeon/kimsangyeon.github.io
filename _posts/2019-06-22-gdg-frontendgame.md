@@ -4,7 +4,6 @@ title: "[GDG] FRONT-ENDGAME"
 categories: [ gdg, frontend, javascript ]
 image: assets/images/banner/frontEndgame.png
 author: yeon
-featured: true
 ---
 
 ## [GDG] FRONT-ENDGAME

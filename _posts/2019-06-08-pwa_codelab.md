@@ -4,7 +4,6 @@ title: "PWA 코드랩 참가까지"
 categories: [ pwa, codelab ]
 image: assets/images/banner/pwa.png
 author: yeon
-featured: true
 ---
 
 ## PWA 코드랩 참가까지
