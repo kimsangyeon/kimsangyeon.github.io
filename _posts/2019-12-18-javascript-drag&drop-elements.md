@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 'Javascript Drag & Drop Elements'
+title: 'Javascript Drag Drop Elements'
 categories: [javascript]
 image: assets/images/banner/javascript.png
 author: yeon
 ---
 
-# Javascript Drag & Drop Elements
+# Javascript Drag Drop Elements
 
 Javascript App에서 **Drag and Drop** 기능을 추가하기위한 많은 Library들이 존재합니다. 하지만 HTML에서 DOM 요소를 **Drag and Drop** 할 수 있도록 도와주는 기본 내장 API가 존재합니다. 여기서 **HTML Drag and Drop API**와 **Vanilla Javascript**를 사용하여 간단한 DOM Drag and Drop 기능을 구현해보겠습니다. <br>
 
@@ -177,7 +177,7 @@ HTML Element에 `ondrop`을 설정 후 정상적으로 drop 되어 appendChild �
 
 <br><br>
 
-[참고: Drag & Drop Elements with Vanilla JavaScript and HTML](https://alligator.io/js/drag-and-drop-vanilla-js/?fbclid=IwAR1a1dWzwxf_XbcnxSHL5f8eP4xtI-oeLMEZStafKQemgMtmBWocpCHNAQ8)
+[참고: Drag Drop Elements with Vanilla JavaScript and HTML](https://alligator.io/js/drag-and-drop-vanilla-js/?fbclid=IwAR1a1dWzwxf_XbcnxSHL5f8eP4xtI-oeLMEZStafKQemgMtmBWocpCHNAQ8)
 
 
 
