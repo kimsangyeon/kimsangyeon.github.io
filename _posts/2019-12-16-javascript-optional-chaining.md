@@ -57,7 +57,9 @@ typeof func === 'function' ? func(args) : undefined;
 
 <br>
 
-조금씩 조건이 추가되는 것이지만 `Optional Chaining`의 경우가 조금 더 가독성이 좋다는 것을 느낄 수 있습니다. `Optional Chaining`의 경우도 깊이가 깊어지는 경우 ? 연산이 많아 지기는 하지만 삼항연산자에 비해서는 짧고 간결하게 작성이 가능합니다. <br>
+조금씩 조건이 추가되는 것이지만 `Optional Chaining`의 경우가 조금 더 가독성이 좋다는 것을 느낄 수 있습니다. `Optional Chaining`의 경우도 깊이가 깊어지는 경우 ? 연산이 많아 지기는 하지만 삼항연산자에 비해서는 짧고 간결하게 작성이 가능합니다.
+
+<br>
 
 ```javascript
 const obj = {
@@ -77,11 +79,5 @@ obj ? obj.prop ? obj.prop.hello ? obj.prop.hello.world ? obj.prop.hello.world.fn
 ```
 
 위 코드를 봐도 삼항연산자보다는 `Optional Chaining`이 훨씬 간결하게 코드 작성이 가능한 것을 볼 수 있습니다.
-
-
-
-
-
-
 
 <br><br><br>

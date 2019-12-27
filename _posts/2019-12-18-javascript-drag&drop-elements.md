@@ -14,7 +14,7 @@ Javascript App에서 **Drag and Drop** 기능을 추가하기위한 많은 Libra
 
 HTML drag and drop API는 DOM의 이벤트 모델을 사용하여 해당 요소를 끌어서 놓기가 가능하도록 도와줍니다. 이는 CSS 스타일을 업데이트 한다던지, 요소를 이동시키는 대신 복사하여 요소를 복제하는 것도 가능하게 합니다. <br>
 
-<br>x
+<br>
 
 ## Making HTML Elements Draggable
 
@@ -42,7 +42,9 @@ HTML drag and drop API는 DOM의 이벤트 모델을 사용하여 해당 요소�
 </div>
 ```
 
-`draggable = 'true'` 속성을 설정시 span draggable이 drag가 가능한 것을 체험할 수 있을 것입니다. `draggable attribute` 기본값은 auto이며 브라우저 기본 설정에 따라 결정됩니다. 예를 들어 `( <a> )` 태그는 기본적으로 drag가 가능합니다. <br>
+`draggable = 'true'` 속성을 설정시 span draggable이 drag가 가능한 것을 체험할 수 있을 것입니다. `draggable attribute` 기본값은 auto이며 브라우저 기본 설정에 따라 결정됩니다. 예를 들어 `( <a> )` 태그는 기본적으로 drag가 가능합니다.
+
+<br>
 
 <br><br>
 
@@ -73,9 +75,9 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 `ondragstart`에서  `dataTransfer` 객체의 `setData` 속성을 사용하여 필요한 상태 정보를 설정할 수 있습니다. 두개의 매개변수를 사용하며 전송되는 format과 데이터를 설정합니다.
 
 ```javascript
-  function onDragStart(event) {
-    event.dataTransfer.setData('text/plain', event.target.id);
-  }
+function onDragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.id);
+}
 ```
 
 <br>
@@ -83,10 +85,10 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 우리의 목표는 drag 한 요소를 새로운 부모로 옮기는 것으로 event target id로 drag 된 요소를 기억하여 사용할 수 있도록 합니다. 또한 drag 중인 요소의 CSS를 변경하는 것도 가능합니다.
 
 ```javascript
-  function onDragStart(event) {
-    event.dataTransfer.setData('text/plan', event.target.id);
-    event.currentTarget.style.backgroundColor = 'yellow';
-  }
+function onDragStart(event) {
+  event.dataTransfer.setData('text/plan', event.target.id);
+  event.currentTarget.style.backgroundColor = 'yellow';
+}
 ```
 
 <br>
@@ -113,9 +115,9 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 브라우저에서는 기본적으로 drop 동작에 대해 방지되고 있어 drop 동작을 방지 하지 못하도록 `ondragover`에서 처리가 필요합니다.
 
 ```javascript
-  function onDragOver(event) {
-    event.preventDefault();
-  }
+function onDragOver(event) {
+  event.preventDefault();
+}
 ```
 
 <br>
@@ -135,22 +137,22 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 </div>
 ```
 
-<br<br>
+<br><br>
 
 ### What To Do On Drop
 
 마지막으로 `ondrop` 설정을 하도록 하겠습니다. `ondrop`에서는 `ondragstart`에서 기억하고 있던 dataTransfer에 저장된 id data를 기반으로 DOM Element를 가져와 컨트롤하는 작업이 필요합니다.
 
 ```javascript
-  function onDrop(event) {
-    const id = event.dataTransfer.getData('text');
-    const elDraggable = document.getElementById(id);
-    const elDropzone = event.target;
+function onDrop(event) {
+  const id = event.dataTransfer.getData('text');
+  const elDraggable = document.getElementById(id);
+  const elDropzone = event.target;
 
-    elDropzone.appendChild(elDraggable);
-    
-    event.dataTransfer.clearData();
-  }
+  elDropzone.appendChild(elDraggable);
+
+  event.dataTransfer.clearData();
+}
 ```
 
 `event.dataTransfer.getData`를 사용하여 저장하였던 id 정보를 기반으로 span draggable을 가져와 span dropzone 자식으로 넣는 동작을 추가합니다. <br>
@@ -166,7 +168,6 @@ HTML Element에 `ondrop`을 설정 후 정상적으로 drop 되어 appendChild �
     ondragstart='onDragStart(event)'>
       draggable
   </span>
-
   <span
     ondragover='onDragOver(event)'
     ondrop='onDrop(event)'>
@@ -178,7 +179,5 @@ HTML Element에 `ondrop`을 설정 후 정상적으로 drop 되어 appendChild �
 <br><br>
 
 [참고: Drag Drop Elements with Vanilla JavaScript and HTML](https://alligator.io/js/drag-and-drop-vanilla-js/?fbclid=IwAR1a1dWzwxf_XbcnxSHL5f8eP4xtI-oeLMEZStafKQemgMtmBWocpCHNAQ8)
-
-
 
 <br><br><br>
