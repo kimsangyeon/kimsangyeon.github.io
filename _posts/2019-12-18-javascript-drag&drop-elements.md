@@ -14,7 +14,7 @@ Javascript App에서 **Drag and Drop** 기능을 추가하기위한 많은 Libra
 
 HTML drag and drop API는 DOM의 이벤트 모델을 사용하여 해당 요소를 끌어서 놓기가 가능하도록 도와줍니다. 이는 CSS 스타일을 업데이트 한다던지, 요소를 이동시키는 대신 복사하여 요소를 복제하는 것도 가능하게 합니다. <br>
 
-<br>
+<br>x
 
 ## Making HTML Elements Draggable
 
@@ -97,7 +97,7 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 <div class='parent'>
   <span id='draggableSpan'
     draggable='true'
-    ondragstart='onDragStart(event);'>
+    ondragstart='onDragStart(event)'>
     draggable
   </span>
   <span> dropzone </span>
@@ -126,10 +126,10 @@ Making HTML Elements Draggable 예제로는 drag는 되지만 이후 동작에 �
 <div class='parent'>
   <span id='draggableSpan'
     draggable='true'
-    ondragstart='onDragStart(event);'>
+    ondragstart='onDragStart(event)'>
     draggable
   </span>
-  <span ondragover='onDragOver(event);'>
+  <span ondragover='onDragOver(event)'>
    dropzone 
   </span>
 </div>
@@ -163,13 +163,13 @@ HTML Element에 `ondrop`을 설정 후 정상적으로 drop 되어 appendChild �
 <div class='parent'>
   <span id='draggableSpan'
     draggable='true'
-    ondragstart='onDragStart(event);'>
+    ondragstart='onDragStart(event)'>
       draggable
   </span>
 
   <span
-    ondragover='onDragOver(event);'
-    ondrop='onDrop(event);'>
+    ondragover='onDragOver(event)'
+    ondrop='onDrop(event)'>
       dropzone
   </span>
 </div>

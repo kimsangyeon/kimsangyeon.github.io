@@ -105,7 +105,7 @@ class CommentForm(forms.ModelForm):
 
 <br>
 
-```HTML
+```html
 >>> f = CommentForm(auto_id=False)
 >>> f.as_table()
 <tr><th>Name:</th><td><input type="text" name="name" class="special" required /></td></tr>

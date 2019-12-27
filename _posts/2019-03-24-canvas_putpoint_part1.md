@@ -16,7 +16,7 @@ canvas에 이벤트를 활용하여 간단한 그리기 도구 만들기
 
 ##### canvas tag
 
-```HTML
+```html
 <canvas id="canavs"></canvas>
 ```
 

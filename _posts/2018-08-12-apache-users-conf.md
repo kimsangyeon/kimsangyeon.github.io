@@ -17,7 +17,7 @@ author: yeon
 
 <br>
 
-```HTML
+```html
 <Directory "/Users/Username/Sites/">
     Options Indexes MultiViews
     AllowOverride All
