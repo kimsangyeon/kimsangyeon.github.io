@@ -35,4 +35,14 @@ author: yeon
 
 또 다른 예로 `DHCP snooping`이 있습니다. DHCP란 Dynamic Host Configuration Protocol의 약자로서, 호스트의 IP주소와 각종 TCP/IP 프로토콜의 기본 설정을 클라이언트에게 자동으로 제공해주는 프로토콜입니다. DHCP 지원 클라이언트는 네트워크 부팅과정에서 DHCP서버에 IP주소를 요청하고 얻을 수 있습니다. 여기서 `DHCP Snooping`이란 DHCP 서버를 보호하기 위해 사용하는 기능입니다. 이는 `DHCP spoofing`을 방어하기 위해 사용되며 DHCP 메시지의 내부까지 확인합니다.
 
+<br><br>
+
+## Spoofing
+
+마지막으로 `spoofing`은 spoof '속이다'라는 뜻으로 승인받은 사용자인 것처럼 속여 시스템에 접근하는 것을 말합니다. <br>
+
+<br>
+
+`IP spoofing`은 IP 패킷의 송신측 주소를 위조사칭하거나 Mac address changer 등이 있습니다.
+
 <br><br><br>
