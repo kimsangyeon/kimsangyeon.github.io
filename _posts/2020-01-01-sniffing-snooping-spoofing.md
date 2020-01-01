@@ -43,6 +43,6 @@ author: yeon
 
 <br>
 
-`IP spoofing`은 IP 패킷의 송신측 주소를 위조사칭하거나 Mac address changer 등이 있습니다.
+`spoofing` 예로는 IP 패킷의 송신측 주소를 위조사칭하는 `IP spoofing` 그리고 `Mac address changer` 등이 있습니다.
 
 <br><br><br>
