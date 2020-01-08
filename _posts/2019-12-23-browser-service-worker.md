@@ -46,7 +46,7 @@ author: yeon
 
 <br>
 
-`.register()`를 호출하면 `Service Worker`가 다운로드됩니다. 만약 스크립트를 다운로드하지 못하거나 실행중 로류가 발생하는 경우 register promise가 거부되고 `Service Worker`가 삭제 됩니다. <br>
+`.register()`를 호출하면 `Service Worker`가 다운로드됩니다. 만약 스크립트를 다운로드하지 못하거나 실행중 오류가 발생하는 경우 register promise가 거부되고 `Service Worker`가 삭제 됩니다. <br>
 - Chrome의 DevTools의 Application탭 `Service Worker` 섹션에서 오류 확인이 가능
 
 <br>
