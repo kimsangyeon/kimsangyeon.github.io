@@ -16,7 +16,7 @@ Javascript에서 숨기고 싶은 `Private Properties`를 가지고 싶을 때�
 
 아래는 Properties가 보호되지 못하는 경우를 살펴 보도록 구성된 코드입니다. 생성된 객체의 Member에 쉽게 접근하여 제거가 가능한 것을 보실 수 있습니다.
 
-```javscript
+```javascript
 const Person = (function () {
   function Person(name) {
     this.name = name;
