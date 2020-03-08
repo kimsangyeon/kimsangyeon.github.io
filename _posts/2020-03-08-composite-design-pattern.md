@@ -2,7 +2,7 @@
 layout: post
 title: 'Composite Pattern'
 categories: [design pattern]
-image: assets/images/banner/web.png
+image: assets/images/banner/designPattern.png
 author: yeon
 ---
 
