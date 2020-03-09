@@ -42,4 +42,25 @@ software enginnering에서 `composite pattern`은 partitioning design pattern �
 
 Leaft 객체는 요청을 직접 수행하는 역할을 하고 Composite 객체는 트리 구성요소 아래로 재귀적으로 자식 구성요소로 요청을 전달합니다. 이를 통해 객체를 균일하게 처리하여 쉽게 구현, 변경, 테스트 및 재사용을 할 수 있습니다. <br>
 
+<br><br>
+
+## Composite Pattern 사용
+
+객체의 구성과 개별 객체의 차이가 없을때 `composite pattern`을 사용합니다. 프로그래머가 동일한 방식으로 객체를 사용하고 객체를 처리하는 코드가 거의 동일한 경우 선택하여 사용하는 것이 좋습니다. 이 상황에서는 `promitives`와 `composite`를 균일하게 처리하는 것이 복잡성을 줄여줍니다.
+
 <br>
+
+### UML class and object diagram
+
+![composite uml]({{ site.baseurl }}/assets/images/banner/compositeUML.jpg)
+
+<br>
+
+위의 UML 다이어그램을 보면 `Client Class`는 `Leaf`와 `Composite`를 참조하지 않고 공통 `Component Interface`를 참조하여 `Leaf`와 `Composite`를 균일하게 처리합니다. <br>
+
+- `Leaf`는 자식을 가지지 않으며 직접 `Component Interface`를 구현합니다.
+- `Composite`는 Component 객체의 컨테이너를 유지하며 자식에게 요청을 전달합니다.
+
+<br>
+
+Sample Object Collaboration 다이어그램에서는 런타임 상호작용을 보여주고 있습니다. `Client Class`에서 최상위 `Composite` 객체에게 요청을 보냅니다. 그리고 최상위 `Composite` 객체는 트리 구조 아래의 모든 하위 구성요소에게 요청을 전달합니다.
