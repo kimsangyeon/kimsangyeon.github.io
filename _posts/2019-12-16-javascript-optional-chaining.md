@@ -11,7 +11,7 @@ author: yeon
 존재하지 않는 값에 대해 접근할 경우 발생하는 에러 <br> `Uncaught ReferenceError: obj is not defined` <br>
 한번쯤?은 Javascript 코드를 짜며 본적이 있을 것입니다. 존재하지 않는 객체, 참조에 대해 값을 요구하는 경우 발생합니다. 이를 방지하기 위해 객체가 존재하는지에 대한 예외처리는 필수적으로 이루어져야 합니다. 값에 대한 `null || undefine` 체크를 위해 if 혹은 lodash의 isNil과 값은 검사 구문들이 들어갑니다. 값에 대한 검사는 필수이지만 이러한 코드가 많아질 수록 코드 가독성은 떨어집니다. 이를 위해 Javascript `Optional Chaining` 문법이 나왔습니다. 이는 2019.12.12 stage 3 Draft 되어 추후 표준으로 들어갈 것으로 생각됩니다. <br><br>
 
-현재 `Optional Chaining`은 `@babel/plugin-proposal-optional-chaining`을 추가하여 babel을 사용하여 변환사용이 가능합니다. <br>
+현재 `Optional Chaining`은 `@babel/plugin-proposal-optional-chaining`을 추가하여 사용이 가능합니다. <br>
 
 <br>
 
@@ -26,10 +26,10 @@ The optional chaining operator ?. permits reading the value of a property locate
 # Syntax
 
 ```javascript
-obj?.prop
-obj?.[expr]
-arr?.[index]
-func?.(args)
+obj?.prop;
+obj?.[expr];
+arr?.[index];
+func?.(args);
 ```
 
 위와 같이 ? 를 사용하여 프로퍼티 존재 유무를 체크 하는 형태로 코드 작성이 가능해집니다. 값이 없는 경우 undefined가 반환되고 함수인 경우 undefined, null이 아닌경우 실행 시킵니다. <br>

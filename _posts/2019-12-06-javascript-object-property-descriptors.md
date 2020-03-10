@@ -8,7 +8,7 @@ author: yeon
 
 # Javascript Object Property Descriptors
 
-모든 Object는 단순하게 Key, Value 쌍만 존재하는만 존재하는 것이 아니라 속성을 보거나 지정하는데 도움을 주는 속성 설명자가 있습니다. Property의 Attribute의 집합을 속성 설명자라고 합니다.
+모든 Object는 단순하게 Key, Value 쌍만 존재하는 것이 아니라 속성을 보거나 지정하는데 도움을 주는 속성 설명자가 있습니다. Property의 Attribute의 집합을 속성 설명자라고 합니다.
 
 <br><br>
 
