@@ -83,7 +83,7 @@ Sample Object Collaboration 다이어그램에서는 런타임 상호작용을 �
 
 ### UML Class Diagram
 
-![composite uml3]({{ site.baseurl }}/assets/images/banner/compositeUML3.jpg)
+![composite uml3]({{ site.baseurl }}/assets/images/banner/compositeUML3.png)
 
 <br>
 
