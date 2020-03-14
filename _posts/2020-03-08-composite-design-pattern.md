@@ -10,7 +10,7 @@ author: yeon
 
 에디터 구현시 사용했던 Element 구조의 형태가 `Composite Pattern`이였다는 것을 알고 구현에 사용했던 design pattern이 어떤 패턴에 해당하는 것인지 알고 구현했다면, 좀 더 좋은 프로그램 구조를 갖출 수 있지 않았을까 아쉬움을 가진채 위키피디아에 정리된 `Composite Pattern`을 다시 정리해 봅니다. <br>
 
-<br><br>
+<br><br><br>
 
 ## Composite Pattern 이란?
 
@@ -42,7 +42,7 @@ software enginnering에서 `composite pattern`은 partitioning design pattern �
 
 Leaft 객체는 요청을 직접 수행하는 역할을 하고 Composite 객체는 트리 구성요소 아래로 재귀적으로 자식 구성요소로 요청을 전달합니다. 이를 통해 객체를 균일하게 처리하여 쉽게 구현, 변경, 테스트 및 재사용을 할 수 있습니다. <br>
 
-<br><br>
+<br><br><br>
 
 ## Composite Pattern 사용
 
@@ -64,3 +64,41 @@ Leaft 객체는 요청을 직접 수행하는 역할을 하고 Composite 객체�
 <br>
 
 Sample Object Collaboration 다이어그램에서는 런타임 상호작용을 보여주고 있습니다. `Client Class`에서 최상위 `Composite` 객체에게 요청을 보냅니다. 그리고 최상위 `Composite` 객체는 트리 구조 아래의 모든 하위 구성요소에게 요청을 전달합니다.
+
+<br><br>
+
+![composite uml2]({{ site.baseurl }}/assets/images/banner/compositeUML2.jpg)
+
+<br>
+
+위의 두 디자인은 컨테이너 Component에 자식을 추가/제거 그리고 자식 관련 작업을 정의하고 구현하는 모습입니다.
+
+- Design for uniformity(균일성 설계): 하위 관련 작업은 `Component Interface`에서 정의됩니다. 이를 통해 `Client`는 `Leaf` 및 `Composite`를 균일하게 처리 할 수 ​​있습니다. 그러나 `Client`가 `Leaf`에 대해 자식 관련 작업을 수행 할 수 있기 때문에 형식 안전이 손실됩니다.
+
+- Design for type safety(안전 설계): 자식 관련 작업은 `Composite`에서만 정의됩니다. `Client`는 `Leaf` 및 `Composite`를 다르게 취급해야합니다. `Client`가 `Leaf`에 대해 자식 관련 작업을 수행 할 수 없기 때문에 형식 안전성이 확보됩니다.
+
+**`Composite Pattern`은 안정성보다는 균일성을 중요시 합니다.**
+
+<br><br>
+
+### UML Class Diagram
+
+![composite uml3]({{ site.baseurl }}/assets/images/banner/compositeUML3.jpg)
+
+<br>
+
+#### Component
+
+- `Composite`를 포함한 모든 Component 추상화
+- `Composition`에 대한 Interface 선언
+- 재귀 구조에서 Component 상위에 엑세스 하기 위한 Interface를 정의
+
+#### Leaf
+
+- `Composition`의 `Leaf`
+- 모든 Component method 구현
+
+#### Composite
+
+- 자식이 있는 `Composite` Component
+- 자식 조작 방법 구현
