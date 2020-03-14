@@ -102,3 +102,88 @@ Sample Object Collaboration 다이어그램에서는 런타임 상호작용을 �
 
 - 자식이 있는 `Composite` Component
 - 자식 조작 방법 구현
+
+<br><br><br>
+
+## Composite Pattern 예제
+
+타원 또는 여러 그래픽 구성이 될 수 있는 `Graphic Class`를 구현합니다.
+
+<br>
+
+```
+Graphic ::= ellipse | GraphicList
+GraphicList ::= empty | Graphic GraphicList
+```
+
+<br>
+
+#### Javascript
+
+```javascript
+/** Component Interface */
+class Graphic {
+  constructor() {}
+
+  print() {
+    throw console.log('Override Print Method');
+  }
+}
+
+/** Composite */
+class CompositeGraphic extends Graphic {
+  constructor() {
+    super();
+    this.GraphicList = [];
+  }
+
+  add(graphic) {
+    this.GraphicList.push(graphic);
+  }
+
+  print() {
+    for (let g of this.GraphicList) {
+      g.print();
+    }
+  }
+}
+
+/** Leaf */
+class Ellipse extends Graphic {
+  constructor() {
+    super();
+  }
+
+  print() {
+    console.log('Ellipse');
+  }
+}
+
+/** Client */
+class CompositeDemo {
+  run() {
+    //Initialize four ellipses
+    const ellipse1 = new Ellipse();
+    const ellipse2 = new Ellipse();
+    const ellipse3 = new Ellipse();
+    const ellipse4 = new Ellipse();
+
+    //Creates two composites containing the ellipses
+    const graphic2 = new CompositeGraphic();
+    graphic2.add(ellipse1);
+    graphic2.add(ellipse2);
+    graphic2.add(ellipse3);
+
+    const graphic3 = new CompositeGraphic();
+    graphic3.add(ellipse4);
+
+    //Create another graphics that contains two graphics
+    const graphic1 = new CompositeGraphic();
+    graphic1.add(graphic2);
+    graphic1.add(graphic3);
+
+    //Prints the complete graphic (Four times the string "Ellipse").
+    graphic1.print();
+  }
+}
+```
