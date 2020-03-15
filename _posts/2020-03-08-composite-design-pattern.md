@@ -40,7 +40,7 @@ software enginnering에서 `composite pattern`은 partitioning design pattern �
 
 <br>
 
-Leaft 객체는 요청을 직접 수행하는 역할을 하고 Composite 객체는 트리 구성요소 아래로 재귀적으로 자식 구성요소로 요청을 전달합니다. 이를 통해 객체를 균일하게 처리하여 쉽게 구현, 변경, 테스트 및 재사용을 할 수 있습니다. <br>
+Leaf 객체는 요청을 직접 수행하는 역할을 하고 Composite 객체는 트리 구성요소 아래로 재귀적으로 자식 구성요소로 요청을 전달합니다. 이를 통해 객체를 균일하게 처리하여 쉽게 구현, 변경, 테스트 및 재사용을 할 수 있습니다. <br>
 
 <br><br><br>
 
