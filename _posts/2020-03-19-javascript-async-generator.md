@@ -57,4 +57,10 @@ function* getData() {
 }
 ```
 
-위에서 보았던 `async await`과 비교했을때 거의 같은 것을 볼 수 있습니다.
+위에서 보았던 `async await`과 비교했을때 거의 같은 것을 볼 수 있습니다. 여기서 사용된 `generator function`를 간단히 설명하자면,
+
+<br>
+
+function\* 선언 (끝에 별표가 있는 function keyword) 은 `generator function` 을 정의하는데, 이 함수는 Generator(iterator) 객체를 반환합니다. `generator function`이 호출되는 경우 `iterator`(반복자)가 반환되고 next() 메소드를 호출하면 `generator function`이 실행되고 `yield`문을 만날때까지 실행 된 후 표현식이 명시하는 `iterator`로 부터의 반환값을 반환합니다.
+
+<br>
