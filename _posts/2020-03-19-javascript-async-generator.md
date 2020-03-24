@@ -8,8 +8,7 @@ author: yeon
 
 # Javascript Async Function
 
-`async function` 선언은 AsyncFunction객체를 반환하는 하나의 비동기 함수를 정의합니다. 비동기 함수는 이벤트 루프를 통해 비동기적으로 작동하는 함수로, 암시적으로 Promise를 사용하여 결과를 반환합니다. 그러나 비동기 함수를 사용하는 코드의 구문과 구조는, 표준 동기 함수를 사용하는것과 많이 비슷합니다. <br>
-또한 async function expression을 사용해서 async function을 선언할 수 있습니다. <br>
+`async function` 선언은 Async Function객체를 반환하는 하나의 비동기 함수를 정의합니다. 비동기 함수는 이벤트 루프를 통해 비동기적으로 작동하는 함수로, 암시적으로 Promise를 사용하여 결과를 반환합니다. 그러나 비동기 함수를 사용하는 코드의 구문과 구조는, 표준 동기 함수를 사용하는것과 많이 비슷합니다. 또한 async function expression을 사용해서 async function을 선언할 수 있습니다. <br>
 
 MDN: [Javascript Async Function](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/async_function) <br>
 
@@ -44,8 +43,7 @@ function* getData() {
 }
 ```
 
-여기서 사용된 `generator function`를 간단히 설명하자면, <br>
-function\* 선언 (끝에 별표가 있는 function keyword) 은 `generator function` 을 정의하는데, 이 함수는 Generator(iterator) 객체를 반환합니다. `generator function`이 호출되는 경우 `iterator`(반복자)가 반환되고 next() 메소드를 호출하면 `generator function`이 실행되고 `yield`문을 만날때까지 실행 된 후 표현식이 명시하는 `iterator`로 부터의 반환값을 반환합니다. 이는 비동기 호출을 한 axios get에 대한 반환값이 `iterator`에 담겨 반환되는 값에 대한 제어가 필요합니다.
+여기서 사용된 `generator function`를 간단히 설명하자면 function\* 선언 (끝에 별표가 있는 function keyword) 은 `generator function` 을 정의하는데, 이 함수는 Generator(iterator) 객체를 반환합니다. `generator function`이 호출되는 경우 `iterator`(반복자)가 반환되고 next() 메소드를 호출하면 `generator function`이 실행되고 `yield`문을 만날때까지 실행 된 후 표현식이 명시하는 `iterator`로 부터의 반환값을 반환합니다. 이는 비동기 호출을 한 axios get에 대한 반환값이 `iterator`에 담겨 반환되는 값에 대한 제어가 필요합니다.
 
 <br>
 
@@ -68,6 +66,8 @@ function run(generator) {
 
 run(getData);
 ```
+
+`iterator` 객체를 처리할 반복처리기를 사용하여 비동기 로직을 처리하는 한 방법 입니다.
 
 <br><br>
 
