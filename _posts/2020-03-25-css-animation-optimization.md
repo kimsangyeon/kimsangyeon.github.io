@@ -14,12 +14,43 @@ author: yeon
 
 ## Browser Render Process
 
-브라우저 랜더링에서 중요한 `Reflow`와 `Repaint`에 대한 최적화는 항상 중요합니다. 불필요한 `Reflow`, `Repaint`시 성능이 굉장히 좋지 않기 때문에 작업시 유의가 필요합니다. `Reflow`는 브라우저 DOM Tree를 파싱하고 CSS Style에 맞게 레이아웃을 잡는 과정이라고 할 수 있습니다. 때문에 DOM 추가 및 제거, Style 변경시 `Reflow`가 발생하게 됩니다. 이후에 위치와 크기 그리고 스타일이 계산된 Render Tree(형상 Tree)를 이용하여 실제 픽셀 값을 채워 그리는 과정이 `Repaint`입니다. 
-
-![Render Tree]({{ site.baseurl }}/assets/images/renderTree.png)
+브라우저 랜더링에서 중요한 `Reflow`와 `Repaint`에 대한 최적화는 항상 중요합니다. 불필요한 `Reflow`, `Repaint`시 성능이 굉장히 좋지 않기 때문에 작업시 유의가 필요합니다. <br>
 
 <br>
 
-위의 브라우저 랜더링 과정을 본다면 `Reflow` -> `Repaint` 순으로 랜더링이 진행되기 때문에 `Reflow`시에는 `Repaint`가 항상 일어나므로 랜더링 성능을 최적화 하기 위해서는 `Reflow`가 필요하지 않은 동작은 `Repaint`만 실행될 수 있도록 최적화하는 것이 중요합니다. 여기서 하나 더 `Repaint` 동작 이후에 수행하는 것이 있는데 바로 `Composite`입니다.
+### Reflow Repaint
+
+`Reflow`는 브라우저 DOM Tree를 파싱하고 CSS Style에 맞게 레이아웃을 잡는 과정이라고 할 수 있습니다. 때문에 DOM 추가 및 제거, Style 변경시 `Reflow`가 발생하게 됩니다. 이후에 위치와 크기 그리고 스타일이 계산된 Render Tree(형상 Tree)를 이용하여 실제 픽셀 값을 채워 그리는 과정이 `Repaint`입니다. 
+
+![Render Tree]({{ site.baseurl }}/assets/images/renderTree.png)
+
+<br><br>
+
+### Composite
+
+위의 브라우저 랜더링 과정을 본다면 `Reflow` -> `Repaint` 순으로 랜더링이 진행되기 때문에 `Reflow`시에는 `Repaint`가 항상 일어나므로 랜더링 성능을 최적화 하기 위해서는 `Reflow`가 필요하지 않은 동작은 `Repaint`만 실행될 수 있도록 최적화하는 것이 중요합니다. 여기서 하나 더 `Repaint` 동작 이후에 수행하는 것이 있는데 바로 `Composite`입니다. <br>
+
+<br>
+
+`Composite`는 HTML과 CSS로 생성된 구역인 Layer 별로 `Repaint`하는 작업으로 한장의 bitmap으로 만드는 과정입니다. 해서 `Repaint`과정을 나눈 `Composite`만 수행하는 랜더링으로 최적화를 한다면 브라우저 랜더링을 좀 더 효율적으로 할 수 있습니다. 이는 Style을 적용할때 유의가 필요한데 이는 [CssTriggers](https://csstriggers.com/)에 정의된 Style을 참고하여 사용하면 될 것 같습니다. <br>
+
+<br><br>
+
+## CSS Animation
+
+위에서 보았던 브라우저 랜더링 과정을 참고하여 CSS Animation을 구현한다고 생각해봅시다. <br>
+
+<br>
+
+첫째로 Animaion은 동적으로 계속해서 움직이며 랜더링이 이루어지기 때문에 해당 Layer를 분리시키는 것이 좋습니다. Layer를 분리 시키지 않을시에 Animation이 설정된 DOM이 랜더링되며 아래 혹은 위 DOM Layout에 영향을 미친다면? Animation이 움직이는 Frame마다 `Reflow`가 일어나게 될테고 이는 최악의 퍼포먼스를 초례하게 될 것입니다. <br>
+
+<br>
+
+둘째로는 Animation이 설정된 DOM이 다른 DOM에 영향을 미치지 않도록 처리하였을때, 사용된 속성이 left, top 혹은 width, height라고 했을때 해당 DOM에 영향을 받는 범위에서 `Reflow` -> `Repaint`가 일어나게 될 것입니다. 여기서 `Reflow`가 일어나지 않는 속성을 사용하여 `Repaint`가 일어나게 한다면 **Better**, 더 나아가 `Composite`만 수행하게 한다면? **Best**일 것입니다. Animation 동작은 보통 위치를 움직인다거나 혹은 크기를 변경하는 동작이 많은데 이때 width, height를 통한 크기변경과 left, top 등을 이용하여 위치를 이동시키는 것이 아닌 **transform** 속성을 사용한다면 특정 브라우저 랜더링 엔진에서는 `Composite`만 수행하므로 랜더링을 보다 효율적으로 할 수 있을 것입니다. <br>
+
+![Composite Transform]({{ site.baseurl }}/assets/images/composite-transform.png)
+
+위의 이미지를 보면 랜더링엔진 `Blink`와 `Gecko`에 한에서 `Composite`만으로 랜더링하는 것을 볼 수 있습니다. 그리고 해당 내용을 본다면 "`transform`을 변경해도 지오메트리 변경이나 페인팅이 트리거되지 않으므로 매우 좋습니다. 이는 GPU의 도움으로 컴포 지터 스레드에서 작업을 수행 할 수 있음을 의미합니다."라고 명시되어 있습니다.
+
 
 <br>
