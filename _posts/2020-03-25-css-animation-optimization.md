@@ -20,7 +20,7 @@ author: yeon
 
 ### Reflow Repaint
 
-`Reflow`는 브라우저 DOM Tree를 파싱하고 CSS Style에 맞게 레이아웃을 잡는 과정이라고 할 수 있습니다. 때문에 DOM 추가 및 제거, Style 변경시 `Reflow`가 발생하게 됩니다. 이후에 위치와 크기 그리고 스타일이 계산된 Render Tree(형상 Tree)를 이용하여 실제 픽셀 값을 채워 그리는 과정이 `Repaint`입니다. 
+`Reflow`는 브라우저 DOM Tree를 파싱하고 CSS Style에 맞게 레이아웃을 잡는 과정이라고 할 수 있습니다. 때문에 DOM 추가 및 제거, Style 변경시 `Reflow`가 발생하게 됩니다. 이후에 위치와 크기 그리고 스타일이 계산된 Render Tree(형상 Tree)를 이용하여 실제 픽셀 값을 채워 그리는 과정이 `Repaint`입니다.
 
 ![Render Tree]({{ site.baseurl }}/assets/images/renderTree.png)
 
@@ -50,7 +50,58 @@ author: yeon
 
 ![Composite Transform]({{ site.baseurl }}/assets/images/composite-transform.png)
 
-위의 이미지를 보면 랜더링엔진 `Blink`와 `Gecko`에 한에서 `Composite`만으로 랜더링하는 것을 볼 수 있습니다. 그리고 해당 내용을 본다면 "`transform`을 변경해도 지오메트리 변경이나 페인팅이 트리거되지 않으므로 매우 좋습니다. 이는 GPU의 도움으로 컴포 지터 스레드에서 작업을 수행 할 수 있음을 의미합니다."라고 명시되어 있습니다.
+위의 이미지를 보면 랜더링엔진 `Blink`와 `Gecko`에 한에서 `Composite`만으로 랜더링하는 것을 볼 수 있습니다. 그리고 해당 내용을 본다면 "`transform`을 변경해도 지오메트리 변경이나 페인팅이 트리거되지 않으므로 매우 좋습니다. 이는 GPU의 도움으로 컴포지터 스레드에서 작업을 수행 할 수 있음을 의미합니다."라고 명시되어 있습니다. <br>
 
+<br><br>
+
+## requestAnimationFrame
+
+Animation 동작에서 브라우저에서 최적화된 애니매이션 동작을 위해 `requestAnimationFrame`을 사용하였습니다. `requestAnimationFrame`은 브라우저에게 수행하기를 원하는 애니메이션을 알리고 다음 리페인트가 진행되기 전에 해당 애니메이션을 업데이트하는 함수를 호출하게 합니다. 이 메소드는 리페인트 이전에 실행할 콜백을 인자로 받습니다. 사용되는 콜백의 회수는 보통 1초에 60회로 수행되어 브래우저에서 효율적으로 애니매이션 함수를 호출하여 사용하도록 도와줍니다. <br>
 
 <br>
+
+해당 `requestAnimationFrame`이 나오기 전에는 `setInterval`을 초당 60 프레임 호출을 목표로 동작을 수행하도록 구성하였습니다. <br>
+
+```javascript
+setInterval(() => {
+  // animation
+  ...
+}, 1000 / 60);
+```
+
+그렇다면 위 처럼 `setInterval`을 사용하는 것과 `requestAnimationFrame`을 사용하는 것은 별반 다르지 않을까? 할 수 있지만 `requestAnimationFrame`이 가지는 장점들이 있습니다.
+
+- 각 브라우저에 최적화되어 애니매이션이 좀 더 안정적이고 부드럽게 진행
+- 비활성 탭에 애니매이션은 중지되어 CPU 메모리를 사용하지 않음
+- 배터리 수명에 좀 더 이점을 가짐
+
+<br>
+
+### requestAnimationFrame Example
+
+`requestAnimationFrame`은 재귀 호출로 수행되며 인자로 실행될 애니메이션 동작을 가지는 콜백 함수를 받습니다.
+
+<br>
+
+```javascript
+const start = null;
+const element = document.getElementById('SomeElementYouWantToAnimate');
+element.style.position = 'absolute';
+
+function step(timestamp) {
+  if (!start) start = timestamp;
+  const progress = timestamp - start;
+  element.style.left = `${Math.min(progress / 10, 200)}px`;
+  if (progress < 2000) {
+    window.requestAnimationFrame(step);
+  }
+}
+
+window.requestAnimationFrame(step);
+```
+
+<br><br><br>
+
+참고: [MDN window.requestAnimationFrame()](https://developer.mozilla.org/ko/docs/Web/API/Window/requestAnimationFrame)
+
+<br><br><br>
