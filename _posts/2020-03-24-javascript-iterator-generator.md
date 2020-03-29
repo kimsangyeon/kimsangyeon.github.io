@@ -108,3 +108,40 @@ function* makeRangeIterator(start = 0, end = Infinity, step = 1) {
 위에서 보듯 `Generator`실행 후 반환된 iter는 `Generator` prototype을 가집니다. 그리고 해당 prototype은 **f [Symbol(Symbol.iterator)]()** function을 가진 prototype을 보실 수 있습니다.
 
 <br><br><br>
+
+## Iterables
+
+객체에 반복(**iterable**) 동작을 정의하는 경우 **for..of** 구조내에서 반복 가능합니다. **Array** 혹은 **Map** 등의 경우 반복동작을 내장형으로 가지지만 Object는 없습니다. 반복이 가능하기 위해서는 **@@iterable** 메소드를 구현해야합니다. 객체(혹은 그 prototype 체인에 등장하는 객체 중 하나)가 Symbol.iterator 키를 갖는 속성이 있어야 함을 뜻합니다. <br>
+
+<br>
+
+### Iterables Example
+
+다음은 반복가능 객체를 반드는 예제입니다.
+
+```javascript
+const myIterable = {
+    *[Symbol.iterator]() {
+        yield 1;
+        yield 2;
+        yield 3;
+    }
+}
+
+for (let value of myIterable) {
+    console.log(value);
+}
+// 1
+// 2
+// 3
+
+or
+
+[...myIterable]; // [1, 2, 3]
+```
+
+<br>
+
+String, Array, TypedArray, Map 및 Set은 모두 내장 반복가능 객체입니다. 그들의 prototype 객체가 모두 **Symbol.iterator** 메서드가 있기 때문입니다. <br>
+
+<br><br><br>
