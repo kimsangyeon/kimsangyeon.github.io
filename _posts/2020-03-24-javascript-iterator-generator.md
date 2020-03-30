@@ -8,7 +8,7 @@ author: yeon
 
 # Javascript Iterator Generator
 
-Javascript에서는 for 루프, map() filter() 등 컬렉션을 반복할 수 있는 많은 방법들을 제공합니다. 여기서 `반복기(iterator)` 및 `생성기(generator)`는 반복 개념을 핵심 언어 내로 바로 가져와 for...of 루프의 동작(behavior)을 사용자 정의하는 메커니즘을 제공합니다. [참고 MDN]
+Javascript에서는 for 루프, map() filter() 등 컬렉션을 반복할 수 있는 많은 방법들을 제공합니다. 여기서 `반복기(iterator)` 및 `생성기(generator)`는 반복 개념을 핵심 언어 내로 바로 가져와 for..of 루프의 동작(behavior)을 사용자 정의하는 메커니즘을 제공합니다. [참고 MDN]
 
 <br><br>
 
@@ -40,7 +40,12 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
         return { done: true };
       }
 
-      result = { value: nextIndex, done: nextIndex === end };
+      if (nextIndex === end) {
+        result = { value: prevIndex, done: true };
+      } else {
+        result = { value: nextIndex, done: false };
+      }
+
       prevIndex = nextIndex;
       nextIndex += step;
 
@@ -72,11 +77,11 @@ console.log('Iterated over sequence of size: ', result.value);
 
 ## Generator
 
-`Iterator`는 유용하게 만들어 사용할 수 있지만 생성할때 유의가 필요합니다. `Iterator` 내부에 사용되는 상태를 유지하고 관리하는 로직을 고려하여야합니다. `Generator`는 이러한 상태 관리에 도움을 주는 `iterative algorithm`을 정의 할 수 있도록 도와줍니다. <br>
+`Iterator`는 유용하게 만들어 사용할 수 있지만 생성할 때 유의가 필요합니다. `Iterator` 내부에 사용되는 상태를 유지하고 관리하는 로직을 고려하여야 합니다. `Generator`는 이러한 상태 관리에 도움을 주는 `iterative algorithm`을 정의 할 수 있도록 도와줍니다. <br>
 
 <br>
 
-`Generator`는 **function\***문법을 사용하여 작성됩니다. 그리고 `Generator` 함수가 최초로 호출될때 함수 내부의 코드는 실행되지 않고 생성자라고 불리는 생성자 타입을 반환합니다. <br>
+`Generator`는 **function\***문법을 사용하여 작성됩니다. 그리고 `Generator` 함수가 최초로 호출될 때 함수 내부의 코드는 실행되지 않고 생성자라 불리는 생성자 타입을 반환합니다. <br>
 
 <br>
 
