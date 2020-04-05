@@ -8,7 +8,7 @@ author: yeon
 
 # Coroutine Event Loops in Javascript
 
-ECMAScript 6 (es6)에는 생성자 및 코루틴을 구현하기위해 yield 키워드가 도입되었습니다. 코루틴은 콜백 함수의 대안으로 이벤트 루프를 구현하는 것이며 좀 더 우아한 로직을 구현할 수 있도록 도와줍니다. <br>
+ECMAScript 6 (es6)에는 생성자 및 코루틴을 구현하기위해 yield 키워드가 도입되었습니다. 코루틴은 콜백 함수의 대안으로 이벤트 루프를 구현한 것이며 좀 더 우아한 로직을 구현할 수 있도록 도와줍니다. <br>
 
 <br><br>
 
@@ -40,7 +40,7 @@ tester.next('a dog'); // prints 'Then I got: a dog'
 
 <br>
 
-앞서 설명하였든 코루틴을 next() 메소드로 실행하며 다음 코루틴에 사용할 string을 주입하여 다음 코루틴에서 사용해보았습니다. <br>
+앞서 설명하였던 코루틴을 next() 메소드로 실행하며 다음 코루틴에 사용할 string을 주입하여 다음 코루틴에서 사용해보았습니다. <br>
 
 <br><br>
 
@@ -101,7 +101,7 @@ clock(); // prints 'Tick!'
 setInterval(clock, 1000);
 ```
 
-다음과 같이 코루틴을 사용하여 setInterval로 1초마다 실행시 1초마다 시간을 출력하는 시계도 쉽게 구현이 가능 할 것입니다. <br>
+다음과 같이 코루틴을 사용하여 setInterval로 1초마다 시간을 출력하는 시계도 쉽게 구현이 가능 할 것입니다. <br>
 
 <br><br>
 
@@ -110,23 +110,23 @@ setInterval(clock, 1000);
 코루틴을 이벤트의 콜백으로 사용할 수 있습니다. 다음 예는 네모 상자를 드래그하는 예입니다. <br>
 
 1. 상자에서 mousedown 을 기다립니다.
-2. mouseown이후 mousemove 이벤트를 처리하고 실제로 상자를 움직입니다.
+2. mousedown이후 mousemove 이벤트를 처리하고 실제로 상자를 움직입니다.
 3. mouseup 이벤트가 발생하기까지 상자가 움직입니다.
 
 <br>
 
 ```javascript
-   const loop = coroutine(function\*() {
-   const event;
-   while (event = yield) { // wait for a mousedown
-   if (event.type == 'mousedown') {
-   while (event = yield) { // process mousemoves until a mouseup
-   if (event.type == 'mousemove') move(event);
-   if (event.type == 'mouseup') break;
-   }
-   }
-   }
-   });
+const loop = coroutine(function\*() {
+  const event;
+  while (event = yield) { // wait for a mousedown
+    if (event.type == 'mousedown') {
+      while (event = yield) { // process mousemoves until a mouseup
+        if (event.type == 'mousemove') move(event);
+        if (event.type == 'mouseup') break;
+      }
+    }
+  }
+});
 ```
 
 yield를 while의 조건으로 설정하여 event를 받아와 다음 코루틴 동작을 수행하도록 합니다. <br>
