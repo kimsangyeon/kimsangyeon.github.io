@@ -2376,6 +2376,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.tmon img,
 		.image.editor img,
 		.image.office img {
 			width: 280px;

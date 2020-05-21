@@ -3,6 +3,7 @@ layout: page
 title: PORTFOLIO
 comments: true
 ---
+
 <head>
     <title>Photon by HTML5 UP</title>
     <meta charset="utf-8" />
@@ -16,8 +17,7 @@ comments: true
         <div class="inner">
             <span class="icon major fa-cloud"></span>
             <h1><strong>Front-End</strong> Developer</h1>
-            <p>현재 <strong>Javascript</strong> 스토킹 중인 김상연입니다.</p>
-            <p>김상연의 개발자 Life는 <strong>ing...</strong></p>
+            <p><strong>Javascript</strong> 개발자 김상연입니다.</p>
             <ul class="actions special">
                 <li><a href="https://github.com/kimsangyeon" class="button scrolly">GitHub</a></li>
             </ul>
@@ -32,9 +32,17 @@ comments: true
             <p>Javascript Front-End Web Service.</p>
             <div class="row gtr-150">
                 <div class="col-4 col-12-medium">
+                    <span class="image tmon"><img src="images/about/tmon.png" alt="" /></span>
+                    <h3><a href="#resume-tmon">TMON</a></h3>
+                    <p>2019.11 ~ ing</p>
+                    <ul class="actions special">
+                        <li><a href="https://www.tmon.co.kr/" class="button">More</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-12-medium">
                     <span class="image editor"><img src="images/about/editor.png" alt="" /></span>
                     <h3><a href="#resume-synapeditor">Synap Editor</a></h3>
-                    <p>2018.02 ~ ing</p>
+                    <p>2018.02 ~ 2019.11</p>
                     <ul class="actions special">
                         <li><a href="http://www.synapsoft.co.kr/editor" class="button">More</a></li>
                     </ul>
@@ -50,6 +58,36 @@ comments: true
             </div>
         </div>
     </section>
+    <!-- TMON -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2 id="resume-tmon">TMON</h2><br>
+                        <h5>2019.11 ~ ing</h5>
+                    </header>
+                    <h3>Description</h3>
+                    <p>TMON FE 프론트엔드 개발팀에서 개발</p>
+                    <p>TMON 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현.</p><br>
+                    <h3>Tech</h3>
+                    <p>Javascript, Jquery가 주로 사용되었으며, ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. React 사용하여 딜상세 페이지 부분 개편.</p><br>
+                    <h4>딜상세</h4>
+                    <ul>
+                        <li>React 부분 개편 작업</li>
+                        <li>API 호출 개선</li>
+                    </ul>
+                    <h4>홈 메인</h4>
+                    <ul>
+                        <li>브랜드관 애니메이션 인터렉션 구현</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium">
+                    <span class="image fit"><img src="images/about/tmon2.jpg" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- SynapEditor -->
     <section id="one" class="main style1">
         <div class="container">
@@ -57,7 +95,7 @@ comments: true
                 <div class="col-6 col-12-medium">
                     <header class="major">
                         <h2 id="resume-synapeditor">Synap Editor</h2><br>
-                        <h5>2018.02 ~ ing</h5>
+                        <h5>2018.02 ~ 2019.11</h5>
                     </header>
                     <h3>Description</h3>
                     <p>ContentEditable을 사용하지 않은 모델 편집중심 웹 에디터 개발 참여.</p>
@@ -116,11 +154,6 @@ comments: true
                         <li>오피스 워드 도형 표현</li>
                         <li>오피스 셀 도형 표현</li>
                         <li>슬라이드 랜더링 성능 개선</li>
-                    </ul>
-                    <h4>문서 공유</h4>
-                    <ul>
-                        <li>문서 뷰 공유</li>
-                        <li>문서 퍼블리싱</li>
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
