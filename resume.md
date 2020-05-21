@@ -69,7 +69,7 @@ comments: true
                     </header>
                     <h3>Description</h3>
                     <p>TMON FE 개발</p>
-                    <p>TMON 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현.</p><br>
+                    <p>TMON 상품 판매 페이지인 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현.</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. React 사용하여 딜상세 페이지 부분 개편.</p><br>
                     <h4>딜상세</h4>
