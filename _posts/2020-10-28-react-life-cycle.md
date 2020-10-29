@@ -56,7 +56,7 @@ Virtual DOM은 더블 버퍼링 형태로 랜더링 단계 (Render Phase)에서 
 <br><br>
 
 
-![React Fiber]({{ site.baseurl }}/assets/images/react-fiber.jpeg)
+![React Fiber]({{ site.baseurl }}/assets/images/react-fiber.png)
 
 <br>
 
