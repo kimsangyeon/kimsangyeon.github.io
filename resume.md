@@ -69,13 +69,15 @@ comments: true
                     </header>
                     <h3>Description</h3>
                     <p>TMON FE 개발</p>
-                    <p>TMON 상품 판매 페이지인 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현.</p><br>
+                    <p>TMON 상품 판매 페이지인 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현. Webpack 버전 마이그레이션(1->4)</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. React 사용하여 딜상세 페이지 부분 개편.</p><br>
                     <h4>딜상세</h4>
                     <ul>
-                        <li>React 부분 개편 작업</li>
-                        <li>API 호출 개선</li>
+                        <li>딜상세 페이지 상품정보 영역 React 부분 전환</li>
+                        <li>Intersection Observer 활용한 API 호출 개선</li>
+                        <li>메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
+                        <li>Webpack 1버전 사용 프로젝트 4번으로 마이그레이션</li>
                     </ul>
                     <h4>홈 메인</h4>
                     <ul>
@@ -99,7 +101,7 @@ comments: true
                     </header>
                     <h3>Description</h3>
                     <p>ContentEditable을 사용하지 않은 모델 편집중심 웹 에디터 개발 참여.</p>
-                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 원활한 입력이 가능한 IME(입력기) 개발, 에디터 편집을 전담하여 개발하였습니다. GS인증 1등급 획득 완료하였으며, 현재 개발 진행 중입니다.</p><br>
+                    <p>사이냅 에디터 프로젝트 시작부터 제품 출시까지 원활한 입력이 가능한 IME(입력기) 개발, 에디터 편집을 전담하여 개발하였습니다.</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, MVC Model 편집부터 랜더링 구조로 작업. Mocha, karma를 사용한 브라우저 테스트 환경 구축. ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. cross browsing 지원 작업 (IE10 이상)</p><br>
                     <h4>에디터 편집</h4>
