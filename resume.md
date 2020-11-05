@@ -69,19 +69,18 @@ comments: true
                     </header>
                     <h3>Description</h3>
                     <p>TMON FE 개발</p>
-                    <p>TMON 상품 판매 페이지인 딜상세 개발을 담당하며 딜상세 일부 영역 React 부분 개편작업. API 호출 개선 및 랜더링 개선. TMON 홈 메인 페이지 브랜드관 애니메이션 인터렉션 구현. Webpack 버전 마이그레이션(1->4)</p><br>
+                    <p>TMON 상품 판매 페이지인 딜상세 개발을 주로 담당하며, 고객이 보기 편한 UI와 상품 구매를 손쉽게 할 수 있도록 개발하였습니다.</p><br>
                     <h3>Tech</h3>
                     <p>Javascript, Jquery가 주로 사용되었으며, ES6 문법으로 작성 webpack, babel을 사용하여 모듈화. React 사용하여 딜상세 페이지 부분 개편.</p><br>
                     <h4>딜상세</h4>
                     <ul>
                         <li>딜상세 페이지 상품정보 영역 React 부분 전환</li>
-                        <li>Intersection Observer 활용한 API 호출 개선</li>
-                        <li>메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
-                        <li>Webpack v1에서 v4로 마이그레이션</li>
+                        <li>Intersection Observer 활용한 API 호출 및 랜더링 개선</li>
+                        <li>Webpack 마이그레이션 (1 -> 4)</li>
                     </ul>
                     <h4>홈 메인</h4>
                     <ul>
-                        <li>브랜드관 애니메이션 인터렉션 구현</li>
+                        <li>TMON 홈 메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
