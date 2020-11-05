@@ -77,7 +77,7 @@ comments: true
                         <li>딜상세 페이지 상품정보 영역 React 부분 전환</li>
                         <li>Intersection Observer 활용한 API 호출 개선</li>
                         <li>메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
-                        <li>Webpack 1버전 사용 프로젝트 4번으로 마이그레이션</li>
+                        <li>Webpack v1에서 v4로 마이그레이션</li>
                     </ul>
                     <h4>홈 메인</h4>
                     <ul>
