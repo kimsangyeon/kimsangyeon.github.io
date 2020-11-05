@@ -76,12 +76,11 @@ comments: true
                     <ul>
                         <li>딜상세 페이지 상품정보 영역 React 부분 전환</li>
                         <li>Intersection Observer 활용한 API 호출 및 랜더링 개선</li>
-                        <li>TMON 홈 메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
                         <li>Webpack 마이그레이션 (1 -> 4)</li>
                     </ul>
                     <h4>홈 메인</h4>
                     <ul>
-                        <li>브랜드관 애니메이션 인터렉션 구현</li>
+                        <li>TMON 홈 메인 페이지에 사용자 인터렉션 가능한 브랜드관 애니메이션 구현</li>
                     </ul>
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
