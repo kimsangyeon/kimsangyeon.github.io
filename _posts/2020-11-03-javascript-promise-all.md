@@ -66,7 +66,7 @@ Promise.all([promise1, promise2, promise3]).then((v) => {
 
 <br>
 
-**Promise.all**은 실패 우선성을 띄기 때문에 실패할 수 있는 동작을 앞에두어 사전처리 할 수 있습니다.
+**Promise.all**은 실패 우선성을 띄기 때문에 실패할 수 있는 동작을 앞에두어 사전처리 할 수 있다.
 
 <br><br>
 
