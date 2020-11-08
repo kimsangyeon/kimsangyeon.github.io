@@ -119,6 +119,38 @@ setTimeout(() => {
 
 <br><br>
 
+### Promise.all Polyfill
+
+```javascript
+Promise.all = function ( promises ) {
+  return new Promise( function ( fulfil, reject ) {
+    var result = [], pending, i, processPromise;
+
+    if ( !promises.length ) {
+      fulfil( result );
+      return;
+    }
+
+    processPromise = function ( i ) {
+      promises[i].then( function ( value ) {
+        result[i] = value;
+
+        if ( !--pending ) {
+          fulfil( result );
+        }
+      }, reject );
+    };
+
+    pending = i = promises.length;
+    while ( i-- ) {
+      processPromise( i );
+    }
+  });
+};
+```
+
+<br><br>
+
 ## Promise allSettled
 
 **Promise.all**의 경우에는 하나라도 실패시 실패로 간주되어 처리된다. 이를 개선(?)한 성공과 실패를 나누어 처리하도록 해주는 allSettled가 있다.
@@ -156,6 +188,22 @@ setTimeout(() => {
 
 **Promise.allSettled**를 사용할 경우 reject 되더라도 iterable로 전달받은 Promise를 모두 수행하며, 결과로는 fulfilled와 rejected 상태값을 모두 가진 결과를 가진다.
 
+<br><br>
+
+## Promise.allSettled Polyfill
+
+```javascript
+Promise.allSettled = Promise.allSettled || ((promises) => Promise.all(promises.map(p => p
+  .then(v => ({
+    status: 'fulfilled',
+    value: v,
+  }))
+  .catch(e => ({
+    status: 'rejected',
+    reason: e,
+  }))
+)));
+```
 
 <br><br>
 
