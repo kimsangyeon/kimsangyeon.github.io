@@ -145,6 +145,75 @@ function addEvent(node, event, fn, opt_useCapture) {
 
 <br><br>
 
+root 기준 감시를 위해서 html 혹은 body 기준으로 rootRect를 구한다.
+
+```javascript
+/**
+ * Returns the root rect after being expanded by the rootMargin value.
+ * @return {ClientRect} The expanded root rect.
+ * @private
+ */
+IntersectionObserver.prototype._getRootRect = function() {
+  var rootRect;
+  if (this.root) {
+    rootRect = getBoundingClientRect(this.root);
+  } else {
+    // Use <html>/<body> instead of window since scroll bars affect size.
+    var html = document.documentElement;
+    var body = document.body;
+    rootRect = {
+      top: 0,
+      left: 0,
+      right: html.clientWidth || body.clientWidth,
+      width: html.clientWidth || body.clientWidth,
+      bottom: html.clientHeight || body.clientHeight,
+      height: html.clientHeight || body.clientHeight
+    };
+  }
+  return this._expandRectByRootMargin(rootRect);
+};
+
+```
+
+<br><br>
+
+하지만 옵션으로 root를 받을 경우 root getBoundingClientRect 기준으로 감시하도록 되어있다.
+
+```javascript
+/**
+ * Shims the native getBoundingClientRect for compatibility with older IE.
+ * @param {Element} el The element whose bounding rect to get.
+ * @return {DOMRect|ClientRect} The (possibly shimmed) rect of the element.
+ */
+function getBoundingClientRect(el) {
+  var rect;
+
+  try {
+    rect = el.getBoundingClientRect();
+  } catch (err) {
+    // Ignore Windows 7 IE11 "Unspecified error"
+    // https://github.com/w3c/IntersectionObserver/pull/205
+  }
+
+  if (!rect) return getEmptyRect();
+
+  // Older IE
+  if (!(rect.width && rect.height)) {
+    rect = {
+      top: rect.top,
+      right: rect.right,
+      bottom: rect.bottom,
+      left: rect.left,
+      width: rect.right - rect.left,
+      height: rect.bottom - rect.top
+    };
+  }
+  return rect;
+}
+```
+
+<br><br>
+
 ## Intersection Obeserver 활용
 
 ### Photo List 영역 Infinity Scroll로 구현된 경우
