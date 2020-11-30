@@ -314,6 +314,11 @@ root와의 교차점이 변경된 요소. (target) <br>
 ### IntersectionObserverEntry.time
 
 문서가 생성되고나서 intersectionObserver 교차점이 기록된 시간 <br>
+
+<br><br>
+
+### example
+
 IntersectionObserver callback에서 받는 Entry 정보로 callback 내부에서 target 노출과 관련된 코드를 작설 할 수 있다. <br>
 
 ```jsx
