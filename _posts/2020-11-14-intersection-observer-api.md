@@ -48,7 +48,7 @@ intersection observer를 생성하기 위해서는 생성자 호출 시 콜백 �
 
 ## Intersection observer 설정
 
-**IntersectionObserver**` 생성자에 전달되는 `options` 객체는 observer 콜백이 호출되는 상황을 조작할 수 있습니다. 이는 아래와 같은 필드를 가진다. <br>
+**IntersectionObserver** 생성자에 전달되는 ` options` 객체는 observer 콜백이 호출되는 상황을 조작할 수 있습니다. 이는 아래와 같은 필드를 가진다. <br>
 
 <br>
 
@@ -56,7 +56,7 @@ intersection observer를 생성하기 위해서는 생성자 호출 시 콜백 �
 
 <br>
 
-**`rootMargin`** root 가 가진 여백입니다. 이 속성의 값은 CSS의 **margin**` 속성과 유사하다. e.g. "`10px 20px 30px 40px"` (top, right, bottom, left). 이 값은 퍼센티지가 될 수 있다. 이것은 root 요소의 각 측면의 bounding box를 수축시키거나 증가시키며, 교차성을 계산하기 전에 적용된다. 기본값은 0이다. <br>
+**`rootMargin`** root 가 가진 여백입니다. 이 속성의 값은 CSS의 **margin** 속성과 유사하다. e.g. `"10px 20px 30px 40px"` (top, right, bottom, left). 이 값은 퍼센티지가 될 수 있다. 이것은 root 요소의 각 측면의 bounding box를 수축시키거나 증가시키며, 교차성을 계산하기 전에 적용된다. 기본값은 0이다. <br>
 
 <br>
 
@@ -234,9 +234,9 @@ function getBoundingClientRect(el) {
 
 ### img가 나열된 경우 스크롤시 lazy loading
 
-스크롤이 존재하는 영역안에 여러 <img> 가 존재하는 경우 스크롤에 따라 lazy loading을 구현 할 수 있다. <br>
+스크롤이 존재하는 영역안에 여러 \<img\> 가 존재하는 경우 스크롤에 따라 lazy loading을 구현 할 수 있다. <br>
 
-최초 랜더링시 img를 가져올 주소를 data-src와 같은 곳에 설정, img를 target으로 두고 노출여부 isIntersecting 되었을 경우 data-src 주소를 src에 넣어 img가 랜더링되도록 한다. <br>
+최초 랜더링시 \<img\>를 가져올 주소를 data-src와 같은 곳에 설정, img를 target으로 두고 노출여부 isIntersecting 되었을 경우 data-src 주소를 src에 넣어 \<img\>가 랜더링되도록 한다. <br>
 
 ```html
 <!-- 노출전 -->
@@ -256,9 +256,9 @@ const imageObserver = new IntersectionObserver((entries, imgObserver) => {
         if(entry.isIntersecting) {
             const lazyImage = entry.target;
             lazyImage.src = lazyImage.dataset.src;
-						imageObserver.unobserve(lazyImage);
+            imageObserver.unobserve(lazyImage);
         }
-    })
+    });
 });
 
 imageObserver.observe(document.querySelectorAll('img.lazyImg'));
@@ -314,6 +314,11 @@ root와의 교차점이 변경된 요소. (target) <br>
 ### IntersectionObserverEntry.time
 
 문서가 생성되고나서 intersectionObserver 교차점이 기록된 시간 <br>
+
+<br><br>
+
+### example
+
 IntersectionObserver callback에서 받는 Entry 정보로 callback 내부에서 target 노출과 관련된 코드를 작설 할 수 있다. <br>
 
 ```jsx
