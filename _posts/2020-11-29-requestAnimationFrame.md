@@ -8,13 +8,13 @@ author: yeon
 
 # requestAnimationFrame
 
-**requestAnimationFrame**은 브라우저에게 다음에 수행할 애니메이션을 알려 브라우저 리페인트가 좀 더 원활하게 동작할 수 있게 하다. <br>
-해당 메소드는 다음으로 실행할 메소드를 콜백인자로 받으며 연속된 애니메이션을 수행하기위해서는 해당 메소드 내부에서 재귀 호출이 필요하다. <br>
+**requestAnimationFrame**은 브라우저에게 다음에 수행할 애니메이션을 알려 브라우저 리페인트가 좀 더 원활하게 동작할 수 있게 한다. <br>
+해당 메소드는 다음으로 실행할 메소드를 콜백인자로 받으며 연속된 애니메이션을 수행하기 위해서는 해당 메소드 내부에서 재귀 호출이 필요하다. <br>
 
 <br>
 
 화면이 새로운 애니메이션을 업데이트할 준비가 될때마다 메소드를 호출하는 것이 좋다. <br>
-일반적으로 콜백의 수는 보통 1초에 60회인 60fps를 선호한다. **requestAnimationFrame**은 호출시 디스플레이 주사율에 맞추어 수행되며 해당 호출은 백그라운드 탭이나 hidden iframe에서는 실행을 중단하여 성능과 배터리 수명향상에 도움을 준다. <br>
+일반적으로 콜백의 수는 보통 1초에 60회인 60fps를 선호한다.(대략 16ms에 1번) **requestAnimationFrame**은 호출시 디스플레이 주사율에 맞추어 수행되며 해당 호출은 백그라운드 탭이나 hidden iframe에서는 실행을 중단하여 성능과 배터리 수명향상에 도움을 준다. <br>
 
 <br>
 
@@ -68,7 +68,7 @@ window.requestAnimationFrame(step);
 
 ### requestAnimationFrame Polyfill
 
-현재시간에서 지난 시간을 계산하여 callback의 인자로 DOMHighResTimeStamp를 넘겨주고 setTimeout을 16ms에 맞게 실행되도록 한다. <br>
+현재시간에서 지난 시간을 계산하여 callback의 인자로 DOMHighResTimeStamp를 넘겨주고 setTimeout을 16ms 안으로 실행되도록 한다. 계산시 16ms 보다 시간이 경과한 경우 setTimeout ms를 0으로 설정한다.<br>
 
 ```jsx
 (function() {
