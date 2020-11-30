@@ -218,17 +218,17 @@ function getBoundingClientRect(el) {
 
 ### Photo List 영역 Infinity Scroll로 구현된 경우
 
-<ul> 영역 하위로 <li> 리스트로 이미지가 스크롤시 맨 밑 영역에서 새로운 이미지를 추가 한다. <br>
+\<ul\> 영역 하위로 \<li\> 리스트로 이미지가 스크롤시 맨 밑 영역에서 새로운 이미지를 추가 한다. <br>
 
 가장하단에 target으로 삼을 Element를 두고 해당 target 기준으로 이미지를 추가하며 랜더링하도록 한다. <br>
 
 <br>
 
-<ul>은 항상 높이 값을 가지며 이미지를 추가한다. 특정 높이 혹은 이미지 개수에 따라 새로운 <ul>을 생성하며 그 하위로 <li> 다시 infinity Scroll로 갱신하여 영역을 구분한다. 그리고 특정 영역 혹은 높이를 벗어 나는 경우 <ul>의 자식들을 비워줌으로써 페이지의 DOM 개수가 너무 많아 랜더링이 느려지는 현상을 방지한다. (<ul>에서 높이를 유지하기 때문에 스크롤은 유지됨) <br>
+\<ul\>은 항상 높이 값을 가지며 이미지를 추가한다. 특정 높이 혹은 이미지 개수에 따라 새로운 \<ul\>을 생성하며 그 하위로 \<li\> 다시 infinity Scroll로 갱신하여 영역을 구분한다. 그리고 특정 영역 혹은 높이를 벗어 나는 경우 \<ul\>의 자식들을 비워줌으로써 페이지의 DOM 개수가 너무 많아 랜더링이 느려지는 현상을 방지한다. (\<ul\>에서 높이를 유지하기 때문에 스크롤은 유지됨) <br>
 
 <br>
 
-다시 스크롤을 올려 viewport 영역으로 들어올시 역순으로  <li>이미지를 추가하며 랜더링한다. <br>
+다시 스크롤을 올려 viewport 영역으로 들어올시 역순으로  \<li\>이미지를 추가하며 랜더링한다. <br>
 
 <br><br>
 
@@ -266,7 +266,100 @@ imageObserver.observe(document.querySelectorAll('img.lazyImg'));
 
 <br><br>
 
+## IntersectionObserverEntry
+
+IntersectionObserverEntry는 IntersectionObserver 콜백으로 전달되며 observer 객체에 설정된 options root와 target의 교차 정보를 알려준다. <br>
+
+<br>
+
+### IntersectionObserverEntry.boundingClientRect
+
+target의 경계값을 DOMRectReadOnly로 반환하여 알려준다. <br>
+
+- DOMRectReadOnly
+    - x, y, width, height, top, right, bottom, left
+
+<br>
+
+### IntersectionObserverEntry.intersectionRect
+
+target의 가시영역을 나타내는 DOMRectReadOnly를 반환한다. <br>
+
+<br>
+
+### IntersectionObserverEntry.rootBounds
+
+intersectionObserver root에 대한 DOMRectReadOnly를 반환한다. <br>
+
+<br>
+
+### IntersectionObserverEntry.intersectionRatio
+
+boundingclientRect에 대한 intersectionRect 비율을 반환한다. <br>
+
+<br>
+
+### IntersectionObserverEntry.isIntersecting
+
+target 요소가 intersectionObserver root와 교차하는 상황에 노출 조건 참인 경우 true 아닌 경우 false를 반환한다. <br>
+
+<br>
+
+### IntersectionObserverEntry.target
+
+root와의 교차점이 변경된 요소. (target) <br>
+
+<br>
+
+### IntersectionObserverEntry.time
+
+문서가 생성되고나서 intersectionObserver 교차점이 기록된 시간 <br>
+IntersectionObserver callback에서 받는 Entry 정보로 callback 내부에서 target 노출과 관련된 코드를 작설 할 수 있다. <br>
+
+```jsx
+  function handleIntersect(entries) {
+    entries.forEach(entry => {
+      if (entry.isInterSecting) {
+        target.style.display = 'visible';
+      }
+    });
+  }
+
+  const target = document.getElementById('target');
+  const observer = new IntersectionObserver(handleIntersect);
+  observer.observe(target);
+
+```
+
+<br>
+
+간단한 예로 display: none;으로 미노출되던 target 요소를 교차시점에 visible로 바꾸어 노출 시키는 예이다. <br>
+
+<br>
+
+MDN의 예제로는 이전 Ratio와 비교하여 배경색을 바꾸는 예제도 있다. <br>
+
+```jsx
+function handleIntersect(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > prevRatio) {
+      entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
+    } else {
+      entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
+    }
+
+    prevRatio = entry.intersectionRatio;
+  });
+}
+```
+
+increasingColor (remember, it's "rgba(40, 40, 190, ratio)") <br>
+
+<br><br>
+
+
 [ref]:
 - [Intersection Observer API](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API)
+- [Intersection Observer Entry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry)
 
 <br><br><br>
