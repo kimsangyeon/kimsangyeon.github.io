@@ -147,14 +147,20 @@ class FileInput extends React.Component {
     this.fileInput = React.createRef();  }
   handleSubmit(event) {
     event.preventDefault();
-    alert(
-      `Selected file - ${this.fileInput.current.files[0].name}`    );
+    alert(`Selected file - ${this.fileInput.current.files[0].name}`);
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>        <label>          Upload file:
-          <input type="file" ref={this.fileInput} />        </label>        <br />        <button type="submit">Submit</button>      </form>);
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Upload file:
+          <input type="file" ref={this.fileInput} />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    );
   }
 }
 
