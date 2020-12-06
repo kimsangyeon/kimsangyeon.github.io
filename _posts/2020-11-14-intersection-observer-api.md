@@ -369,7 +369,7 @@ increasingColor (remember, it's "rgba(40, 40, 190, ratio)") <br>
 
 ### event scroll 사용하는 경우
 
-![intersection observer 1]({{ site.baseurl }}/assets/images/intersection-observer-1.png)
+![intersection observer 1]({{ site.baseurl }}/assets/images/intersection-observer-2.png)
 
 event scroll을 사용하는 경우 scroll 발생시마다 callback 함수 호출로 인하여 해당 callback이 Main thread function call로 잡히는 것을 볼 수 있다. (Main 에서 노란색 부분) <br>
 
