@@ -379,7 +379,7 @@ event scroll을 사용하는 경우 scroll 발생시마다 callback 함수 호�
 
 ### Intersection Observer를 사용
 
-![intersection observer 2]({{ site.baseurl }}/assets/images/intersection-observer-1.png)
+![intersection observer 2]({{ site.baseurl }}/assets/images/intersection-observer-2.png)
 
 intersection observer api를 사용한 경우에는 target이 감지된 경우에만 Main thread에서 function Call을 호출한 것을 볼 수 있다. (Main에서 노란색 부분) <br>
 
