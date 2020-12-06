@@ -363,6 +363,31 @@ increasingColor (remember, it's "rgba(40, 40, 190, ratio)") <br>
 <br><br>
 
 
+## scroll event VS intersection Observer
+
+[Scroll listener vs Intersection Observers: a performance comparison](https://itnext.io/1v1-scroll-listener-vs-intersection-observers-469a26ab9eb6)
+
+### event scroll 사용하는 경우
+
+![intersection observer 1]({{ site.baseurl }}/assets/images/intersection-observer-1.png)
+
+event scroll을 사용하는 경우 scroll 발생시마다 callback 함수 호출로 인하여 해당 callback이 Main thread function call로 잡히는 것을 볼 수 있다. (Main 에서 노란색 부분) <br>
+
+이는 event callback은 Main thread 리소스를 사용한다는 것이다. <br>
+
+<br><br>
+
+### Intersection Observer를 사용
+
+![intersection observer 2]({{ site.baseurl }}/assets/images/intersection-observer-1.png)
+
+intersection observer api를 사용한 경우에는 target이 감지된 경우에만 Main thread에서 function Call을 호출한 것을 볼 수 있다. (Main에서 노란색 부분) <br>
+
+이는 target을 감지하는 intersection observer observe 역할은 Main thread에 영향을 주지 않는다는 것으로 성능 향상에 도움이된다. <br>
+
+<br><br>
+
+
 [ref]:
 - [Intersection Observer API](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API)
 - [Intersection Observer Entry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry)
