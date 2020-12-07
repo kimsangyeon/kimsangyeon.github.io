@@ -10,7 +10,7 @@ author: yeon
 
 React에서 리스트 랜더링시 key 값을 지정하지 않을 경우 key값 지정에 대한 경고문이 노출된다. <br>
 
-- key는 배열로 생성되는 React Element 생성 구간에서 key를 지정해 주어야한다. (ex: map 내부에서 생성되는 컴포넌트)
+- key는 배열로 생성되는 React Element 생성 구간에서 key를 지정해 주어야한다. <br> (ex: map 내부에서 생성되는 컴포넌트)
 - key는 형제 컴포넌트 사이에서만 고유하면 된다.
 - key 값을 지정하지 않는 경우 인덱스 값으로 key 값이 지정된다.
 
@@ -45,15 +45,15 @@ function NumberList(props) {
   const numbers = props.numbers;
   return (
     <ul>
-			{
-				numbers.map((number) =>
-					<ListItem
-						key={number.toString()}
-						value={number}
-					/>)
-			}
-		</ul>
-	);
+      {
+        numbers.map((number) =>
+          <ListItem
+            key={number.toString()}
+            value={number}
+          />)
+      }
+    </ul>
+  );
 }
 ```
 
@@ -89,7 +89,7 @@ React는 재조정알고리즘에서 이전 DOM과 새로 생성된 DOM을 비�
 </ul>
 -------------------
 <ul>
-	<li>first</li>
+  <li>first</li>
   <li>second</li>
   <li>third</li>
 </ul>
@@ -110,7 +110,7 @@ React는 재조정알고리즘에서 이전 DOM과 새로 생성된 DOM을 비�
 </ul>
 -------------------
 <ul>
-	<li key="one">first</li>
+  <li key="one">first</li>
   <li key="two">second</li>
   <li key="three">third</li>
 </ul>
@@ -129,7 +129,7 @@ React는 재조정알고리즘에서 이전 DOM과 새로 생성된 DOM을 비�
 </ul>
 -------------------
 <ul>
-	<li key=1>first</li>
+  <li key=1>first</li>
   <li key=2>second</li>
   <li key=3>third</li>
 </ul>
