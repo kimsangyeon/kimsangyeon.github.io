@@ -22,7 +22,7 @@ author: yeon
 
 ## Structure
 
-**Redux** 구조는는 크게 액션, 리듀서, 스토어로 나눌수 있다.
+**Redux** 구조는 크게 액션, 리듀서, 스토어로 나눌수 있다.
 
 <br>
 
@@ -133,11 +133,11 @@ function todos(state = initialState, action) {
 
 <br><br>
 
-위와같이 state는 직접 변경하지 않은채 새로운 상태를 반환하며 객체의 경우 Object assign을 사용하여 새로운 객체를 생성해낸다. Object assign이 아닌 ES7 문법인 전개 연산자인 { ...state, ...newState } 형태로도 가능하다. <br>
+위와같이 state는 직접 변경하지 않은채 새로운 상태를 반환하며 객체의 경우 Object assign을 사용하여 새로운 객체를 생성해낸다. Object assign이 아닌 ES7 문법인 전개 연산자 { ...state, ...newState } 형태로도 가능하다. <br>
 
 <br>
 
-리듀서에 정의된 타입들이 많아질수록 리듀서가 복잡해 질 수 있다. 이를 위해 리듀서를 분리하고 조합도 가능하다. 연관된 상태변경 동작들을 함수 별로 나누고 리덕스에서 제공하는 combineRedueces를 사용하여 합칠 수 있다. <br>
+리듀서에 정의된 타입들이 많아질수록 리듀서가 복잡해 질 수 있다. 이를 위해 리듀서를 분리하고 조합도 가능하다. 연관된 상태변경 동작들을 함수 별로 나누고 리덕스에서 제공하는 combineReducers를 사용하여 합칠 수 있다. <br>
 
 ```jsx
 - todos.js -
@@ -284,7 +284,7 @@ function reducer(state = initialState, action) {
 }
 ```
 
-리듀서는 순수함수로 리듀서 안에서 일어나는 계산은 완전 예측 가능하여야한다. 같은입력에 대해서는 항상 같은 결과를 반환해야한다. 때문에 API 호출이나 라우터 전환, new Date(), Math.random() 과 같은 호출은 이루어져서는 안된다. <br>
+리듀서는 순수함수로 리듀서 안에서 일어나는 계산은 완전 예측 가능하여야한다. 같은 입력에 대해서는 항상 같은 결과를 반환해야한다. 때문에 API 호출이나 라우터 전환, new Date(), Math.random() 과 같은 호출은 이루어져서는 안된다. <br>
 
 <br><br>
 

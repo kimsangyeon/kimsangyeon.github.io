@@ -13,7 +13,7 @@ author: yeon
 
 <br>
 
-**랜더링 단계**에서는 재조정(reconciler)에서 관리되며 일반적으로 사용되는 legacy mode에서는 스택기반으로 동기적 Render Phase가 수행된다. 이는 React가 Virtual DOM을 생성하는 단계이며 랜더링 할 모양을 결정하는 것입니다. <br>
+**랜더링 단계**는 재조정(reconciler)에서 관리된다. 일반적으로 사용되는 legacy mode에서는 스택기반으로 동기적 Render Phase가 수행된다. 이는 React가 Virtual DOM을 생성하는 단계이며 랜더링 할 모양을 결정하는 것이다. <br>
 
 concurrent mode에서는 비동기로 스택기반에서 fiber architecture로 변경되어 React 앱이 사용자의 장치 기능 및 네트워크 속도에 맞추어 랜더링 단계를 수행한다. <br>
 
