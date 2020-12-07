@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Controlled Component'
+title: 'React List Key'
 categories: [javascript, react]
 image: assets/images/banner/react.png
 author: yeon
