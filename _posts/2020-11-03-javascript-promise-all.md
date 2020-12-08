@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 'Javascript Promise all & allSettled'
+title: 'Javascript Promise all & allSettled & race'
 categories: [javascript]
 image: assets/images/banner/javascript.png
 author: yeon
 ---
 
-# Javascript Promise all & allSettled
+# Javascript Promise all & allSettled & race
 
 Javascript에서 비동기 작업의 처리를 위해 ES6에서의 **Promise**를 사용한다. **Promise**는 비동기 연산이 종료된 이후 결과값이나 실패를 처리하기 위한 처리기를 연결 할 수 있도록 한다. <br>
 
@@ -206,6 +206,33 @@ Promise.allSettled = Promise.allSettled || ((promises) => Promise.all(promises.m
 ```
 
 <br><br>
+
+## Promise.race
+`Promise.race`는 all, allSettled와는 다르게 모든 Promise에 대한 결과를 반환하지 않는다. `Promise.race`는 수행되는 Promise 중 가장 빠르게 수행되는 결과만을 반환한다.
+
+<br>
+
+```javascript
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 200, 'time1');
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'time2');
+});
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 10, 'time3');
+});
+
+Promise.race([promise1, promise2, promise3]).then((v) => {
+  console.log(v);
+});
+// time3
+```
+위 같은 경우 가장 빨리 수행되는 'time3'이 반환된다.
+
+
+<br><br>
+
 
 [ref]:
 - [Promise.allSettled()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled)
