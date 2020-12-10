@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'React List Key'
+title: 'React-redux'
 categories: [javascript, react]
-image: assets/images/banner/react.png
+image: assets/images/banner/redux.png
 author: yeon
 ---
 
