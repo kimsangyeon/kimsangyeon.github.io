@@ -8,19 +8,19 @@ author: yeon
 
 # React Component State
 
-`React` 에서 State는 컴포넌트의 상태값을 가리킨다. `setState` 를 통해 상태값 변경이 가능하고 상태값이 변경되면 컴포넌트는 리랜더링된다. <br>
+`React` 에서 State는 컴포넌트의 상태 값을 가리킨다. `setState` 를 통해 상태 값 변경이 가능하고 상태 값이 변경되면 컴포넌트는 리랜더링 된다. <br>
 
 <br>
 
 ## State & Props
 
-State는 컴포넌트의 상태값으로 컴포넌트 내부에서 관리되는 값이다. Props는 Properties의 줄임말로 함수의 매개변수와 같이 컴포넌트로 전달되는 값이다. State가 하위컴포넌트로 전달되고 하위컴포넌트는 이 값을 Props로 받게된다. <br>
+State는 컴포넌트의 상태 값으로 컴포넌트 내부에서 관리되는 값이다. Props는 Properties의 줄임말로 함수의 매개변수와 같이 컴포넌트로 전달되는 값이다. State가 하위컴포넌트로 전달되고 하위컴포넌트는 이 값을 Props로 받게 된다. <br>
 
 <br><br>
 
 ## State 일괄처리
 
-컴포넌트에서 state를 변경하기위해 `setState`를 사용할때 `setState`가 여러번 호출 된다면? 랜더링이 계속 일어나는가?.. 이 답은 아니다. `setState`에 새롭게 설정할 상태값인 객체를 전달하게 되는 경우 마지막으로 설정된 State로 랜더링이된다. <br>
+컴포넌트에서 state를 변경하기위해 `setState`를 사용할 때 `setState`가 여러 번 호출된다면? 랜더링이 계속 일어나는가?.. 이 답은 아니다. `setState`에 새롭게 설정할 상태 값인 객체를 전달하게 되는 경우 마지막으로 설정된 State로 랜더링이 된다. <br>
 
 ```jsx
 incrementCount() {
@@ -43,11 +43,11 @@ handleSomething() {
 }
 ```
 
-`setState`호출시마다 리랜더링 되지 않아 this.state 값이 갱신되지 않기 때문에 this.state.count 값은 1이 된다. <br>
+`setState`호출할 때마다 리랜더링 되지 않아 this.state 값이 갱신되지 않기 때문에 this.state.count 값은 1이 된다. <br>
 
 <br>
 
-위의 문제점 해결은 `setState`에 함수를 전달하는 방법으로 해결이 가능하다. `setState`에 전달되는 함수는 이전 상태값 state에 접근 할 수 있고 `setState` 호출은 일괄처리되며 이전에 있었던 문제가 해결된다. <br>
+위의 문제점 해결은 `setState`에 함수를 전달하는 방법으로 해결이 가능하다. `setState`에 전달되는 함수는 이전 상태 값 state에 접근 할 수 있고 `setState` 호출은 일괄처리되며 이전에 있었던 문제가 해결된다. <br>
 
 ```jsx
 incrementCount() {
@@ -68,7 +68,7 @@ handleSomething() {
 }
 ```
 
-`setState`에 partialState 인자가 object, function인 경우 `updater.enqueueSetState`로 설정 한다. <br>
+`setState`에 partialState 인자가 object, function인 경우 `updater.enqueueSetState`로 설정한다. <br>
 
 <br>
 
@@ -146,7 +146,7 @@ function getStateFromUpdate<State>(
     }
 ```
 
-위의 예시는 `React Class Component` 인 경우에 해당되며 `Functional Component Hook`인 `useState`의 경우에는 `ReactFiberHooks.js`를 참고하여야한다. <br>
+위의 예시는 `React Class Component` 인 상황에 해당되며 `Functional Component Hook`인 `useState`의 경우에는 `ReactFiberHooks.js`를 참고하여야 한다. <br>
 
 <br><br>
 
