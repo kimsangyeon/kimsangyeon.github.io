@@ -34,6 +34,10 @@ import reducer from './reducer';
 const store = createStore(reducer, applyMiddleware(ReduxThunk));
 ```
 
+<br>
+
+- [applyMiddleware](https://github.com/reduxjs/redux/blob/master/src/applyMiddleware.ts)
+
 <br><br>
 
 ## Redux thunk
@@ -60,9 +64,26 @@ export default thunk;
 
 수행된 액션이 function 인 경우 action에 dispatch와 state를 넘겨 수행시켜주는 역할이 전부이다. <br>
 
-<br>
+<br><br>
 
-해서 API 액션을 dispatch 할때에 함수가 반환되는 thunk 함수를 만들어 dispatch로 호출하면된다.
+## Example
+
+redux thunk를 사용하기 위한 thunk 함수 예제들을 보자. 가장 많이 사용하는 logger 함수의 경우 아래와 같이 action 수행전 상태와 action 수행후 상태를 비교할 수 있다.
+
+```javascript
+const logger = store => next => action => {
+  console.group(action.type);
+  console.info('dispatching', action);
+  let result = next(action);
+  console.log('next state', store.getState());
+  console.groupEnd(action.type);
+  return result;
+};
+```
+
+<br><br>
+
+API 액션을 dispatch 할때에 함수가 반환되는 thunk 함수를 만들어 dispatch로 호출하면된다.
 
 ```javascript
 function getData() {
