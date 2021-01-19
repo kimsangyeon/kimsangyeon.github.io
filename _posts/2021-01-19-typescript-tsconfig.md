@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Redux Thunk'
-categories: [javascript, redux]
-image: assets/images/banner/redux.png
+title: 'tsconfig'
+categories: [javascript, typescript]
+image: assets/images/banner/typescript/typescript.png
 author: yeon
 ---
 # tsconfig
