@@ -70,7 +70,7 @@ author: yeon
 
 <br><br>
 
-### typesRoots & types
+### typeRoots & types
 
 기본적으로 유형 정의에 대한 `@types` 패키지는 컴파일에 모두 포함된다. `typeRoots`를 지정할 경우 지정된 타입 정의만이 포함된다. <br>
 
@@ -106,7 +106,7 @@ author: yeon
 
 ## files
 
-컴파일할 파일의 상태 또는 절대 파일 경로 목록을 가진다.
+컴파일할 파일의 상대 또는 절대 파일 경로 목록을 가진다.
 
 <br>
 
