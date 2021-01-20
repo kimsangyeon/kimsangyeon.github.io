@@ -324,7 +324,6 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: 'Droid Serif', serif;
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
@@ -711,6 +710,7 @@ h6 {
 
 .layout-page .article-post p {
     margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", 나눔고딕, "Nanum Gothic", "Noto Sans KR", "Noto Sans CJK KR", arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
 }
 
 img {
