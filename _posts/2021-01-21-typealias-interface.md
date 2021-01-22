@@ -64,7 +64,7 @@ let person: PersonTuple = ['yeon', 1];
 
 변수 as 강제할 타입 <br>
 
-<강제할타입> 변수 <br>
+\<강제할타입\> 변수 <br>
 
 <br>
 
