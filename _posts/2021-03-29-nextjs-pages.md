@@ -12,7 +12,7 @@ author: yeon
 
 <br>
 
-예로 아래와 같이 React 컴포넌트를 내보내는 `pages / about.jsx`를 생성하면 `/about` 경로로 해당 페이지를 접근 할 수 있다. <br>
+예로 아래와 같이 React 컴포넌트를 내보내는 `pages/about.jsx`를 생성하면 `/about` 경로로 해당 페이지를 접근 할 수 있다. <br>
 
 <br><br>
 
@@ -28,7 +28,7 @@ const About = () => {
 export default About;
 ```
 
-**Next.js**는 동적 경로가 있는 페이지를 지원한다. 만약 `pages / posts / [id].jsx` 형태로 파일을 만든다면 posts / 1, posts/ 2 와 같은 형태로 페이지 접근이 가능하다. <br>
+**Next.js**는 동적 경로가 있는 페이지를 지원한다. 만약 `pages/posts/[id].jsx` 형태로 파일을 만든다면 posts / 1, posts/ 2 와 같은 형태로 페이지 접근이 가능하다. <br>
 
 <br>
 
