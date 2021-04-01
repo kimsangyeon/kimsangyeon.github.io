@@ -22,7 +22,7 @@ author: yeon
 // pages/about.jsx
 
 const About = () => {
-	return <div>Aboout</div>
+  return <div>Aboout</div>;
 };
 
 export default About;
@@ -54,12 +54,12 @@ export default About;
 
 <br>
 
-- **SSG (Static Generation)** : HTML은 빌드시 생성되며 각 요청에서 재사용된다.
+- **SSG (Static Site Generation)** : HTML은 빌드시 생성되며 각 요청에서 재사용된다.
 - **SSR(Server Side Rendering)** :  HTML은 각 요청에 대해 생성된다.
 
 <br><br>
 
-## [Static Generation (Recommended)](https://nextjs.org/docs/basic-features/pages#static-generation-recommended)
+## [Static Site Generation (Recommended)](https://nextjs.org/docs/basic-features/pages#static-generation-recommended)
 
 페이지 정적 생성을 사용하는 경우 HTML은 빌드시 생성된다. 즉, 프로덕션에서 다음 빌드를 실행할 때 페이지 HTML이 생성된다. 이 HTML은 각 요청에서 재사용된다. CDN에 의해 캐시 될 수 있다. <br>
 
@@ -73,7 +73,7 @@ export default About;
 
 <br><br>
 
-### Static Generation with data
+### Static Site Generation with data
 
 일부 페이지는 사전 렌더링을 위해 외부 데이터를 가져와야한다. 두 가지 시나리오가 있으며 하나 또는 둘 모두가 적용될 수 있다. 각각의 경우 Next.js가 제공하는 특수 기능을 사용할 수 있다. <br>
 
@@ -94,8 +94,8 @@ function Blog({ posts }) {
 // This function gets called at build time
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = await fetch('https://.../posts')
-  const posts = await res.json()
+  const res = await fetch('https://.../posts');
+  const posts = await res.json();
 
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
@@ -103,13 +103,14 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-  }
+  };
 }
 
-export default Blog
+export default Blog;
+
 ```
 
-`getStaticProps` ****: 빌드타임때 실행되며 pre rendering시 데이터를 가져와 데이터를 설정 할 수 있다. <br>
+`getStaticProps` : 빌드 타임 때 실행되며 pre rendering시 데이터를 가져와 데이터를 설정 할 수 있다. <br>
 사전 랜더링에 데이터를 가져오므로 실시간으로 데이터가 자주 바뀌는 곳에서는 사용을 피하는 것이 좋다. <br>
 
 <br>
@@ -118,7 +119,7 @@ export default Blog
 
 <br>
 
-**Next.js**를 사용하면 동적 경로가있는 페이지를 만들 수 있다. 예를 들어 pages / posts / [id] .js라는 파일을 만들어 ID를 기반으로 한 단일 블로그 게시물을 표시 할 수 있다. 이렇게하면 posts / 1에 액세스 할 때 id : 1 인 블로그 게시물을 표시 할 수 있다. <br>
+**Next.js**를 사용하면 동적 경로가있는 페이지를 만들 수 있다. 예를 들어 `pages/posts/[id].js`라는 파일을 만들어 Id를 기반으로한 단일 블로그 게시물을 표시 할 수 있다. 이렇게하면 `posts/1`에 액세스 할 때 id : 1 인 블로그 게시물을 표시 할 수 있다. <br>
 
 그러나 빌드시 사전 렌더링하려는 Id는 외부 데이터에 따라 달라질 수 있다. <br>
 
@@ -128,21 +129,21 @@ export default Blog
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('https://.../posts')
-  const posts = await res.json()
+  const res = await fetch('https://.../posts');
+  const posts = await res.json();
 
   // Get the paths we want to pre-render based on posts
   const paths = posts.map((post) => ({
     params: { id: post.id },
-  }))
+  }));
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: false }
+  return { paths, fallback: false };
 }
 ```
 
-`getStaticPaths`: 사전에 랜더링하려는 페이지 경로를 설정하여 페이지를 미리 사전 랜더링한다. <br>
+`getStaticPaths` : 사전에 랜더링하려는 페이지 경로를 설정하여 페이지를 미리 사전 랜더링한다. <br>
 
 사전 랜더링 하려는 Id를 기반으로 paths를 설정하여 해당 경로에 맞는 페이지를 사전랜더링한다. <br>
 
@@ -159,11 +160,11 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`https://.../posts/${params.id}`)
-  const post = await res.json()
+  const res = await fetch(`https://.../posts/${params.id}`);
+  const post = await res.json();
 
   // Pass post data to the page via props
-  return { props: { post } }
+  return { props: { post } };
 }
 ```
 
@@ -197,21 +198,22 @@ function Page({ data }) {
 // This gets called on every request
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://.../data`)
-  const data = await res.json()
+  const res = await fetch(`https://.../data`);
+  const data = await res.json();
 
   // Pass data to the page via props
-  return { props: { data } }
+  return { props: { data } };
 }
 
-export default Page
+export default Page;
+
 ```
 
-**getServerSideProps**: **getStaticProps**와 유사하지만 차이점은 **getServerSideProps**가 빌드 시간이 아닌 모든 요청에서 실행된다. <br>
+**getServerSideProps** : **getStaticProps**와 유사하지만 차이점은 **getServerSideProps**가 빌드 시간이 아닌 모든 요청에서 실행된다. <br>
 
 <br>
 
-모든 요청에 실행된다는 점에서 **getStaticProps** 불필요하게 리소스를 사용할 수 있지만 실시간으로 변경되는 데이터를 가져와야 할 경우에 **getServerSideProps** 사용하여 정확한 데이터를 가져와 랜더링 할 수 있다. <br>
+모든 요청에 실행된다는 점에서 불필요하게 리소스를 사용할 수 있지만 실시간으로 변경되는 데이터를 가져와야 할 경우에 **getServerSideProps** 사용하여 정확한 데이터를 가져와 랜더링 할 수 있다. <br>
 
 <br><br>
 
