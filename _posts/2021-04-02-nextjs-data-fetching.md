@@ -52,7 +52,7 @@ getStaticProps에서 사용하는 `context`는 동적 라우팅을 위한 params
 - props : 페이지에서 받을 props 정보. (직렬화된 객체)
 - revelidate : 페이지 재생성이 발생할 수 있는 시간.
 - notFound : 404 상태 반환여부 (fallback false인 경우에는 불필요)
-- redirect : 내부 및 오부 리소스로 리다이렉션 할 수 있는지 여부
+- redirect : 내부 및 외부 리소스로 리다이렉션 할 수 있는지 여부
 
 <br>
 
@@ -210,7 +210,7 @@ export default Blog
 
 <br>
 
-`revalidate` 설정으로 1초마다 재검증이 이루어져 새로운 게시물이 추가되도라도 다시 빌드하거나 배포할 필요없이 즉시 사용할 수 있다. 이 동작은 fallback: true 설정과 완벽하게 상호작용하며 항상 최신 게시물로 업데이트되는 게시물 목록을 가질 수 있다. <br>
+`revalidate` 설정으로 1초마다 재검증이 이루어져 새로운 게시물이 추가되더라도 다시 빌드하거나 배포할 필요없이 즉시 사용할 수 있다. 이 동작은 fallback: true 설정과 완벽하게 상호작용하며 항상 최신 게시물로 업데이트되는 게시물 목록을 가질 수 있다. <br>
 
 <br><br>
 
