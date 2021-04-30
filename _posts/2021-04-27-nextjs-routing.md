@@ -117,6 +117,8 @@ export default Posts
 
 <br>
 
+`Link` href를 object 형태로 설정한 경우: <br>
+
 ```tsx
 import Link from 'next/link'
 
@@ -149,7 +151,7 @@ export default Posts
 
 <br><br>
 
-# Dynamic Routes
+## Dynamic Routes
 
 Next.js에서는 페이지 경로에 [param] 대괄호를 사용하여 동적 경로를 만들 수 있다. <br>
 
@@ -232,7 +234,7 @@ export default Home
 
 <br><br>
 
-## Catch all routes
+### Catch all routes
 
 모든 동적 경로를 포함하게 하기위하여 ('...') 세개의 점을 추가하여 동적 경로를 확장 할 수 있다. <br>
 
@@ -249,7 +251,7 @@ pages / post / [...slug].js 같이 정의 할 경우 '/post/a' '/post/a/b' '/pos
 
 <br><br>
 
-## Optional catch all routes
+### Optional catch all routes
 
 경로에 이중 괄호 형태로 포함하게 되는 경우 모든 경로를 선택적으로 접근할 수 있다. ([[...slug]]) <br>
 
@@ -283,7 +285,7 @@ pages / post / [...slug].js 같이 정의 할 경우 '/post' '/post/a' '/post/a/
 
 <br><br>
 
-# Imperatively
+## Imperatively
 
 `next/link`는 대부분 라우팅 요구사항을 처리 할 수 있지만 `useRouter` 등을 사용하여 기본 페이지 탐색을 수행 할 수도 있다. <br>
 
@@ -303,7 +305,7 @@ export default ReadMore
 
 <br><br>
 
-# Shallow Routing
+## Shallow Routing
 
 shallow routing을 사용하면 `getServerSideProps`, `getStaticProps` 및 `getInitialProps`를 포함하는 데이터 가져오기 메소드를 다시 실행하지 않고도 URL을 변경 할 수 있다. <br>
 
