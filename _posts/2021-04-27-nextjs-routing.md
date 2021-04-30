@@ -119,6 +119,11 @@ export default Posts
 
 `Link` href를 object 형태로 설정한 경우: <br>
 
+- pathname은 pages 디렉토리에 있는 페이지 이름이다. `/ blog / [slug].js`
+- query는 동적 세그먼트 개체이며 위 예제에서는 slug
+
+<br>
+
 ```tsx
 import Link from 'next/link'
 
@@ -143,11 +148,6 @@ function Posts({ posts }) {
 
 export default Posts
 ```
-
-<br>
-
-- pathname은 pages 디렉토리에 있는 페이지 이름이다. `/ blog / [slug].js`
-- query는 동적 세그먼트 개체이며 위 예제에서는 slug
 
 <br><br>
 
