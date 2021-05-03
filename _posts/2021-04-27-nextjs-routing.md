@@ -93,9 +93,9 @@ export default Home
 
 ## Linking to dynamic paths
 
-`Link`를 사용하여 동적 경로도 생성 할 수 있다. 예로 컴포넌트가 게시물 목록을 노출하고 게시물 링크를 가지는 경우: <br>
-
 ```tsx
+/* `Link`를 사용하여 동적 경로도 생성 할 수 있다. 예로 컴포넌트가 게시물 목록을 노출하고 게시물 링크를 가지는 경우: */
+
 import Link from 'next/link'
 
 function Posts({ posts }) {
@@ -113,13 +113,9 @@ function Posts({ posts }) {
 }
 
 export default Posts
-```
 
-<br>
+/* `Link` href를 object 형태로 설정한 경우: */
 
-`Link` href를 object 형태로 설정한 경우: <br>
-
-```tsx
 import Link from 'next/link'
 
 function Posts({ posts }) {
