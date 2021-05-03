@@ -101,12 +101,12 @@ function Posts({ posts }) {
     <ul>
       {posts.map((post) => (
         <li key={post.id}>
-          {// `Link`를 사용하여 동적 경로도 생성 할 수 있다. 예로 컴포넌트가 게시물 목록을 노출하고 게시물 링크를 가지는 경우:}
+          {/* `Link`를 사용하여 동적 경로도 생성 할 수 있다. 예로 컴포넌트가 게시물 목록을 노출하고 게시물 링크를 가지는 경우: */}
           <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
             <a>{post.title}</a>
           </Link>
 
-          {// `Link` href를 object 형태로 설정한 경우:}
+          {/* `Link` href를 object 형태로 설정한 경우: */}
           <Link
             href={{
               pathname: '/blog/[slug]',
