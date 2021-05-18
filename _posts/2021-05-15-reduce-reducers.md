@@ -23,7 +23,7 @@ reducer의 병합이라고하면 많이들 사용하는 combineReducers가 생�
 
 <br>
 
-```jsx
+```js
 // this reducer adds a payload to state.sum
 // and tracks total number of operations
 function reducerAdd(state, payload) {
@@ -63,7 +63,7 @@ function reducerMult(state, payload) {
 
 <br>
 
-```jsx
+```js
 const rootReducer = combineReducers({
   add: reducerAdd,
   mult: reducerMult
@@ -105,7 +105,7 @@ const second = rootReducer(first, 4)
 
 <br>
 
-```jsx
+```js
 const addAndMult = reduceReducers(reducerAdd, reducerMult)
 
 const initial = addAndMult(undefined)
